@@ -22,9 +22,29 @@ for i in range(0, len(pods_processes_list)):
             i += 1 
 
             if not pods_processes_list[i].startswith("bash: jps: command not found"):
+                count = 0
                 while(not pods_processes_list[i].startswith("****")):
                     process_pod_dict[pod_name][pods_processes_list[i].split()[0]] = pods_processes_list[i].split()[1]
+                    count+=1
                     i+=1
+                if count == 1:
+                    # print(pod_name)
+                    while(not pods_processes_list[i].startswith(pod_name)):
+                        i=i-1 #backtracking lines of the file
+                    
+                    i+=2 #skipping header columns line
+
+                    while(not pods_processes_list[i].startswith("Java Services running on Pod")):
+                        split_process_line = pods_processes_list[i].split()[:13]
+                        process_id = split_process_line[1]
+                        process_name = " ".join(split_process_line[10:])
+                        process_pod_dict[pod_name][process_id] = process_name
+                        i=i+1
+                    
+                    
+
+
+
             else:
                 while(not pods_processes_list[i].startswith(pod_name)):
                     i=i-1 #backtracking lines of the file
@@ -42,3 +62,5 @@ for i in range(0, len(pods_processes_list)):
     except IndexError:
         pass
 
+with open("json_pod_parsed.json", "w") as outfile:
+    json.dump(process_pod_dict, outfile, indent = 4)

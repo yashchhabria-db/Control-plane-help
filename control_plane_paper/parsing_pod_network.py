@@ -41,13 +41,14 @@ if __name__ == '__main__':
                     'node_ip': node_ip,
                     'listening_ports': [],
                     'ougoing_ports' : [],
+                    'pid': [],
                     'incomming_connections': [], 
                     'incomming_connected_service_names': [],
                     'incomming_connected_pod_names': [],
                     'outgoing_connections': [], 
                     'outgoing_connected_service_names': [],
                     'outgoing_connected_pod_names': [],
-                    'pid': []
+                    
                 }
 
                 i=i+3 #skip bs lines
@@ -58,9 +59,20 @@ if __name__ == '__main__':
                     pod_port = connection_line[3].split(":")[-1]
 
 
+                    #getting process names from the parsed dict coming from json_pod_parsed file
                     
                     if connection_line[6] not in pod_parsed[pod_info[0]]['pid'] and len(connection_line[6])>1:
-                            print(connection_line[6])
+                            process_id = connection_line[6].split("/")[0]
+                            if process_id in process_pod_dict[pod_info[0]]:
+                                id_name_tuple = (process_id,process_pod_dict[pod_info[0]][process_id])
+                                if id_name_tuple not in pod_parsed[pod_info[0]]['pid']:
+                                    pod_parsed[pod_info[0]]['pid'].append(id_name_tuple)
+                            else:
+                                id_unknown_tuple  = (process_id, "process_name_not_found")
+                                if id_unknown_tuple not in pod_parsed[pod_info[0]]['pid']:
+                                    pod_parsed[pod_info[0]]['pid'].append(id_unknown_tuple)
+
+                            
 
 
                     #Setting incomming and outgoing ports list

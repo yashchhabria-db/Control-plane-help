@@ -34,6 +34,12 @@
             "41340",
             "47692"
         ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.accesscontrol.AccessControlService"
+            ]
+        ],
         "incomming_connections": [
             [
                 "10.2.236.15:7777",
@@ -288,8 +294,7 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "acl-manager-867cc96fcc-d2p49": {
         "pod_ip": "10.2.236.16",
@@ -307,6 +312,12 @@
             "60354",
             "34288",
             "34666"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.aclmanager.AclManagerService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -371,8 +382,7 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "apiproxy-68d6bc64fc-88tpk": {
         "pod_ip": "10.2.211.115",
@@ -406,6 +416,12 @@
             "60522",
             "57354",
             "57340"
+        ],
+        "pid": [
+            [
+                "1",
+                "/usr/local/bin/envoy --config-path /databricks/envoy-config/envoy-config-5928d29713f030fd8d072d66ca4302ae.yaml"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -1225,8 +1241,7 @@
         "outgoing_connected_service_names": [
             "endpoint-discovery-service-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "auth-c5944fbbf-cktr8": {
         "pod_ip": "10.2.152.169",
@@ -1249,6 +1264,12 @@
             "44378",
             "58106",
             "36852"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.auth.server.service.AuthService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -1850,8 +1871,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "auth-high-qps-6c786dd5b9-9wvj9": {
         "pod_ip": "10.2.191.184",
@@ -1873,6 +1893,12 @@
             "55760",
             "56980",
             "49224"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.auth.server.service.AuthService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -1982,8 +2008,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "auth-v2-74df99ddbc-89jwg": {
         "pod_ip": "10.2.152.170",
@@ -1994,6 +2019,12 @@
             "7777"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "6",
+                "com.databricks.authv2.server.AuthV2Service"
+            ]
+        ],
         "incomming_connections": [
             [
                 "10.2.152.170:7777",
@@ -2072,8 +2103,7 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "automl-895b5bb78-pxlxn": {
         "pod_ip": "10.2.211.116",
@@ -2085,6 +2115,12 @@
         ],
         "ougoing_ports": [
             "60596"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.automl.AutomlService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -2248,8 +2284,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "billing-ingester-5584b47b6c-fbn2d": {
         "pod_ip": "10.2.61.248",
@@ -2261,6 +2296,12 @@
         ],
         "ougoing_ports": [
             "43704"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.billingingester.BillingIngesterService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -2316,8 +2357,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cloudmock-794bc6696b-h2lkv": {
         "pod_ip": "10.2.12.179",
@@ -2331,6 +2371,12 @@
         "ougoing_ports": [
             "43684",
             "43680"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.cloudmock.CloudmockService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -2358,8 +2404,7 @@
         "outgoing_connected_service_names": [],
         "outgoing_connected_pod_names": [
             "kafka-test-shard-kafka-0"
-        ],
-        "pid": []
+        ]
     },
     "cluster-events-5b4fdfb55d-z57mw": {
         "pod_ip": "10.2.179.8",
@@ -2370,13 +2415,18 @@
             "18888"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "7",
+                "com.databricks.clusterevents.ClusterEventsService"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cluster-identity-7dc49d5fc4-fmq7f": {
         "pod_ip": "10.2.12.180",
@@ -2388,6 +2438,12 @@
         ],
         "ougoing_ports": [
             "48842"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.clusteridentity.ClusterIdentityService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -2406,8 +2462,7 @@
         "outgoing_connected_service_names": [
             "directory-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cluster-libraries-89855b5cc-zjv9z": {
         "pod_ip": "10.2.61.249",
@@ -2421,6 +2476,12 @@
             "36578",
             "60342",
             "41098"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.clusterlibraries.ClusterLibrariesService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -2476,8 +2537,7 @@
             "cmapiserver-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cluster-manager-k8s-57f4d497bc-k6m4c": {
         "pod_ip": "10.2.236.17",
@@ -2501,6 +2561,12 @@
             "40140",
             "56638",
             "56658"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.clustermanagerk8s.ClusterManagerK8sService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -2630,8 +2696,7 @@
         ],
         "outgoing_connected_pod_names": [
             "kafka-test-shard-kafka-0"
-        ],
-        "pid": []
+        ]
     },
     "cluster-metrics-6865bbf9f5-4z994": {
         "pod_ip": "10.2.179.9",
@@ -2643,6 +2708,12 @@
         ],
         "ougoing_ports": [
             "36126"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.clustermetrics.ClusterMetricsService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -2726,8 +2797,7 @@
             "cmapiserver-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cluster-monitor-0": {
         "pod_ip": "10.2.62.1",
@@ -2740,6 +2810,12 @@
         "ougoing_ports": [
             "46140",
             "53886"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.clustermonitor.ClusterMonitorService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -2786,8 +2862,7 @@
             "directory-service",
             "cmapiserver-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "clusters-database-monitor-56c5f797c7-t5d22": {
         "pod_ip": "10.2.191.185",
@@ -2822,6 +2897,12 @@
             "57746",
             "55760",
             "47082"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.clustersdatabasemonitor.ClustersDatabaseMonitorService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -3066,8 +3147,7 @@
             "test-shard-local-database-service",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cmapiserver-695cbbc467-zjddt": {
         "pod_ip": "10.2.211.117",
@@ -3105,6 +3185,12 @@
             "35488",
             "51820",
             "46588"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.backend.cmapiserver.CmApiRpcServer"
+            ]
         ],
         "incomming_connections": [
             [
@@ -3503,8 +3589,7 @@
             "directory-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-delegate-76586f55c-b6g62": {
         "pod_ip": "10.2.152.171",
@@ -3516,6 +3601,12 @@
         ],
         "ougoing_ports": [
             "43814"
+        ],
+        "pid": [
+            [
+                "8",
+                "com.databricks.backend.delegate.DelegateRPCServer"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -3544,8 +3635,7 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-jobs-0": {
         "pod_ip": "10.2.62.2",
@@ -3554,6 +3644,12 @@
             "7777"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "7",
+                "com.databricks.jobs.core.main.ElasticSparkService"
+            ]
+        ],
         "incomming_connections": [
             [
                 "10.2.62.2:7777",
@@ -3587,8 +3683,7 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-jobs-proxy-77dc498f9d-48v99": {
         "pod_ip": "10.2.211.118",
@@ -3599,13 +3694,18 @@
             "7777"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "1",
+                "nginx: master process"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-jobs-runner-9766899db-9fdjh": {
         "pod_ip": "10.2.211.119",
@@ -3638,6 +3738,12 @@
             "37100",
             "35840",
             "50252"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.elasticspark.runner.JobRunnerMain"
+            ]
         ],
         "incomming_connections": [
             [
@@ -3883,8 +3989,7 @@
             "test-shard-local-database-service",
             "cmapiserver-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-manager-0": {
         "pod_ip": "10.2.12.190",
@@ -4062,6 +4167,12 @@
             "46462",
             "55398",
             "56694"
+        ],
+        "pid": [
+            [
+                "323",
+                "com.databricks.backend.manager.ClusterManagerRPCServer"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -5568,8 +5679,7 @@
             "instance-manager-service",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-projects-0": {
         "pod_ip": "10.2.191.192",
@@ -5598,6 +5708,12 @@
             "35918",
             "48900",
             "60748"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.projects.Projects"
+            ]
         ],
         "incomming_connections": [
             [
@@ -5762,8 +5878,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-s3-commit-84dd85fcf6-bmxzx": {
         "pod_ip": "10.2.211.120",
@@ -5775,6 +5890,12 @@
         ],
         "ougoing_ports": [
             "43828"
+        ],
+        "pid": [
+            [
+                "4127",
+                "process_name_not_found"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -5793,8 +5914,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-shs-8589bdf6c6-rddhj": {
         "pod_ip": "10.2.236.18",
@@ -5806,13 +5926,18 @@
             "7777"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "7",
+                "com.databricks.sparkhistoryserver.SparkHistoryServerServiceMain"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-sisyphus-74ddbdc456-99g8v": {
         "pod_ip": "10.2.211.121",
@@ -5825,6 +5950,12 @@
         ],
         "ougoing_ports": [
             "56444"
+        ],
+        "pid": [
+            [
+                "148485",
+                "process_name_not_found"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -5852,8 +5983,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "cons-webapp-0": {
         "pod_ip": "10.2.64.46",
@@ -6017,6 +6147,12 @@
             "51197",
             "47113",
             "57703"
+        ],
+        "pid": [
+            [
+                "8",
+                "com.databricks.webapp.WebappService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -7464,8 +7600,7 @@
         ],
         "outgoing_connected_pod_names": [
             "cons-webapp-0"
-        ],
-        "pid": []
+        ]
     },
     "consul-0": {
         "pod_ip": "10.2.242.208",
@@ -7484,6 +7619,12 @@
             "43540",
             "9999",
             "8300"
+        ],
+        "pid": [
+            [
+                "367",
+                "/databricks/consul/consul agent -server"
+            ]
         ],
         "incomming_connections": [
             [
@@ -7965,8 +8106,7 @@
         "outgoing_connected_service_names": [],
         "outgoing_connected_pod_names": [
             "consul-0"
-        ],
-        "pid": []
+        ]
     },
     "credentials-manager-5b99dc45b5-dl6r6": {
         "pod_ip": "10.2.50.106",
@@ -7993,6 +8133,12 @@
             "38076",
             "34186",
             "59894"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.credentialsmanager.CredentialsManagerService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -8147,8 +8293,7 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "data-monitoring-76d6b96c54-zw5ch": {
         "pod_ip": "10.2.12.181",
@@ -8160,6 +8305,12 @@
         ],
         "ougoing_ports": [
             "50362"
+        ],
+        "pid": [
+            [
+                "112",
+                "com.databricks.datamonitoring.DataMonitoringService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -8242,8 +8393,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "data-plane-router-578cfb7d9f-whs7z": {
         "pod_ip": "10.2.64.42",
@@ -8254,6 +8404,12 @@
         ],
         "ougoing_ports": [
             "56920"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.dataplanerouter.DataPlaneRouterService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -8272,8 +8428,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "delta-pipelines-74878b6ff5-qctqv": {
         "pod_ip": "10.2.179.10",
@@ -8286,6 +8441,12 @@
         "ougoing_ports": [
             "55958",
             "47910"
+        ],
+        "pid": [
+            [
+                "78",
+                "com.databricks.pipelines.deployment.server.DeltaPipelinesRPCServer"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -8314,8 +8475,7 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "delta-pipelines-manager-758cc8cbd-jjgpf": {
         "pod_ip": "10.2.12.182",
@@ -8329,6 +8489,12 @@
             "60712",
             "34052",
             "44122"
+        ],
+        "pid": [
+            [
+                "81",
+                "com.databricks.pipelines.deployment.server.DeltaPipelinesRPCServer"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -8367,8 +8533,7 @@
             "cmapiserver-service",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "dicer-assigner-5f765f7bc7-2c2xc": {
         "pod_ip": "10.2.12.183",
@@ -8380,6 +8545,12 @@
         ],
         "ougoing_ports": [
             "24500"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.dicer.assigner.AssignerMain"
+            ]
         ],
         "incomming_connections": [
             [
@@ -8480,8 +8651,7 @@
         ],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "dicer-etcd-0": {
         "pod_ip": "10.2.12.191",
@@ -8495,13 +8665,18 @@
             "43006",
             "2379"
         ],
+        "pid": [
+            [
+                "7",
+                "etcd --name dicer-etcd-0"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "directory-599fdd8684-dk7bz": {
         "pod_ip": "10.2.211.122",
@@ -8548,6 +8723,12 @@
             "49624",
             "50968",
             "48620"
+        ],
+        "pid": [
+            [
+                "83",
+                "com.databricks.directory.DirectoryService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -9047,8 +9228,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "dummyservice-b9d44d4cb-6kr6z": {
         "pod_ip": "10.2.191.186",
@@ -9058,13 +9238,18 @@
             "7777"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "7",
+                "com.databricks.dummyservice.DummyServiceMain"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "email-notifications-b4877896f-48fnn": {
         "pod_ip": "10.2.61.250",
@@ -9077,6 +9262,12 @@
         ],
         "ougoing_ports": [
             "32774"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.emailnotifications.EmailNotificationsService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -9095,8 +9286,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "endpoint-discovery-service-548f7fd597-h64pw": {
         "pod_ip": "10.2.61.251",
@@ -9109,6 +9299,12 @@
         "ougoing_ports": [
             "11000",
             "41242"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.endpointdiscoveryservice.server.EndpointDiscoveryServiceServer"
+            ]
         ],
         "incomming_connections": [
             [
@@ -9155,8 +9351,7 @@
             ]
         ],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "feature-store-5bcd995f68-8c8tf": {
         "pod_ip": "10.2.236.19",
@@ -9179,6 +9374,12 @@
             "50570",
             "58130",
             "46368"
+        ],
+        "pid": [
+            [
+                "74",
+                "com.databricks.featurestore.FeatureStoreService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -9288,8 +9489,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "graphql-6bcc6c57bc-876cs": {
         "pod_ip": "10.2.179.11",
@@ -9307,6 +9507,12 @@
             "46576",
             "46562",
             "49876"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.graphql.core.Graphql"
+            ]
         ],
         "incomming_connections": [
             [
@@ -9565,8 +9771,7 @@
         "outgoing_connected_pod_names": [
             "graphql-6bcc6c57bc-876cs",
             "kafka-test-shard-kafka-0"
-        ],
-        "pid": []
+        ]
     },
     "groot-5c9bc8b6c8-w8db6": {
         "pod_ip": "10.2.236.20",
@@ -9578,6 +9783,12 @@
         ],
         "ougoing_ports": [
             "43176"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.groot.GrootService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -9678,8 +9889,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "ingestion-5568dcbd69-ktjvn": {
         "pod_ip": "10.2.179.12",
@@ -9691,6 +9901,12 @@
         ],
         "ougoing_ports": [
             "60662"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.ingestion.IngestionService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -9746,8 +9962,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "instance-manager-5d875f84d8-f2ts8": {
         "pod_ip": "10.2.211.123",
@@ -9871,6 +10086,12 @@
             "45538",
             "49162",
             "43122"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.backend.instancemanager.InstanceManagerRPCServer"
+            ]
         ],
         "incomming_connections": [
             [
@@ -10902,8 +11123,7 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "instance-pool-659b447f59-bwndl": {
         "pod_ip": "10.2.152.172",
@@ -10935,6 +11155,12 @@
             "47228",
             "47126",
             "40956"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.backend.instancepool.InstancePoolRPCServer"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -11134,8 +11360,7 @@
             "test-shard-local-database-service",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "jobs-api-776b6dfbb5-fcspg": {
         "pod_ip": "10.2.179.13",
@@ -11183,6 +11408,12 @@
             "44076",
             "48010",
             "60194"
+        ],
+        "pid": [
+            [
+                "147",
+                "com.databricks.jobsapi.JobsApiService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -11538,8 +11769,7 @@
             "cons-auth",
             "cmapiserver-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "jobs-housekeeper-9c7596dbc-mgm6n": {
         "pod_ip": "10.2.12.184",
@@ -11596,6 +11826,12 @@
             "49116",
             "55164",
             "44216"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.jobshousekeeper.JobsHousekeeperService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -12095,8 +12331,7 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "jobs-observability-5f5f74ddc-rs2vw": {
         "pod_ip": "10.2.61.252",
@@ -12163,6 +12398,12 @@
             "46020",
             "36840",
             "37534"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.jobsobservability.JobsObservabilityService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -12687,8 +12928,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "jobs-ops-7fcf6b7f86-lcxhp": {
         "pod_ip": "10.2.236.21",
@@ -12730,6 +12970,12 @@
             "44118",
             "34300",
             "59980"
+        ],
+        "pid": [
+            [
+                "134",
+                "com.databricks.jobsops.JobsOpsService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -13074,8 +13320,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "jobs-orchestrator-74c5f446c8-5bf7f": {
         "pod_ip": "10.2.191.187",
@@ -13109,6 +13354,12 @@
             "46878",
             "45624",
             "48470"
+        ],
+        "pid": [
+            [
+                "2772",
+                "com.databricks.jobsorchestrator.JobsOrchestratorService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -13374,8 +13625,7 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "kafka-consumer-proxy-887d7f7b-lcfwb": {
         "pod_ip": "10.2.191.188",
@@ -13687,6 +13937,12 @@
             "45702",
             "45400",
             "47604"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.kafkaconsumerproxy.KafkaConsumerProxyService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -16398,8 +16654,7 @@
         ],
         "outgoing_connected_pod_names": [
             "kafka-test-shard-kafka-0"
-        ],
-        "pid": []
+        ]
     },
     "kafka-producer-proxy-5c67f8d7d7-tv644": {
         "pod_ip": "10.2.236.22",
@@ -16411,6 +16666,12 @@
         ],
         "ougoing_ports": [
             "43006"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.kafkaproducerproxy.KafkaProducerProxyService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -16429,21 +16690,20 @@
         "outgoing_connected_service_names": [],
         "outgoing_connected_pod_names": [
             "kafka-test-shard-kafka-0"
-        ],
-        "pid": []
+        ]
     },
     "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s": {
         "pod_ip": "10.2.30.77",
         "node_ip": "10.20.10.74",
         "listening_ports": [],
         "ougoing_ports": [],
+        "pid": [],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "kafka-test-shard-kafka-0": {
         "pod_ip": "10.2.30.72",
@@ -16460,6 +16720,12 @@
             "9092",
             "9091",
             "41204"
+        ],
+        "pid": [
+            [
+                "64",
+                "kafka.Kafka"
+            ]
         ],
         "incomming_connections": [
             [
@@ -19323,8 +19589,7 @@
         "outgoing_connected_service_names": [
             "kafka-test-shard-zookeeper-client"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "kafka-test-shard-zookeeper-0": {
         "pod_ip": "10.2.30.65",
@@ -19340,6 +19605,12 @@
         ],
         "ougoing_ports": [
             "2181"
+        ],
+        "pid": [
+            [
+                "71",
+                "org.apache.zookeeper.server.quorum.QuorumPeerMain"
+            ]
         ],
         "incomming_connections": [
             [
@@ -19370,8 +19641,7 @@
         ],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "key-manager-594cb6458b-cxb42": {
         "pod_ip": "10.2.61.253",
@@ -19432,6 +19702,12 @@
             "38370",
             "38286",
             "36970"
+        ],
+        "pid": [
+            [
+                "3231",
+                "com.databricks.keymanager.KeyManagerService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -19910,8 +20186,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "lakeview-config-5c9d8f57f7-q4f8q": {
         "pod_ip": "10.2.179.14",
@@ -19926,6 +20201,12 @@
             "42158",
             "50136",
             "38586"
+        ],
+        "pid": [
+            [
+                "990",
+                "com.databricks.lakeviewconfig.LakeviewConfigService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -20072,8 +20353,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "lakeview-query-6f59dd4c7-484gq": {
         "pod_ip": "10.2.152.173",
@@ -20085,6 +20365,12 @@
         ],
         "ougoing_ports": [
             "56236"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.lakeviewquery.LakeviewQueryService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -20194,8 +20480,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "legacy-handlers-55df96d6f6-h8dtr": {
         "pod_ip": "10.2.236.23",
@@ -20206,6 +20491,12 @@
         ],
         "ougoing_ports": [
             "40388"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.legacyhandlers.LegacyHandlersService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -20270,8 +20561,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "lethe-proxy-mt-5496c64586-4gs6n": {
         "pod_ip": "10.2.236.24",
@@ -20284,6 +20574,12 @@
             "7777"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "1",
+                "nginx: master process"
+            ]
+        ],
         "incomming_connections": [
             [
                 "10.2.236.24:7778",
@@ -20371,8 +20667,7 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "maintenance-auto-compute-54579ddccd-wbkwn": {
         "pod_ip": "10.2.211.124",
@@ -20397,6 +20692,12 @@
             "53336",
             "60122",
             "42682"
+        ],
+        "pid": [
+            [
+                "157",
+                "com.databricks.maintenanceautocompute.MaintenanceAutoComputeService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -20606,8 +20907,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "managed-catalog-b5685957-sk28b": {
         "pod_ip": "10.2.191.189",
@@ -20722,6 +21022,12 @@
             "53878",
             "43058",
             "57236"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.managedcatalog.ManagedCatalogService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -21667,8 +21973,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "marketplace-7f7778d65c-kbwdw": {
         "pod_ip": "10.2.12.185",
@@ -21682,6 +21987,12 @@
         ],
         "ougoing_ports": [
             "39050"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.marketplace.MarketplaceService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -21800,8 +22111,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "marketplace-metadata-7dc7b7d5b7-69z4h": {
         "pod_ip": "10.2.152.174",
@@ -21826,6 +22136,12 @@
             "35224",
             "34930",
             "56608"
+        ],
+        "pid": [
+            [
+                "1088",
+                "com.databricks.marketplacemetadata.MarketplaceMetadataService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -22035,8 +22351,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "metadata-lineage-api-server-6d9b8c485f-x5qgn": {
         "pod_ip": "10.2.191.190",
@@ -22105,6 +22420,12 @@
             "34736",
             "41858",
             "56438"
+        ],
+        "pid": [
+            [
+                "667",
+                "com.databricks.metadatalineageapiserver.MetadataLineageApiServerService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -22718,8 +23039,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "mlflow-64c5cd6db-d6qfg": {
         "pod_ip": "10.2.152.175",
@@ -22767,6 +23087,12 @@
             "47730",
             "43172",
             "37032"
+        ],
+        "pid": [
+            [
+                "281",
+                "com.databricks.mlflow.Mlflow"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -23101,8 +23427,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "mlflow-serving-5d6f9ccbc9-q6ksh": {
         "pod_ip": "10.2.64.43",
@@ -23123,6 +23448,12 @@
             "38410",
             "45882",
             "58718"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.mlflow.serving.ServingMain"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -23222,8 +23553,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "model-serving-api-5b7d659b6f-l6rw2": {
         "pod_ip": "10.2.64.44",
@@ -23238,6 +23568,12 @@
             "40614",
             "40628",
             "56604"
+        ],
+        "pid": [
+            [
+                "409",
+                "com.databricks.modelservingapi.ModelServingApiService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -23375,8 +23711,7 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "model-serving-proxy-667ccdb58f-pvrsl": {
         "pod_ip": "10.2.179.15",
@@ -23397,6 +23732,12 @@
             "49382",
             "42578",
             "57092"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.modelservingproxy.ModelServingProxyService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -23506,8 +23847,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "onboarding-7b89897895-p2sds": {
         "pod_ip": "10.2.61.254",
@@ -23522,6 +23862,12 @@
             "56270",
             "38700",
             "40942"
+        ],
+        "pid": [
+            [
+                "1006",
+                "com.databricks.onboarding.OnboardingService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -23668,8 +24014,7 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "partnerhub-bb8d7f7fb-6t2fz": {
         "pod_ip": "10.2.98.206",
@@ -23691,6 +24036,12 @@
             "54958",
             "41284",
             "52726"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.partnerhub.PartnerhubService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -23790,8 +24141,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "projects-proxy-67bf648bf8-rjhdj": {
         "pod_ip": "10.2.184.220",
@@ -23802,13 +24152,18 @@
             "7778"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "1",
+                "/usr/local/bin/envoy --config-path /databricks/envoy-config/envoy-config-197e6ec4afeb2a7f7b99b11d71cb381f"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "ratelimit-v2-66655f9546-xpznl": {
         "pod_ip": "10.2.236.25",
@@ -23822,6 +24177,12 @@
             "37114",
             "37118",
             "37116"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.ratelimitv2.RatelimitV2Service"
+            ]
         ],
         "incomming_connections": [
             [
@@ -23886,8 +24247,7 @@
         "outgoing_connected_service_names": [
             "cons-ratelimit-v2-redis"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "ratelimit-v2-redis-75b968b698-9vpzx": {
         "pod_ip": "10.2.247.19",
@@ -23900,6 +24260,16 @@
         ],
         "ougoing_ports": [
             "6389"
+        ],
+        "pid": [
+            [
+                "7",
+                "redis-server *:6379"
+            ],
+            [
+                "29840",
+                "process_name_not_found"
+            ]
         ],
         "incomming_connections": [
             [
@@ -23936,8 +24306,7 @@
         ],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "redash-async-d5b464c6-trj5r": {
         "pod_ip": "10.2.236.26",
@@ -23964,6 +24333,24 @@
             "44964",
             "47634",
             "34446"
+        ],
+        "pid": [
+            [
+                "1",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "42",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "45",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "41",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -24135,8 +24522,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "redash-b6777b664-bsnkp": {
         "pod_ip": "10.2.61.255",
@@ -24156,6 +24542,28 @@
             "46476",
             "47460",
             "58862"
+        ],
+        "pid": [
+            [
+                "1",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "52",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "53",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "57",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "56",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -24255,8 +24663,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "redash-jobs-7bcbd49999-dwq9p": {
         "pod_ip": "10.2.191.191",
@@ -24285,6 +24692,60 @@
             "50400",
             "49128",
             "48586"
+        ],
+        "pid": [
+            [
+                "1",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "68",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "61",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "58",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "65",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "54",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "52",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "56",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "63",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "70",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "59",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "72",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ],
+            [
+                "73",
+                "/usr/bin/python /usr/local/bin/gunicorn -k"
+            ]
         ],
         "incomming_connections": [
             [
@@ -24475,8 +24936,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "redash-scheduler-6758fd9647-phdcr": {
         "pod_ip": "10.2.211.125",
@@ -24491,6 +24951,16 @@
             "57796",
             "58902",
             "57514"
+        ],
+        "pid": [
+            [
+                "1",
+                "python /app/manage.py rq"
+            ],
+            [
+                "19",
+                "python ./sidecar.py"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -24554,8 +25024,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "redash-v2-679b79c457-4zx4q": {
         "pod_ip": "10.2.61.202",
@@ -24580,6 +25049,12 @@
             "53414",
             "35832",
             "46566"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.redashv2.RedashV2Service"
+            ]
         ],
         "incomming_connections": [
             [
@@ -24744,8 +25219,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "redash-worker-8f75c7b45-69b8m": {
         "pod_ip": "10.2.152.176",
@@ -24782,6 +25256,28 @@
             "60724",
             "38982",
             "60710"
+        ],
+        "pid": [
+            [
+                "20",
+                "python ./manage.py rq"
+            ],
+            [
+                "16",
+                "python ./manage.py rq"
+            ],
+            [
+                "19",
+                "python ./manage.py rq"
+            ],
+            [
+                "21",
+                "python ./manage.py rq"
+            ],
+            [
+                "22",
+                "python ./manage.py rq"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -25268,8 +25764,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "release-test-service-848f74484d-z84tm": {
         "pod_ip": "10.2.98.215",
@@ -25280,13 +25775,18 @@
             "4051"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "6",
+                "com.databricks.releasetestservice.ReleaseTestServiceService"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "route-discovery-service-7f455df6c9-k7stz": {
         "pod_ip": "10.2.211.126",
@@ -25297,6 +25797,12 @@
         ],
         "ougoing_ports": [
             "43556"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.routediscoveryservice.RouteDiscoveryServiceMain"
+            ]
         ],
         "incomming_connections": [
             [
@@ -25368,8 +25874,7 @@
             ]
         ],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "secret-manager-78c675f8cd-ncz7x": {
         "pod_ip": "10.2.12.186",
@@ -25390,6 +25895,12 @@
             "53960",
             "42712",
             "56140"
+        ],
+        "pid": [
+            [
+                "170",
+                "com.databricks.secretmanager.SecretManagerService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -25589,8 +26100,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "serving-scheduler-8b5d548c-wwz2v": {
         "pod_ip": "10.2.236.27",
@@ -25601,13 +26111,18 @@
             "7777"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "78",
+                "com.databricks.servingscheduler.ServingSchedulerService"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "settings-policy-69d99d586f-9v924": {
         "pod_ip": "10.2.211.128",
@@ -25626,6 +26141,12 @@
             "37260",
             "33886",
             "35748"
+        ],
+        "pid": [
+            [
+                "830",
+                "com.databricks.settingspolicy.SettingsPolicyService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -25798,8 +26319,7 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "softclient-74bcfcd4f8-kw2n9": {
         "pod_ip": "10.2.12.187",
@@ -25812,6 +26332,12 @@
         "ougoing_ports": [
             "40960",
             "43416"
+        ],
+        "pid": [
+            [
+                "8",
+                "com.databricks.softstore.softclient.SoftclientMain"
+            ]
         ],
         "incomming_connections": [
             [
@@ -25887,8 +26413,7 @@
         ],
         "outgoing_connected_pod_names": [
             "softstore-storelet-0"
-        ],
-        "pid": []
+        ]
     },
     "softstore-storelet-0": {
         "pod_ip": "10.2.152.178",
@@ -25902,6 +26427,12 @@
         "ougoing_ports": [
             "60660",
             "24576"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.softstore.storelet.StoreletMain"
+            ]
         ],
         "incomming_connections": [
             [
@@ -25968,8 +26499,7 @@
         "outgoing_connected_service_names": [
             "dicer-assigner-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "spark-connect-router-8f7486d9c-4vqrr": {
         "pod_ip": "10.2.236.28",
@@ -25981,6 +26511,12 @@
         ],
         "ougoing_ports": [
             "52192"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.sparkconnectrouter.SparkConnectRouterService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -26045,8 +26581,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "sql-cloud-results-gc-546d9d7c49-82tmk": {
         "pod_ip": "10.2.98.216",
@@ -26057,13 +26592,18 @@
             "25447"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "6",
+                "com.databricks.sqlcloudresultsgc.SqlCloudResultsGcService"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "sql-exec-api-66889b5694-746nm": {
         "pod_ip": "10.2.211.127",
@@ -26075,6 +26615,12 @@
         ],
         "ougoing_ports": [
             "49254"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.sqlexecapi.SqlExecApiService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -26139,8 +26685,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "sqlacl-sisyphus-c4fb4d997-cpmxz": {
         "pod_ip": "10.2.62.0",
@@ -26153,6 +26698,12 @@
         ],
         "ougoing_ports": [
             "56004"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.backend.daemon.data.server.meta.MetaService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -26171,8 +26722,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "sqlgateway-history-67d585ff87-gk7d7": {
         "pod_ip": "10.2.12.188",
@@ -26237,6 +26787,12 @@
             "49670",
             "38254",
             "47364"
+        ],
+        "pid": [
+            [
+                "87",
+                "com.databricks.sqlgateway.history.HistoryService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -26788,8 +27344,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "sqlgateway-history-db-admin-5c6cdbf4b7-665qf": {
         "pod_ip": "10.2.98.213",
@@ -26800,6 +27355,12 @@
             "4051"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "441",
+                "com.databricks.sqlgateway.history.historydbadmin.SqlgatewayHistoryDbAdminService"
+            ]
+        ],
         "incomming_connections": [
             [
                 "10.2.98.213:7777",
@@ -26824,8 +27385,7 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "sqlgateway-proxy-6d746ff9c9-9l6nq": {
         "pod_ip": "10.2.98.205",
@@ -26843,6 +27403,12 @@
             "34368",
             "46804",
             "46666"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.sqlgateway.proxy.ProxyService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -26907,8 +27473,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "sqlgateway-scheduler-0": {
         "pod_ip": "10.2.98.202",
@@ -26930,6 +27495,12 @@
             "43980",
             "49336",
             "42544"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.sqlgateway.scheduler.service.SchedulerService"
+            ]
         ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
@@ -27038,21 +27609,20 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "strimzi-cluster-operator-5b55f5b6-qvmjl": {
         "pod_ip": "10.2.152.177",
         "node_ip": "10.20.10.162",
         "listening_ports": [],
         "ougoing_ports": [],
+        "pid": [],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "test-shard-local-database-64dbd96db6-lj5kn": {
         "pod_ip": "10.2.152.179",
@@ -27068,6 +27638,7 @@
             "6379",
             "3306"
         ],
+        "pid": [],
         "incomming_connections": [
             [
                 "10.2.152.179:5432",
@@ -38409,8 +38980,7 @@
         ],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "uc-model-registry-c6cc85977-4qt87": {
         "pod_ip": "10.2.191.193",
@@ -38422,6 +38992,12 @@
         ],
         "ougoing_ports": [
             "37994"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.ucmodelregistry.UcModelRegistryService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -38531,8 +39107,7 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "ui-555774c89b-nwcn9": {
         "pod_ip": "10.2.12.189",
@@ -38545,6 +39120,12 @@
         "ougoing_ports": [
             "38674",
             "5678"
+        ],
+        "pid": [
+            [
+                "6",
+                "com.databricks.ui.UiService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -38705,8 +39286,7 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "user-activity-7c96cb868d-9gnkl": {
         "pod_ip": "10.2.50.107",
@@ -38721,6 +39301,12 @@
             "54776",
             "59786",
             "54784"
+        ],
+        "pid": [
+            [
+                "1325",
+                "com.databricks.useractivity.UserActivityService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -38840,8 +39426,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "webhook-notifications-859444dcd7-ndmsq": {
         "pod_ip": "10.2.191.194",
@@ -38866,6 +39451,12 @@
             "40296",
             "35060",
             "47140"
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.webhooknotifications.WebhookNotificationsService"
+            ]
         ],
         "incomming_connections": [
             [
@@ -39120,8 +39711,7 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     },
     "workspace-files-gc-65475f8b68-swphd": {
         "pod_ip": "10.2.211.129",
@@ -39132,12 +39722,17 @@
             "7777"
         ],
         "ougoing_ports": [],
+        "pid": [
+            [
+                "6",
+                "com.databricks.workspacefilesgc.WorkspaceFilesGcService"
+            ]
+        ],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": [],
-        "pid": []
+        "outgoing_connected_pod_names": []
     }
 }
