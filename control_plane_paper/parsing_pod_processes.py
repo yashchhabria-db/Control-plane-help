@@ -41,8 +41,6 @@ for i in range(0, len(pods_processes_list)):
                         process_pod_dict[pod_name][process_id] = process_name
                         i=i+1
                     
-                    
-
 
 
             else:

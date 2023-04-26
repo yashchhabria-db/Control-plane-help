@@ -40,7 +40,7 @@ if __name__ == '__main__':
                     'pod_ip': pod_info[1],
                     'node_ip': node_ip,
                     'listening_ports': [],
-                    'ougoing_ports' : [],
+                    'outgoing_ports' : [],
                     'pid': [],
                     'incomming_connections': [], 
                     'incomming_connected_service_names': [],
@@ -82,8 +82,8 @@ if __name__ == '__main__':
                             pod_parsed[pod_info[0]]['listening_ports'].append(pod_port)  
 
                     elif connection_line[5].startswith("WAIT") or connection_line[5].startswith("ESTABLISHED"):
-                        if pod_port not in pod_parsed[pod_info[0]]['ougoing_ports']:
-                            pod_parsed[pod_info[0]]['ougoing_ports'].append(pod_port)  
+                        if pod_port not in pod_parsed[pod_info[0]]['outgoing_ports']:
+                            pod_parsed[pod_info[0]]['outgoing_ports'].append(pod_port)  
 
 
                     #figuring out incoming and outgoing connections
