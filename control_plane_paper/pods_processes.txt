@@ -1,0 +1,1053 @@
+
+access-control-78c6d875b8-rk98n|10.2.236.15|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25028  8008 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  3.2  1.2 12360344 1648888 ?    Sl   Apr23  43:04 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=access-control -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/access-control/heapdump.1682290864.hprof -XX:ErrorFile=/databricks/logs/access-control/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/access-control/gc.log.1682290864 -XX:+UseG1GC -Xmx300M -cp /databricks/jars/manifest.jar com.databricks.accesscontrol.AccessControlService
+root        4598  0.0  0.0  20648  3932 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        4604  0.0  0.0  36148  3388 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: access-control-78c6d875b8-rk98n : 
+7 com.databricks.accesscontrol.AccessControlService
+4606 sun.tools.jps.Jps
+******************************
+acl-manager-867cc96fcc-d2p49|10.2.236.16|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8040 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.3  0.9 9018388 1212396 ?     Sl   Apr23  30:21 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=acl-manager -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/acl-manager/heapdump.1682291141.hprof -XX:ErrorFile=/databricks/logs/acl-manager/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/acl-manager/gc.log.1682291141 -XX:+UseG1GC -Xmx250M -XX:-OmitStackTraceInFastThrow -XX:OnOutOfMemoryError=jstack -F %p 1>/databricks/logs/acl-manager/stack_oom_%p.log 2>&1 -Dsun.io.serialization.extendedDebugInfo=true -cp /databricks/jars/manifest.jar com.databricks.aclmanager.AclManagerService
+root        2453  0.0  0.0  20644  3840 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2458  0.0  0.0  36144  3356 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: acl-manager-867cc96fcc-d2p49 : 
+7 com.databricks.aclmanager.AclManagerService
+2460 sun.tools.jps.Jps
+******************************
+apiproxy-68d6bc64fc-88tpk|10.2.211.115|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  2.6  0.2 3653604 329384 ?      Ssl  Apr23  35:31 /usr/local/bin/envoy --config-path /databricks/envoy-config/envoy-config-5928d29713f030fd8d072d66ca4302ae.yaml --service-cluster apiproxy --service-node apiproxy-68d6bc64fc-88tpk --log-level debug --log-format %Y-%m-%d %T.%e [%t][%l][%n] %v --log-path /databricks/logs/apiproxy/envoy-service.log
+syslog        13  0.0  0.0 154548  2516 ?        Ssl  Apr23   0:00 rsyslogd
+root          17  0.0  0.0   6888  2560 ?        Ss   Apr23   0:00 cron
+root        1127  0.0  0.0   7572  3776 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1133  0.0  0.0   8960  3360 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: apiproxy-68d6bc64fc-88tpk : 
+bash: jps: command not found
+******************************
+auth-c5944fbbf-cktr8|10.2.152.169|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25040  8224 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  3.9  0.7 11728652 950420 ?     Sl   Apr23  52:11 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=auth -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/auth/heapdump.1682290772.hprof -XX:ErrorFile=/databricks/logs/auth/hs_err_pid%p.log -Ddatabricks.useAsyncActivityLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/auth/gc.log.1682290772 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.auth.server.service.AuthService
+root      160554  0.0  0.0  20656  3872 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      160560  0.0  0.0  36156  3400 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: auth-c5944fbbf-cktr8 : 
+160562 sun.tools.jps.Jps
+6 com.databricks.auth.server.service.AuthService
+******************************
+auth-high-qps-6c786dd5b9-9wvj9|10.2.191.184|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25032  8048 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  4.1  0.6 11484804 905952 ?     Sl   Apr23  54:19 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=auth -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/auth/heapdump.1682290785.hprof -XX:ErrorFile=/databricks/logs/auth/hs_err_pid%p.log -Ddatabricks.useAsyncActivityLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/auth/gc.log.1682290785 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.auth.server.service.AuthService
+root      159904  0.0  0.0  20652  3936 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      159910  0.0  0.0  36152  3228 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: auth-high-qps-6c786dd5b9-9wvj9 : 
+159922 sun.tools.jps.Jps
+7 com.databricks.auth.server.service.AuthService
+******************************
+auth-v2-74df99ddbc-89jwg|10.2.152.170|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  7984 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.7  0.4 7089588 638712 ?      Sl   Apr23  36:27 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=auth-v2 -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/auth-v2/heapdump.1682289538.hprof -XX:ErrorFile=/databricks/logs/auth-v2/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/auth-v2/gc.log.1682289538 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.authv2.server.AuthV2Service
+root        2029  0.0  0.0  20644  3856 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2035  0.0  0.0  36144  3256 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: auth-v2-74df99ddbc-89jwg : 
+2037 sun.tools.jps.Jps
+6 com.databricks.authv2.server.AuthV2Service
+******************************
+automl-895b5bb78-pxlxn|10.2.211.116|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8216 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.9  0.4 8500756 598068 ?      Sl   Apr23  39:01 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=automl -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/automl/heapdump.1682289500.hprof -XX:ErrorFile=/databricks/logs/automl/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/automl/gc.log.1682289500 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.automl.AutomlService
+root        2051  0.0  0.0  20644  3904 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2058  0.0  0.0  36144  3360 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: automl-895b5bb78-pxlxn : 
+7 com.databricks.automl.AutomlService
+2060 sun.tools.jps.Jps
+******************************
+billing-ingester-5584b47b6c-fbn2d|10.2.61.248|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25020  8136 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.6  0.4 8988568 632504 ?      Sl   Apr23  35:30 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=billing-ingester -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/billing-ingester/heapdump.1682289499.hprof -XX:ErrorFile=/databricks/logs/billing-ingester/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/billing-ingester/gc.log.1682289499 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.billingingester.BillingIngesterService
+root        2056  0.0  0.0  20644  4004 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2062  0.0  0.0  36144  3252 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: billing-ingester-5584b47b6c-fbn2d : 
+2064 sun.tools.jps.Jps
+7 com.databricks.billingingester.BillingIngesterService
+******************************
+cloudmock-794bc6696b-h2lkv|10.2.12.179|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25032  8252 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.2  0.7 7031080 919148 ?      Sl   Apr23  29:29 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=cloudmock -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/cloudmock/heapdump.1682289969.hprof -XX:ErrorFile=/databricks/logs/cloudmock/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/cloudmock/gc.log.1682289969 -XX:+UseG1GC -Xmx650M -cp /databricks/jars/manifest.jar com.databricks.cloudmock.CloudmockService
+root        1948  0.0  0.0  20652  4008 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1954  0.0  0.0  36152  3388 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: cloudmock-794bc6696b-h2lkv : 
+1956 sun.tools.jps.Jps
+7 com.databricks.cloudmock.CloudmockService
+******************************
+cluster-events-5b4fdfb55d-z57mw|10.2.179.8|ip-10-20-9-223.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25040  8016 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.7  0.6 5884288 789972 ?      Sl   Apr23  36:23 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=cluster-events -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/cluster-events/heapdump.1682289519.hprof -XX:ErrorFile=/databricks/logs/cluster-events/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/cluster-events/gc.log.1682289519 -XX:+UseG1GC -Xmx200M -cp /databricks/jars/manifest.jar com.databricks.clusterevents.ClusterEventsService
+root        1931  0.0  0.0  20656  4028 pts/0    Ss+  20:51   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1937  0.0  0.0  36156  3312 pts/0    R+   20:51   0:00 ps -aux
+Java Services running on Pod: cluster-events-5b4fdfb55d-z57mw : 
+1939 sun.tools.jps.Jps
+7 com.databricks.clusterevents.ClusterEventsService
+******************************
+cluster-identity-7dc49d5fc4-fmq7f|10.2.12.180|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25012  8072 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.4  0.6 7379096 852576 ?      Sl   Apr23  32:24 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=cluster-identity -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/cluster-identity/heapdump.1682290831.hprof -XX:ErrorFile=/databricks/logs/cluster-identity/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/cluster-identity/gc.log.1682290831 -XX:+UseG1GC -Xmx400M -cp /databricks/jars/manifest.jar com.databricks.clusteridentity.ClusterIdentityService
+root        2297  0.0  0.0  20648  3852 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2303  0.0  0.0  36148  3304 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cluster-identity-7dc49d5fc4-fmq7f : 
+2305 sun.tools.jps.Jps
+6 com.databricks.clusteridentity.ClusterIdentityService
+******************************
+cluster-libraries-89855b5cc-zjv9z|10.2.61.249|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25020  8120 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  3.1  0.7 10617408 929512 ?     Sl   Apr23  41:48 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=cluster-libraries -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/cluster-libraries/heapdump.1682289539.hprof -XX:ErrorFile=/databricks/logs/cluster-libraries/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/cluster-libraries/gc.log.1682289539 -XX:+UseG1GC -Xmx800M -cp /databricks/jars/manifest.jar com.databricks.clusterlibraries.ClusterLibrariesService
+root      122436  0.0  0.0  20648  3932 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      122442  0.0  0.0  36148  3372 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cluster-libraries-89855b5cc-zjv9z : 
+7 com.databricks.clusterlibraries.ClusterLibrariesService
+122444 sun.tools.jps.Jps
+******************************
+cluster-manager-k8s-57f4d497bc-k6m4c|10.2.236.17|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25216  8192 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  3.0  2.8 14449988 3773684 ?    Sl   Apr23  40:03 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=cluster-manager-k8s -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/cluster-manager-k8s/heapdump.1682290890.hprof -XX:ErrorFile=/databricks/logs/cluster-manager-k8s/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/cluster-manager-k8s/gc.log.1682290890 -XX:+UseG1GC -Xmx1000M -cp /databricks/jars/manifest.jar com.databricks.clustermanagerk8s.ClusterManagerK8sService
+root        2841  0.0  0.0  21004  4440 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2847  0.0  0.0  36244  3492 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cluster-manager-k8s-57f4d497bc-k6m4c : 
+2849 sun.tools.jps.Jps
+7 com.databricks.clustermanagerk8s.ClusterManagerK8sService
+******************************
+cluster-metrics-6865bbf9f5-4z994|10.2.179.9|ip-10-20-9-223.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25024  8168 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  4.4  0.7 11998224 1005884 ?    Sl   Apr23  59:16 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=cluster-metrics -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/cluster-metrics/heapdump.1682289561.hprof -XX:ErrorFile=/databricks/logs/cluster-metrics/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/cluster-metrics/gc.log.1682289561 -XX:+UseG1GC -Xmx1600M -cp /databricks/jars/manifest.jar com.databricks.clustermetrics.ClusterMetricsService
+root        2113  0.0  0.0  20648  3920 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2119  0.0  0.0  36148  3304 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cluster-metrics-6865bbf9f5-4z994 : 
+7 com.databricks.clustermetrics.ClusterMetricsService
+2121 sun.tools.jps.Jps
+******************************
+cluster-monitor-0|10.2.62.1|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25184  8236 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  4.2  1.2 13810708 1577412 ?    Sl   Apr23  55:03 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=cluster-monitor -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/cluster-monitor/heapdump.1682291004.hprof -XX:ErrorFile=/databricks/logs/cluster-monitor/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/cluster-monitor/gc.log.1682291004 -XX:+UseG1GC -Xmx2865M -cp /databricks/jars/manifest.jar com.databricks.clustermonitor.ClusterMonitorService
+root       32345  0.0  0.0  20940  4404 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root       32351  0.0  0.0  36228  3284 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cluster-monitor-0 : 
+32353 sun.tools.jps.Jps
+7 com.databricks.clustermonitor.ClusterMonitorService
+******************************
+clusters-database-monitor-56c5f797c7-t5d22|10.2.191.185|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25040  8084 ?        Ss   19:38   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7 38.7  0.9 10623060 1234496 ?    Sl   19:38  28:40 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=clusters-database-monitor -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/clusters-database-monitor/heapdump.1682365090.hprof -XX:ErrorFile=/databricks/logs/clusters-database-monitor/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/clusters-database-monitor/gc.log.1682365090 -XX:+UseG1GC -Xmx800M -cp /databricks/jars/manifest.jar com.databricks.clustersdatabasemonitor.ClustersDatabaseMonitorService
+root         425  0.0  0.0  20656  3872 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root         431  0.0  0.0  36156  3216 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: clusters-database-monitor-56c5f797c7-t5d22 : 
+433 sun.tools.jps.Jps
+7 com.databricks.clustersdatabasemonitor.ClustersDatabaseMonitorService
+******************************
+cmapiserver-695cbbc467-zjddt|10.2.211.117|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25196  8244 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6 14.1  3.3 14860684 4380984 ?    Sl   Apr23 185:26 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=cmapiserver -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/cmapiserver/heapdump.1682290925.hprof -XX:ErrorFile=/databricks/logs/cmapiserver/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/cmapiserver/gc.log.1682290925 -Xms2500M -Xmx2500M -XX:+UseG1GC -cp /databricks/jars/manifest.jar -XX:OnOutOfMemoryError=jstack -F %p 1>logs/cmapiserver/stack.oom.%p.log 2>&1 -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic com.databricks.backend.cmapiserver.CmApiRpcServer
+root      285580  0.0  0.0  20976  4544 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      285586  0.0  0.0  36236  3416 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cmapiserver-695cbbc467-zjddt : 
+285588 sun.tools.jps.Jps
+6 com.databricks.backend.cmapiserver.CmApiRpcServer
+******************************
+cons-delegate-76586f55c-b6g62|10.2.152.171|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0   4632   892 ?        Ss   Apr23   0:01 /tini -- /bin/bash -c exec /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  0.0  0.0  25100  8148 ?        S    Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           8  4.4  3.1 14519028 4046192 ?    Sl   Apr23  58:36 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=delegate -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/delegate/heapdump.1682290928.hprof -XX:ErrorFile=/databricks/logs/delegate/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/delegate/gc.log.1682290928 -Xms2000M -Xmx2000M -XX:+UseG1GC -cp /databricks/jars/manifest.jar -XX:OnOutOfMemoryError=jstack -F %p 1>logs/delegate/stack.oom.%p.log 2>&1 -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic com.databricks.backend.delegate.DelegateRPCServer
+root        5250  0.0  0.0  20820  4032 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        5256  0.0  0.0  36188  3368 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-delegate-76586f55c-b6g62 : 
+8 com.databricks.backend.delegate.DelegateRPCServer
+5258 sun.tools.jps.Jps
+******************************
+cons-jobs-0|10.2.62.2|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25056  8252 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  3.8  0.6 7057444 802032 ?      Sl   Apr23  51:25 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=elastic-spark -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/elastic-spark/heapdump.1682289847.hprof -XX:ErrorFile=/databricks/logs/elastic-spark/hs_err_pid%p.log -Ddatabricks.defaultThrottleMessageSamplerSeconds=120 -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/elastic-spark/gc.log.1682289847 -Xmx813M -XX:+UseG1GC -cp /databricks/jars/manifest.jar:/databricks/scripts com.databricks.jobs.core.main.ElasticSparkService
+root      240252  0.0  0.0  20680  3996 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      240258  0.0  0.0  36164  3280 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-jobs-0 : 
+7 com.databricks.jobs.core.main.ElasticSparkService
+240260 sun.tools.jps.Jps
+******************************
+cons-jobs-proxy-77dc498f9d-48v99|10.2.211.118|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  55532  9152 ?        Ss   Apr23   0:00 nginx: master process /usr/local/bin/nginx -c /databricks/nginx/nginx.conf -g daemon off; error_log /usr/local/nginx/logs/error.log info;
+syslog         9  0.0  0.0 193468  3756 ?        Ssl  Apr23   0:00 rsyslogd
+root          12  0.0  0.0  30088  3024 ?        Ss   Apr23   0:00 cron
+nobody        15  0.0  0.0  63976  9028 ?        S    Apr23   0:00 nginx: worker process
+root         913  0.0  0.0  20636  3940 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root         919  0.0  0.0  38436  3548 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-jobs-proxy-77dc498f9d-48v99 : 
+921 sun.tools.jps.Jps
+******************************
+cons-jobs-runner-9766899db-9fdjh|10.2.211.119|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25056  8248 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  6.1  0.9 11553644 1224236 ?    Sl   Apr23  80:11 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=job-runner -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/job-runner/heapdump.1682290842.hprof -XX:ErrorFile=/databricks/logs/job-runner/hs_err_pid%p.log -Ddatabricks.defaultThrottleMessageSamplerSeconds=120 -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/job-runner/gc.log.1682290842 -Xmx825M -XX:+UseG1GC -cp /databricks/jars/manifest.jar:/databricks/scripts com.databricks.elasticspark.runner.JobRunnerMain
+root      239216  2.0  0.0  20664  3864 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      239222  0.0  0.0  36164  3408 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-jobs-runner-9766899db-9fdjh : 
+6 com.databricks.elasticspark.runner.JobRunnerMain
+239224 sun.tools.jps.Jps
+******************************
+cons-manager-0|10.2.12.190|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0   4640   904 ?        Ss   Apr23   0:01 /tini -- /bin/bash -c exec /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  0.0  0.0  26224  8304 ?        S    Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         323 10.8  2.7 13499988 3620772 ?    Sl   Apr23 142:27 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=manager -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/manager/heapdump.1682290858.hprof -XX:ErrorFile=/databricks/logs/manager/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/manager/gc.log.1682290858 -Xms1500M -Xmx1500M -XX:+UseG1GC -cp /databricks/jars/manifest.jar -XX:OnOutOfMemoryError=jstack -F -l %p 1>logs/manager/stack.oom.%p.log 2>&1 -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic com.databricks.backend.manager.ClusterManagerRPCServer
+root        9759  0.0  0.0  20828  4116 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        9765  0.0  0.0  36196  3412 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-manager-0 : 
+323 com.databricks.backend.manager.ClusterManagerRPCServer
+9767 sun.tools.jps.Jps
+******************************
+cons-projects-0|10.2.191.192|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25024  8028 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  3.1  0.9 11483024 1191136 ?    Sl   Apr23  41:30 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=projects -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/projects/heapdump.1682290803.hprof -XX:ErrorFile=/databricks/logs/projects/hs_err_pid%p.log -agentlib:jdwp=transport=dt_socket,address=40001,server=y,suspend=n -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/projects/gc.log.1682290803 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.projects.Projects
+root        3406  0.0  0.0  20648  4004 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3411  0.0  0.0  36148  3344 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-projects-0 : 
+3413 sun.tools.jps.Jps
+7 com.databricks.projects.Projects
+******************************
+cons-s3-commit-84dd85fcf6-bmxzx|10.2.211.120|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26120  8124 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         593  0.0  0.0      0     0 ?        Z    01:23   0:00 [PrometheusMetri] <defunct>
+root        1004  0.0  0.0      0     0 ?        Z    03:50   0:00 [PrometheusMetri] <defunct>
+root        1571  0.0  0.0      0     0 ?        Z    06:28   0:00 [PrometheusMetri] <defunct>
+root        1888  0.0  0.0      0     0 ?        Z    07:43   0:00 [PrometheusMetri] <defunct>
+root        2706  0.0  0.0      0     0 ?        Z    11:32   0:00 [PrometheusMetri] <defunct>
+root        2843  0.0  0.0      0     0 ?        Z    12:30   0:00 [PrometheusMetri] <defunct>
+root        3441  0.0  0.0      0     0 ?        Z    16:29   0:00 [PrometheusMetri] <defunct>
+root        4027  0.0  0.0      0     0 ?        Z    18:08   0:00 [PrometheusMetri] <defunct>
+root        4519  3.6  0.4 6284012 603732 ?      Sl   19:55   2:04 java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=s3-commit -Djavax.net.ssl.sessionCacheSize=10000 -XX:+PrintGCDateStamps -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/s3-commit/heapdump.1682366154.hprof -XX:ErrorFile=/databricks/logs/s3-commit/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/s3-commit/gc.log.1682366154 -Xmx400M -XX:+UseG1GC -cp /databricks/jars/manifest.jar com.databricks.s3commit.S3CommitService
+root        4663  0.0  0.0  20644  3964 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        4669  0.0  0.0  36144  3396 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-s3-commit-84dd85fcf6-bmxzx : 
+4519 com.databricks.s3commit.S3CommitService
+4671 sun.tools.jps.Jps
+******************************
+cons-shs-8589bdf6c6-rddhj|10.2.236.18|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25000  8064 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.0  0.4 7145512 614864 ?      Sl   Apr23  26:39 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=spark-history-server -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/spark-history-server/heapdump.1682289654.hprof -XX:ErrorFile=/databricks/logs/spark-history-server/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/spark-history-server/gc.log.1682289654 -Xmx400M -XX:+UseG1GC -XX:+UseStringDeduplication -cp /databricks/jars/manifest.jar com.databricks.sparkhistoryserver.SparkHistoryServerServiceMain
+root        2044  0.0  0.0  20644  4012 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2050  0.0  0.0  36144  3252 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-shs-8589bdf6c6-rddhj : 
+2052 sun.tools.jps.Jps
+7 com.databricks.sparkhistoryserver.SparkHistoryServerServiceMain
+******************************
+cons-sisyphus-74ddbdc456-99g8v|10.2.211.121|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26128  8416 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root      160886 29.4  0.6 10905756 897008 ?     Sl   20:48   1:08 java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=sisyphus -Djavax.net.ssl.sessionCacheSize=10000 -XX:+PrintGCDateStamps -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/sisyphus/heapdump.1682369324.hprof -XX:ErrorFile=/databricks/logs/sisyphus/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/sisyphus/gc.log.1682369324 -Xmx500M -XX:+UseG1GC -XX:NativeMemoryTracking=summary -XX:+UnlockDiagnosticVMOptions -XX:+PrintNMTStatistics -cp /databricks/jars/manifest.jar com.databricks.backend.daemon.data.server.meta.MetaService
+root      161460  0.0  0.0  20648  3872 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      161467  0.0  0.0  36148  3308 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-sisyphus-74ddbdc456-99g8v : 
+160886 com.databricks.backend.daemon.data.server.meta.MetaService
+161469 sun.tools.jps.Jps
+******************************
+cons-webapp-0|10.2.64.46|ip-10-20-8-172.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25200  8376 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           8  9.3  3.4 14937760 4540928 ?    Sl   Apr23 122:43 /graalvm-ce-java11-20.1.0/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=webapp -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/webapp/heapdump.1682290843.hprof -XX:ErrorFile=/databricks/logs/webapp/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/webapp/gc.log.1682290843 -Xms2166M -Xmx2166M -XX:+UseG1GC -XX:-OmitStackTraceInFastThrow -XX:NativeMemoryTracking=summary -XX:+UnlockDiagnosticVMOptions -XX:+PrintNMTStatistics -XX:OnOutOfMemoryError=jstack -F %p 1>/databricks/logs/webapp/jstack.oom.pid-%p.log 2>&1 -Dsun.io.serialization.extendedDebugInfo=true -cp /databricks/jars/manifest.jar com.databricks.webapp.WebappService /databricks
+root      201891  0.0  0.0  20980  4500 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      201897  0.0  0.0  36236  3476 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: cons-webapp-0 : 
+8 com.databricks.webapp.WebappService
+201899 sun.tools.jps.Jps
+******************************
+consul-0|10.2.242.208|ip-10-20-8-11.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  20640  3960 ?        Ss   Apr23   0:00 bash -c echo '{"addresses": {"https": "0.0.0.0"}, "ca_file": "/databricks/secrets/public-service-certs/shard-services-ca.pem", "cert_file": "/databricks/secrets/consul-cert/consul-crt.pem", "enable_debug": true, "key_file": "/databricks/secrets/consul-cert/consul-key.pem", "ports": {"https": 9999}, "telemetry": {"statsd_address": "localhost:9125"}, "verify_incoming": true, "verify_outgoing": true}' > /databricks/consul/tls.json; /init_consul.sh && sleep 30s && /databricks/consul/consul agent -server -advertise=10.2.242.208 -bootstrap-expect=1 -domain=cluster.local -data-dir /databricks/consul/data -node-id=$(uuid -v3 ns:DNS $POD_NAME) -raft-protocol=3 -ui -log-file /databricks/logs/consul/consul.log -log-rotate-duration 1h -log-level debug -config-file /databricks/secrets/consul-gossip-key/encrypt.json -config-file /databricks/consul/tls.json -retry-join=consul-0.consul.test-shard-mrajput.svc.cluster.local
+syslog       355  0.0  0.0 191172  2972 ?        Ssl  Apr23   0:00 rsyslogd
+root         359  0.0  0.0  30088  2960 ?        Ss   Apr23   0:00 cron
+root         367  1.1  0.0 188072 71180 ?        Sl   Apr23  15:32 /databricks/consul/consul agent -server -advertise=10.2.242.208 -bootstrap-expect=1 -domain=cluster.local -data-dir /databricks/consul/data -node-id=afef9839-685d-3478-a478-08c59e038a37 -raft-protocol=3 -ui -log-file /databricks/logs/consul/consul.log -log-rotate-duration 1h -log-level debug -config-file /databricks/secrets/consul-gossip-key/encrypt.json -config-file /databricks/consul/tls.json -retry-join=consul-0.consul.test-shard-mrajput.svc.cluster.local
+root      223417  0.0  0.0  20508  3980 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      223423  0.0  0.0  36140  3476 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: consul-0 : 
+223425 sun.tools.jps.Jps
+******************************
+credentials-manager-5b99dc45b5-dl6r6|10.2.50.106|ip-10-20-9-127.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25028  8168 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.6  0.5 10741056 770152 ?     Sl   Apr23  34:41 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=credentials-manager -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/credentials-manager/heapdump.1682291112.hprof -XX:ErrorFile=/databricks/logs/credentials-manager/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/credentials-manager/gc.log.1682291112 -XX:+UseG1GC -Xmx200M -cp /databricks/jars/manifest.jar com.databricks.credentialsmanager.CredentialsManagerService
+root        2754  0.0  0.0  20648  3884 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2759  0.0  0.0  36148  3388 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: credentials-manager-5b99dc45b5-dl6r6 : 
+6 com.databricks.credentialsmanager.CredentialsManagerService
+2761 sun.tools.jps.Jps
+******************************
+data-monitoring-76d6b96c54-zw5ch|10.2.12.181|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26124  8160 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         112  2.6  0.5 9310788 706612 ?      Sl   Apr23  34:43 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=data-monitoring -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/data-monitoring/heapdump.1682290734.hprof -XX:ErrorFile=/databricks/logs/data-monitoring/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/data-monitoring/gc.log.1682290734 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.datamonitoring.DataMonitoringService //common/flyway-utils:flyway_utils //common/flyway-utils:flyway_versions
+root        2130  0.0  0.0  20644  3944 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2137  0.0  0.0  36144  3320 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: data-monitoring-76d6b96c54-zw5ch : 
+112 com.databricks.datamonitoring.DataMonitoringService
+2139 sun.tools.jps.Jps
+******************************
+data-plane-router-578cfb7d9f-whs7z|10.2.64.42|ip-10-20-8-172.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25020  8204 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.1  0.9 9653168 1246064 ?     Sl   Apr23  28:07 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=data-plane-router -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/data-plane-router/heapdump.1682289526.hprof -XX:ErrorFile=/databricks/logs/data-plane-router/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/data-plane-router/gc.log.1682289526 -XX:+UseG1GC -Xmx1200M -cp /databricks/jars/manifest.jar com.databricks.dataplanerouter.DataPlaneRouterService
+root        3267  0.0  0.0  20644  3948 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3272  0.0  0.0  36144  3264 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: data-plane-router-578cfb7d9f-whs7z : 
+7 com.databricks.dataplanerouter.DataPlaneRouterService
+3274 sun.tools.jps.Jps
+******************************
+delta-pipelines-74878b6ff5-qctqv|10.2.179.10|ip-10-20-9-223.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26132  8164 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root          78  3.4  0.8 10578884 1142964 ?    Sl   Apr23  45:20 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=delta-pipelines -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/delta-pipelines/heapdump.1682290795.hprof -XX:ErrorFile=/databricks/logs/delta-pipelines/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/delta-pipelines/gc.log.1682290795 -Xms500M -Xmx500M -XX:+UseG1GC -XX:NativeMemoryTracking=summary -XX:+UnlockDiagnosticVMOptions -XX:+PrintNMTStatistics -cp /databricks/jars/* com.databricks.pipelines.deployment.server.DeltaPipelinesRPCServer
+root        2184  0.0  0.0  20648  3892 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2190  0.0  0.0  36148  3256 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: delta-pipelines-74878b6ff5-qctqv : 
+2192 sun.tools.jps.Jps
+78 com.databricks.pipelines.deployment.server.DeltaPipelinesRPCServer
+******************************
+delta-pipelines-manager-758cc8cbd-jjgpf|10.2.12.182|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26132  8168 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root          81  5.5  0.8 11149404 1164996 ?    Sl   Apr23  72:45 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=delta-pipelines -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/delta-pipelines/heapdump.1682290872.hprof -XX:ErrorFile=/databricks/logs/delta-pipelines/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/delta-pipelines/gc.log.1682290872 -Xms500M -Xmx500M -XX:+UseG1GC -XX:NativeMemoryTracking=summary -XX:+UnlockDiagnosticVMOptions -XX:+PrintNMTStatistics -cp /databricks/jars/* com.databricks.pipelines.deployment.server.DeltaPipelinesRPCServer
+root        2465  0.0  0.0  20648  3984 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2471  0.0  0.0  36148  3320 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: delta-pipelines-manager-758cc8cbd-jjgpf : 
+81 com.databricks.pipelines.deployment.server.DeltaPipelinesRPCServer
+2473 sun.tools.jps.Jps
+******************************
+dicer-assigner-5f765f7bc7-2c2xc|10.2.12.183|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25008  8164 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  4.6  0.4 10831516 597160 ?     Sl   Apr23  61:24 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=dicer-assigner -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/dicer-assigner/heapdump.1682289651.hprof -XX:ErrorFile=/databricks/logs/dicer-assigner/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/dicer-assigner/gc.log.1682289651 -XX:+UseG1GC -Xmx400M -cp /databricks/jars/manifest.jar com.databricks.dicer.assigner.AssignerMain
+root        2097  0.0  0.0  20640  3860 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2103  0.0  0.0  36140  3380 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: dicer-assigner-5f765f7bc7-2c2xc : 
+7 com.databricks.dicer.assigner.AssignerMain
+2105 sun.tools.jps.Jps
+******************************
+dicer-etcd-0|10.2.12.191|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  20636  4296 ?        Ss   Apr23   0:00 /bin/bash /init_etcd.sh
+root           7  0.3  0.0 11216624 29064 ?      Sl   Apr23   4:47 etcd --name dicer-etcd-0 --data-dir=/etcd-data --initial-advertise-peer-urls https://dicer-etcd-0.dicer-etcd.test-shard-mrajput.svc.cluster.local:2380 --listen-peer-urls https://0.0.0.0:2380 --listen-client-urls https://0.0.0.0:2379 --advertise-client-urls https://dicer-etcd-0.dicer-etcd.test-shard-mrajput.svc.cluster.local:2379 --initial-cluster-token etcd-cluster-1 --initial-cluster dicer-etcd-0=https://dicer-etcd-0.dicer-etcd.test-shard-mrajput.svc.cluster.local:2380 --initial-cluster-state new --heartbeat-interval 100 --election-timeout 1000 --max-txn-ops 300 --snapshot-count 50000 --peer-client-cert-auth --peer-cert-file=/databricks/secrets/dicer-etcd-secrets/server-cert --peer-key-file=/databricks/secrets/dicer-etcd-secrets/server-private-key --peer-trusted-ca-file=/databricks/secrets/public-service-certs/root-ca.pem --client-cert-auth --cert-file=/databricks/secrets/dicer-etcd-secrets/server-cert --key-file=/databricks/secrets/dicer-etcd-secrets/server-private-key --trusted-ca-file=/databricks/secrets/public-service-certs/root-ca.pem --listen-metrics-urls=http://0.0.0.0:7777
+root         416  0.0  0.0  20636  3920 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root         422  0.0  0.0  36140  3364 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: dicer-etcd-0 : 
+424 sun.tools.jps.Jps
+******************************
+directory-599fdd8684-dk7bz|10.2.211.122|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26124  8124 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root          83  5.3  1.3 12001740 1738448 ?    Sl   Apr23  70:14 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=directory -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/directory/heapdump.1682290812.hprof -XX:ErrorFile=/databricks/logs/directory/hs_err_pid%p.log -Ddatabricks.useAsyncActivityLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/directory/gc.log.1682290812 -XX:+UseG1GC -Xmx1000M -Xms1000M -cp /databricks/jars/manifest.jar com.databricks.directory.DirectoryService
+root        2935  0.0  0.0  20644  3940 pts/0    Ss+  20:52   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2941  0.0  0.0  36144  3316 pts/0    R+   20:52   0:00 ps -aux
+Java Services running on Pod: directory-599fdd8684-dk7bz : 
+83 com.databricks.directory.DirectoryService
+2943 sun.tools.jps.Jps
+******************************
+dummyservice-b9d44d4cb-6kr6z|10.2.191.186|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25012  7964 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.1  0.4 6553176 573584 ?      Sl   Apr23  29:18 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=dummyservice -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/dummyservice/heapdump.1682289573.hprof -XX:ErrorFile=/databricks/logs/dummyservice/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/dummyservice/gc.log.1682289573 -XX:+UseG1GC -Xmx850M -cp /databricks/jars/manifest.jar com.databricks.dummyservice.DummyServiceMain
+root        1920  0.0  0.0  20640  3960 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1926  0.0  0.0  36140  3296 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: dummyservice-b9d44d4cb-6kr6z : 
+7 com.databricks.dummyservice.DummyServiceMain
+1928 sun.tools.jps.Jps
+******************************
+email-notifications-b4877896f-48fnn|10.2.61.250|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25024  8040 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.6  0.5 7701544 656636 ?      Sl   Apr23  35:11 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=email-notifications -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/email-notifications/heapdump.1682289574.hprof -XX:ErrorFile=/databricks/logs/email-notifications/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/email-notifications/gc.log.1682289574 -XX:+UseG1GC -Xmx400M -cp /databricks/jars/manifest.jar com.databricks.emailnotifications.EmailNotificationsService
+root        2000  0.0  0.0  20648  3952 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2006  0.0  0.0  36148  3396 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: email-notifications-b4877896f-48fnn : 
+7 com.databricks.emailnotifications.EmailNotificationsService
+2008 sun.tools.jps.Jps
+******************************
+endpoint-discovery-service-548f7fd597-h64pw|10.2.61.251|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8140 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7 11.2  0.6 11086852 785828 ?     Sl   Apr23 150:34 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=endpoint-discovery-service -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/endpoint-discovery-service/heapdump.1682289595.hprof -XX:ErrorFile=/databricks/logs/endpoint-discovery-service/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/endpoint-discovery-service/gc.log.1682289595 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.endpointdiscoveryservice.server.EndpointDiscoveryServiceServer
+root        2123  0.0  0.0  20644  3724 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2130  0.0  0.0  36144  3428 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: endpoint-discovery-service-548f7fd597-h64pw : 
+2132 sun.tools.jps.Jps
+7 com.databricks.endpointdiscoveryservice.server.EndpointDiscoveryServiceServer
+******************************
+feature-store-5bcd995f68-8c8tf|10.2.236.19|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26128  8152 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root          74  2.1  0.6 10321316 785364 ?     Sl   Apr23  28:13 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=feature-store -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/feature-store/heapdump.1682290785.hprof -XX:ErrorFile=/databricks/logs/feature-store/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/feature-store/gc.log.1682290785 -XX:+UseG1GC -Xmx500M -cp /databricks/jars/manifest.jar com.databricks.featurestore.FeatureStoreService
+root        3133  0.0  0.0  20648  3976 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3139  0.0  0.0  36148  3268 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: feature-store-5bcd995f68-8c8tf : 
+3141 sun.tools.jps.Jps
+74 com.databricks.featurestore.FeatureStoreService
+******************************
+graphql-6bcc6c57bc-876cs|10.2.179.11|ip-10-20-9-223.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25024  8104 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  4.7  1.4 10714348 1924228 ?    Sl   Apr23  62:49 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=graphql -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/graphql/heapdump.1682290007.hprof -XX:ErrorFile=/databricks/logs/graphql/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/graphql/gc.log.1682290007 -XX:+UseG1GC -Xmx1300M -XX:NativeMemoryTracking=summary -XX:+UnlockDiagnosticVMOptions -XX:+PrintNMTStatistics -cp /databricks/jars/manifest.jar com.databricks.graphql.core.Graphql
+root        2190  0.0  0.0  20648  3856 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2196  0.0  0.0  36148  3376 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: graphql-6bcc6c57bc-876cs : 
+2198 sun.tools.jps.Jps
+7 com.databricks.graphql.core.Graphql
+******************************
+groot-5c9bc8b6c8-w8db6|10.2.236.20|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8120 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.4  0.5 11192920 759500 ?     Sl   Apr23  32:32 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=groot -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/groot/heapdump.1682289707.hprof -XX:ErrorFile=/databricks/logs/groot/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/groot/gc.log.1682289707 -XX:+UseG1GC -Xmx3G -cp /databricks/jars/manifest.jar com.databricks.groot.GrootService
+root        2028  0.0  0.0  20644  4004 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2034  0.0  0.0  36144  3200 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: groot-5c9bc8b6c8-w8db6 : 
+2036 sun.tools.jps.Jps
+7 com.databricks.groot.GrootService
+******************************
+ingestion-5568dcbd69-ktjvn|10.2.179.12|ip-10-20-9-223.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25020  8072 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.9  0.5 8703512 768040 ?      Sl   Apr23  39:07 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=ingestion -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/ingestion/heapdump.1682289676.hprof -XX:ErrorFile=/databricks/logs/ingestion/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/ingestion/gc.log.1682289676 -XX:+UseG1GC -Xmx600M -XX:MaxDirectMemorySize=600M -cp /databricks/jars/manifest.jar com.databricks.ingestion.IngestionService
+root        2031  0.0  0.0  20644  3876 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2037  0.0  0.0  36144  3316 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: ingestion-5568dcbd69-ktjvn : 
+6 com.databricks.ingestion.IngestionService
+2039 sun.tools.jps.Jps
+******************************
+instance-manager-5d875f84d8-f2ts8|10.2.211.123|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25100  8276 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  7.4  4.7 17462936 6183128 ?    Sl   Apr23  98:06 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=instance-manager -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/instance-manager/heapdump.1682290851.hprof -XX:ErrorFile=/databricks/logs/instance-manager/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/instance-manager/gc.log.1682290851 -Xms5000M -Xmx5000M -XX:+UseG1GC -cp /databricks/jars/manifest.jar -XX:OnOutOfMemoryError=jstack -F %p 1>logs/instance-manager/stack.oom.%p.log 2>&1 -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic com.databricks.backend.instancemanager.InstanceManagerRPCServer
+root        4566  0.0  0.0  20828  3880 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        4571  0.0  0.0  36188  3440 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: instance-manager-5d875f84d8-f2ts8 : 
+7 com.databricks.backend.instancemanager.InstanceManagerRPCServer
+4573 sun.tools.jps.Jps
+******************************
+instance-pool-659b447f59-bwndl|10.2.152.172|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25056  8124 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.8  1.4 12307116 1859236 ?    Sl   Apr23  36:50 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=instance-pool -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/instance-pool/heapdump.1682290889.hprof -XX:ErrorFile=/databricks/logs/instance-pool/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/instance-pool/gc.log.1682290889 -XX:+UseG1GC -Xmx750M -cp /databricks/jars/manifest.jar com.databricks.backend.instancepool.InstancePoolRPCServer
+root        3336  0.0  0.0  20684  3916 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3342  0.0  0.0  36164  3276 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: instance-pool-659b447f59-bwndl : 
+3344 sun.tools.jps.Jps
+7 com.databricks.backend.instancepool.InstancePoolRPCServer
+******************************
+jobs-api-776b6dfbb5-fcspg|10.2.179.13|ip-10-20-9-223.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26300  8348 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         147  5.1  0.8 12088896 1114896 ?    Sl   Apr23  67:47 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=jobs-api -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/jobs-api/heapdump.1682290860.hprof -XX:ErrorFile=/databricks/logs/jobs-api/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/jobs-api/gc.log.1682290860 -XX:+UseG1GC -Xmx1250M -cp /databricks/jars/manifest.jar com.databricks.jobsapi.JobsApiService
+root      240959  0.0  0.0  20964  4396 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      240965  0.0  0.0  36232  3520 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: jobs-api-776b6dfbb5-fcspg : 
+147 com.databricks.jobsapi.JobsApiService
+240967 sun.tools.jps.Jps
+******************************
+jobs-housekeeper-9c7596dbc-mgm6n|10.2.12.184|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25040  8100 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7 22.0  1.0 11945460 1392708 ?    Sl   Apr23 289:22 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=jobs-housekeeper -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/jobs-housekeeper/heapdump.1682290828.hprof -XX:ErrorFile=/databricks/logs/jobs-housekeeper/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/jobs-housekeeper/gc.log.1682290828 -XX:+UseG1GC -Xmx1250M -cp /databricks/jars/manifest.jar com.databricks.jobshousekeeper.JobsHousekeeperService
+root        4523  0.0  0.0  20656  3880 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        4529  0.0  0.0  36156  3304 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: jobs-housekeeper-9c7596dbc-mgm6n : 
+4531 sun.tools.jps.Jps
+7 com.databricks.jobshousekeeper.JobsHousekeeperService
+******************************
+jobs-observability-5f5f74ddc-rs2vw|10.2.61.252|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25040  8136 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  4.0  0.7 9803368 928808 ?      Sl   Apr23  53:10 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=jobs-observability -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/jobs-observability/heapdump.1682290868.hprof -XX:ErrorFile=/databricks/logs/jobs-observability/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/jobs-observability/gc.log.1682290868 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.jobsobservability.JobsObservabilityService
+root        5717  1.0  0.0  20656  4096 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        5723  0.0  0.0  36156  3396 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: jobs-observability-5f5f74ddc-rs2vw : 
+6 com.databricks.jobsobservability.JobsObservabilityService
+5725 sun.tools.jps.Jps
+******************************
+jobs-ops-7fcf6b7f86-lcxhp|10.2.236.21|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26148  8256 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         134  2.5  0.8 10574388 1073648 ?    Sl   Apr23  34:10 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=jobs-ops -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/jobs-ops/heapdump.1682290437.hprof -XX:ErrorFile=/databricks/logs/jobs-ops/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/jobs-ops/gc.log.1682290437 -XX:+UseG1GC -Xmx1024M -cp /databricks/jars/manifest.jar com.databricks.jobsops.JobsOpsService
+root        4315  0.0  0.0  20656  4040 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        4320  0.0  0.0  36156  3200 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: jobs-ops-7fcf6b7f86-lcxhp : 
+4322 sun.tools.jps.Jps
+134 com.databricks.jobsops.JobsOpsService
+******************************
+jobs-orchestrator-74c5f446c8-5bf7f|10.2.191.187|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26156  8188 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root        2772 16.8  0.8 11371600 1145720 ?    Sl   12:28  84:50 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=jobs-orchestrator -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/jobs-orchestrator/heapdump.1682339334.hprof -XX:ErrorFile=/databricks/logs/jobs-orchestrator/hs_err_pid%p.log -Ddatabricks.defaultThrottleMessageSamplerSeconds=120 -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/jobs-orchestrator/gc.log.1682339334 -XX:+UseG1GC -Xmx740M -cp /databricks/jars/manifest.jar com.databricks.jobsorchestrator.JobsOrchestratorService
+root        4436  0.0  0.0  20668  3984 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        4442  0.0  0.0  36160  3400 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: jobs-orchestrator-74c5f446c8-5bf7f : 
+2772 com.databricks.jobsorchestrator.JobsOrchestratorService
+4444 sun.tools.jps.Jps
+******************************
+kafka-consumer-proxy-887d7f7b-lcfwb|10.2.191.188|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25020  8024 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6 18.1  0.7 11375680 1021000 ?    Sl   Apr23 241:28 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=kafka-consumer-proxy -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/kafka-consumer-proxy/heapdump.1682289954.hprof -XX:ErrorFile=/databricks/logs/kafka-consumer-proxy/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/kafka-consumer-proxy/gc.log.1682289954 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.kafkaconsumerproxy.KafkaConsumerProxyService
+root        2325  0.0  0.0  20644  3908 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2331  0.0  0.0  36144  3204 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: kafka-consumer-proxy-887d7f7b-lcfwb : 
+6 com.databricks.kafkaconsumerproxy.KafkaConsumerProxyService
+2333 sun.tools.jps.Jps
+******************************
+kafka-producer-proxy-5c67f8d7d7-tv644|10.2.236.22|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8208 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  1.8  0.4 6750408 648176 ?      Sl   Apr23  24:14 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=kafka-producer-proxy -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/kafka-producer-proxy/heapdump.1682289766.hprof -XX:ErrorFile=/databricks/logs/kafka-producer-proxy/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/kafka-producer-proxy/gc.log.1682289766 -XX:+UseG1GC -Xmx1G -cp /databricks/jars/manifest.jar com.databricks.kafkaproducerproxy.KafkaProducerProxyService
+root        1923  0.0  0.0  20644  4004 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1929  0.0  0.0  36144  3368 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: kafka-producer-proxy-5c67f8d7d7-tv644 : 
+7 com.databricks.kafkaproducerproxy.KafkaProducerProxyService
+1931 sun.tools.jps.Jps
+******************************
+kafka-test-shard-entity-operator-59bfc9cf4-7fp2s|10.2.30.77|ip-10-20-10-74.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0   4448   908 ?        Ss   Apr23   0:01 /usr/bin/tini -w -e 143 -- java -Dlog4j2.configurationFile=file:/opt/topic-operator/custom-config/log4j2.properties -Dvertx.cacheDirBase=/tmp/vertx-cache -Djava.security.egd=file:/dev/./urandom --illegal-access=deny -Dcom.redhat.fips=false -classpath lib/io.strimzi.topic-operator-0.27.1.jar:lib/io.netty.netty-common-4.1.71.Final.jar:lib/io.prometheus.simpleclient_common-0.7.0.jar:lib/org.apache.logging.log4j.log4j-slf4j-impl-2.17.1.jar:lib/io.apicurio.apicurio-registry-utils-streams-1.3.2.Final.jar:lib/io.fabric8.kubernetes-model-flowcontrol-5.10.2.jar:lib/io.netty.netty-buffer-4.1.71.Final.jar:lib/com.101tec.zkclient-0.11.jar:lib/io.fabric8.openshift-model-console-5.10.2.jar:lib/io.fabric8.kubernetes-model-certificates-5.10.2.jar:lib/com.squareup.okio.okio-1.15.0.jar:lib/io.apicurio.apicurio-registry-utils-kafka-1.3.2.Final.jar:lib/io.fabric8.kubernetes-model-node-5.10.2.jar:lib/io.fabric8.kubernetes-model-metrics-5.10.2.jar:lib/io.netty.netty-codec-http2-4.1.71.Final.jar:lib/io.fabric8.openshift-model-storageversionmigrator-5.10.2.jar:lib/io.fabric8.kubernetes-model-policy-5.10.2.jar:lib/io.fabric8.openshift-model-machineconfig-5.10.2.jar:lib/io.fabric8.openshift-model-machine-5.10.2.jar:lib/org.apache.kafka.kafka-clients-3.0.0.jar:lib/jakarta.annotation.jakarta.annotation-api-1.3.5.jar:lib/org.hdrhistogram.HdrHistogram-2.1.11.jar:lib/com.fasterxml.jackson.core.jackson-databind-2.11.3.jar:lib/io.strimzi.api-0.27.1.jar:lib/io.prometheus.simpleclient-0.7.0.jar:lib/io.fabric8.openshift-model-miscellaneous-5.10.2.jar:lib/com.squareup.okhttp3.logging-interceptor-3.12.12.jar:lib/io.fabric8.openshift-model-5.10.2.jar:lib/org.apache.yetus.audience-annotations-0.5.0.jar:lib/io.fabric8.openshift-model-operatorhub-5.10.2.jar:lib/io.fabric8.kubernetes-model-core-5.10.2.jar:lib/com.fasterxml.jackson.core.jackson-annotations-2.11.3.jar:lib/io.fabric8.openshift-model-operator-5.10.2.jar:lib/org.apache.zookeeper.zookeeper-jute-3.6.3.jar:lib/io.netty.netty-handler-4.1.71.Final.jar:lib/io.micrometer.micrometer-core-1.3.1.jar:lib/io.fabric8.kubernetes-model-admissionregistration-5.10.2.jar:lib/io.fabric8.kubernetes-model-apps-5.10.2.jar:lib/io.netty.netty-codec-4.1.71.Final.jar:lib/org.apache.logging.log4j.log4j-core-2.17.1.jar:lib/io.fabric8.kubernetes-model-extensions-5.10.2.jar:lib/org.apache.zookeeper.zookeeper-3.6.3.jar:lib/com.fasterxml.jackson.dataformat.jackson-dataformat-yaml-2.10.5.jar:lib/io.netty.netty-codec-http-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-batch-5.10.2.jar:lib/io.fabric8.kubernetes-model-scheduling-5.10.2.jar:lib/com.github.mifmif.generex-1.0.2.jar:lib/io.fabric8.openshift-model-clusterautoscaling-5.10.2.jar:lib/org.xerial.snappy.snappy-java-1.1.8.1.jar:lib/io.strimzi.certificate-manager-0.27.1.jar:lib/com.fasterxml.jackson.core.jackson-core-2.11.3.jar:lib/io.fabric8.kubernetes-model-autoscaling-5.10.2.jar:lib/io.fabric8.openshift-model-tuned-5.10.2.jar:lib/io.fabric8.kubernetes-model-common-5.10.2.jar:lib/io.fabric8.kubernetes-client-5.10.2.jar:lib/io.strimzi.crd-annotations-0.27.1.jar:lib/org.yaml.snakeyaml-1.26.jar:lib/org.apache.kafka.kafka-streams-3.0.0.jar:lib/io.fabric8.kubernetes-model-coordination-5.10.2.jar:lib/io.netty.netty-resolver-dns-4.1.71.Final.jar:lib/io.apicurio.apicurio-registry-common-1.3.2.Final.jar:lib/io.fabric8.kubernetes-model-discovery-5.10.2.jar:lib/io.fabric8.kubernetes-model-events-5.10.2.jar:lib/org.lz4.lz4-java-1.7.1.jar:lib/io.fabric8.openshift-client-5.10.2.jar:lib/io.fabric8.kubernetes-model-apiextensions-5.10.2.jar:lib/dk.brics.automaton.automaton-1.11-8.jar:lib/io.netty.netty-codec-socks-4.1.71.Final.jar:lib/org.eclipse.microprofile.config.microprofile-config-api-1.4.jar:lib/org.rocksdb.rocksdbjni-6.19.3.jar:lib/io.fabric8.openshift-model-whereabouts-5.10.2.jar:lib/io.fabric8.kubernetes-model-rbac-5.10.2.jar:lib/io.netty.netty-handler-proxy-4.1.71.Final.jar:lib/io.netty.netty-resolver-4.1.71.Final.jar:lib/io.strimzi.operator-common-0.27.1.jar:lib/org.apache.logging.log4j.log4j-api-2.17.1.jar:lib/io.fabric8.zjsonpatch-0.3.0.jar:lib/io.netty.netty-transport-classes-epoll-4.1.71.Final.jar:lib/org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar:lib/io.fabric8.kubernetes-model-networking-5.10.2.jar:lib/io.fabric8.kubernetes-model-storageclass-5.10.2.jar:lib/io.vertx.vertx-micrometer-metrics-4.2.1.jar:lib/com.squareup.okhttp3.okhttp-3.12.6.jar:lib/io.netty.netty-codec-dns-4.1.71.Final.jar:lib/io.fabric8.openshift-model-monitoring-5.10.2.jar:lib/org.slf4j.slf4j-api-1.7.25.jar:lib/io.netty.netty-transport-native-unix-common-4.1.71.Final.jar:lib/org.latencyutils.LatencyUtils-2.0.3.jar:lib/io.netty.netty-transport-native-epoll-4.1.71.Final.jar:lib/com.github.luben.zstd-jni-1.5.0-2.jar:lib/com.fasterxml.jackson.datatype.jackson-datatype-jsr310-2.13.0.jar:lib/io.netty.netty-tcnative-classes-2.0.46.Final.jar:lib/io.netty.netty-transport-4.1.71.Final.jar:lib/io.vertx.vertx-core-4.2.1.jar:lib/io.micrometer.micrometer-registry-prometheus-1.3.1.jar io.strimzi.operator.topic.Main
+root          29  0.5  0.2 2009712 263088 ?      Sl   Apr23   6:41 java -Dlog4j2.configurationFile=file:/opt/topic-operator/custom-config/log4j2.properties -Dvertx.cacheDirBase=/tmp/vertx-cache -Djava.security.egd=file:/dev/./urandom --illegal-access=deny -Dcom.redhat.fips=false -classpath lib/io.strimzi.topic-operator-0.27.1.jar:lib/io.netty.netty-common-4.1.71.Final.jar:lib/io.prometheus.simpleclient_common-0.7.0.jar:lib/org.apache.logging.log4j.log4j-slf4j-impl-2.17.1.jar:lib/io.apicurio.apicurio-registry-utils-streams-1.3.2.Final.jar:lib/io.fabric8.kubernetes-model-flowcontrol-5.10.2.jar:lib/io.netty.netty-buffer-4.1.71.Final.jar:lib/com.101tec.zkclient-0.11.jar:lib/io.fabric8.openshift-model-console-5.10.2.jar:lib/io.fabric8.kubernetes-model-certificates-5.10.2.jar:lib/com.squareup.okio.okio-1.15.0.jar:lib/io.apicurio.apicurio-registry-utils-kafka-1.3.2.Final.jar:lib/io.fabric8.kubernetes-model-node-5.10.2.jar:lib/io.fabric8.kubernetes-model-metrics-5.10.2.jar:lib/io.netty.netty-codec-http2-4.1.71.Final.jar:lib/io.fabric8.openshift-model-storageversionmigrator-5.10.2.jar:lib/io.fabric8.kubernetes-model-policy-5.10.2.jar:lib/io.fabric8.openshift-model-machineconfig-5.10.2.jar:lib/io.fabric8.openshift-model-machine-5.10.2.jar:lib/org.apache.kafka.kafka-clients-3.0.0.jar:lib/jakarta.annotation.jakarta.annotation-api-1.3.5.jar:lib/org.hdrhistogram.HdrHistogram-2.1.11.jar:lib/com.fasterxml.jackson.core.jackson-databind-2.11.3.jar:lib/io.strimzi.api-0.27.1.jar:lib/io.prometheus.simpleclient-0.7.0.jar:lib/io.fabric8.openshift-model-miscellaneous-5.10.2.jar:lib/com.squareup.okhttp3.logging-interceptor-3.12.12.jar:lib/io.fabric8.openshift-model-5.10.2.jar:lib/org.apache.yetus.audience-annotations-0.5.0.jar:lib/io.fabric8.openshift-model-operatorhub-5.10.2.jar:lib/io.fabric8.kubernetes-model-core-5.10.2.jar:lib/com.fasterxml.jackson.core.jackson-annotations-2.11.3.jar:lib/io.fabric8.openshift-model-operator-5.10.2.jar:lib/org.apache.zookeeper.zookeeper-jute-3.6.3.jar:lib/io.netty.netty-handler-4.1.71.Final.jar:lib/io.micrometer.micrometer-core-1.3.1.jar:lib/io.fabric8.kubernetes-model-admissionregistration-5.10.2.jar:lib/io.fabric8.kubernetes-model-apps-5.10.2.jar:lib/io.netty.netty-codec-4.1.71.Final.jar:lib/org.apache.logging.log4j.log4j-core-2.17.1.jar:lib/io.fabric8.kubernetes-model-extensions-5.10.2.jar:lib/org.apache.zookeeper.zookeeper-3.6.3.jar:lib/com.fasterxml.jackson.dataformat.jackson-dataformat-yaml-2.10.5.jar:lib/io.netty.netty-codec-http-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-batch-5.10.2.jar:lib/io.fabric8.kubernetes-model-scheduling-5.10.2.jar:lib/com.github.mifmif.generex-1.0.2.jar:lib/io.fabric8.openshift-model-clusterautoscaling-5.10.2.jar:lib/org.xerial.snappy.snappy-java-1.1.8.1.jar:lib/io.strimzi.certificate-manager-0.27.1.jar:lib/com.fasterxml.jackson.core.jackson-core-2.11.3.jar:lib/io.fabric8.kubernetes-model-autoscaling-5.10.2.jar:lib/io.fabric8.openshift-model-tuned-5.10.2.jar:lib/io.fabric8.kubernetes-model-common-5.10.2.jar:lib/io.fabric8.kubernetes-client-5.10.2.jar:lib/io.strimzi.crd-annotations-0.27.1.jar:lib/org.yaml.snakeyaml-1.26.jar:lib/org.apache.kafka.kafka-streams-3.0.0.jar:lib/io.fabric8.kubernetes-model-coordination-5.10.2.jar:lib/io.netty.netty-resolver-dns-4.1.71.Final.jar:lib/io.apicurio.apicurio-registry-common-1.3.2.Final.jar:lib/io.fabric8.kubernetes-model-discovery-5.10.2.jar:lib/io.fabric8.kubernetes-model-events-5.10.2.jar:lib/org.lz4.lz4-java-1.7.1.jar:lib/io.fabric8.openshift-client-5.10.2.jar:lib/io.fabric8.kubernetes-model-apiextensions-5.10.2.jar:lib/dk.brics.automaton.automaton-1.11-8.jar:lib/io.netty.netty-codec-socks-4.1.71.Final.jar:lib/org.eclipse.microprofile.config.microprofile-config-api-1.4.jar:lib/org.rocksdb.rocksdbjni-6.19.3.jar:lib/io.fabric8.openshift-model-whereabouts-5.10.2.jar:lib/io.fabric8.kubernetes-model-rbac-5.10.2.jar:lib/io.netty.netty-handler-proxy-4.1.71.Final.jar:lib/io.netty.netty-resolver-4.1.71.Final.jar:lib/io.strimzi.operator-common-0.27.1.jar:lib/org.apache.logging.log4j.log4j-api-2.17.1.jar:lib/io.fabric8.zjsonpatch-0.3.0.jar:lib/io.netty.netty-transport-classes-epoll-4.1.71.Final.jar:lib/org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar:lib/io.fabric8.kubernetes-model-networking-5.10.2.jar:lib/io.fabric8.kubernetes-model-storageclass-5.10.2.jar:lib/io.vertx.vertx-micrometer-metrics-4.2.1.jar:lib/com.squareup.okhttp3.okhttp-3.12.6.jar:lib/io.netty.netty-codec-dns-4.1.71.Final.jar:lib/io.fabric8.openshift-model-monitoring-5.10.2.jar:lib/org.slf4j.slf4j-api-1.7.25.jar:lib/io.netty.netty-transport-native-unix-common-4.1.71.Final.jar:lib/org.latencyutils.LatencyUtils-2.0.3.jar:lib/io.netty.netty-transport-native-epoll-4.1.71.Final.jar:lib/com.github.luben.zstd-jni-1.5.0-2.jar:lib/com.fasterxml.jackson.datatype.jackson-datatype-jsr310-2.13.0.jar:lib/io.netty.netty-tcnative-classes-2.0.46.Final.jar:lib/io.netty.netty-transport-4.1.71.Final.jar:lib/io.vertx.vertx-core-4.2.1.jar:lib/io.micrometer.micrometer-registry-prometheus-1.3.1.jar io.strimzi.operator.topic.Main
+root        2279  0.0  0.0  12372  3200 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2285  0.0  0.0  47680  4380 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: kafka-test-shard-entity-operator-59bfc9cf4-7fp2s : 
+bash: jps: command not found
+******************************
+kafka-test-shard-kafka-0|10.2.30.72|ip-10-20-10-74.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0   4440   920 ?        Ss   Apr23   0:01 /usr/bin/tini -w -e 143 -- /opt/kafka/bin/kafka-server-start.sh /tmp/strimzi.properties
+root          64  5.7  0.4 12260240 644372 ?     Sl   Apr23  76:35 /usr/lib/jvm/jre-11/bin/java -Xms400M -Xmx400M -server -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+ExplicitGCInvokesConcurrent -XX:MaxInlineLevel=15 -Djava.awt.headless=true -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dkafka.logs.dir=/opt/kafka -Dlog4j.configuration=file:/opt/kafka/custom-config/log4j.properties -cp /opt/kafka/bin/../libs/accessors-smart-2.4.7.jar:/opt/kafka/bin/../libs/activation-1.1.1.jar:/opt/kafka/bin/../libs/annotations-13.0.jar:/opt/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/opt/kafka/bin/../libs/argparse4j-0.7.0.jar:/opt/kafka/bin/../libs/audience-annotations-0.5.0.jar:/opt/kafka/bin/../libs/automaton-1.11-8.jar:/opt/kafka/bin/../libs/checker-qual-3.5.0.jar:/opt/kafka/bin/../libs/commons-cli-1.4.jar:/opt/kafka/bin/../libs/commons-lang-2.6.jar:/opt/kafka/bin/../libs/commons-lang3-3.8.1.jar:/opt/kafka/bin/../libs/connect-api-2.8.1.jar:/opt/kafka/bin/../libs/connect-basic-auth-extension-2.8.1.jar:/opt/kafka/bin/../libs/connect-file-2.8.1.jar:/opt/kafka/bin/../libs/connect-json-2.8.1.jar:/opt/kafka/bin/../libs/connect-mirror-2.8.1.jar:/opt/kafka/bin/../libs/connect-mirror-client-2.8.1.jar:/opt/kafka/bin/../libs/connect-runtime-2.8.1.jar:/opt/kafka/bin/../libs/connect-transforms-2.8.1.jar:/opt/kafka/bin/../libs/cruise-control-metrics-reporter-2.5.80.jar:/opt/kafka/bin/../libs/error_prone_annotations-2.3.4.jar:/opt/kafka/bin/../libs/failureaccess-1.0.1.jar:/opt/kafka/bin/../libs/generex-1.0.2.jar:/opt/kafka/bin/../libs/gson-2.8.6.jar:/opt/kafka/bin/../libs/guava-30.1-jre.jar:/opt/kafka/bin/../libs/hk2-api-2.6.1.jar:/opt/kafka/bin/../libs/hk2-locator-2.6.1.jar:/opt/kafka/bin/../libs/hk2-utils-2.6.1.jar:/opt/kafka/bin/../libs/j2objc-annotations-1.3.jar:/opt/kafka/bin/../libs/jackson-annotations-2.10.5.jar:/opt/kafka/bin/../libs/jackson-core-2.10.5.jar:/opt/kafka/bin/../libs/jackson-databind-2.10.5.1.jar:/opt/kafka/bin/../libs/jackson-dataformat-csv-2.10.5.jar:/opt/kafka/bin/../libs/jackson-dataformat-yaml-2.11.2.jar:/opt/kafka/bin/../libs/jackson-datatype-jdk8-2.10.5.jar:/opt/kafka/bin/../libs/jackson-datatype-jsr310-2.11.2.jar:/opt/kafka/bin/../libs/jackson-jaxrs-base-2.10.5.jar:/opt/kafka/bin/../libs/jackson-jaxrs-json-provider-2.10.5.jar:/opt/kafka/bin/../libs/jackson-module-jaxb-annotations-2.10.5.jar:/opt/kafka/bin/../libs/jackson-module-paranamer-2.10.5.jar:/opt/kafka/bin/../libs/jackson-module-scala_2.13-2.10.5.jar:/opt/kafka/bin/../libs/jaeger-client-1.6.0.jar:/opt/kafka/bin/../libs/jaeger-core-1.6.0.jar:/opt/kafka/bin/../libs/jaeger-thrift-1.6.0.jar:/opt/kafka/bin/../libs/jaeger-tracerresolver-1.6.0.jar:/opt/kafka/bin/../libs/jakarta.activation-api-1.2.1.jar:/opt/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/opt/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/opt/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/opt/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/opt/kafka/bin/../libs/jakarta.xml.bind-api-2.3.2.jar:/opt/kafka/bin/../libs/javassist-3.27.0-GA.jar:/opt/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/opt/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/opt/kafka/bin/../libs/jaxb-api-2.3.0.jar:/opt/kafka/bin/../libs/jersey-client-2.34.jar:/opt/kafka/bin/../libs/jersey-common-2.34.jar:/opt/kafka/bin/../libs/jersey-container-servlet-2.34.jar:/opt/kafka/bin/../libs/jersey-container-servlet-core-2.34.jar:/opt/kafka/bin/../libs/jersey-hk2-2.34.jar:/opt/kafka/bin/../libs/jersey-server-2.34.jar:/opt/kafka/bin/../libs/jetty-client-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-continuation-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-http-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-io-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-security-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-server-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-servlet-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-servlets-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-util-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-util-ajax-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jline-3.12.1.jar:/opt/kafka/bin/../libs/jmx_prometheus_javaagent-0.16.1.jar:/opt/kafka/bin/../libs/jopt-simple-5.0.4.jar:/opt/kafka/bin/../libs/json-path-2.6.0.jar:/opt/kafka/bin/../libs/json-smart-2.4.7.jar:/opt/kafka/bin/../libs/jsonevent-layout-1.7.jar:/opt/kafka/bin/../libs/jsr305-3.0.2.jar:/opt/kafka/bin/../libs/kafka-agent-0.27.1.jar:/opt/kafka/bin/../libs/kafka-clients-2.8.1.jar:/opt/kafka/bin/../libs/kafka-env-var-config-provider-0.1.1.jar:/opt/kafka/bin/../libs/kafka-kubernetes-config-provider-0.1.1.jar:/opt/kafka/bin/../libs/kafka-log4j-appender-2.8.1.jar:/opt/kafka/bin/../libs/kafka-metadata-2.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-client-0.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-common-0.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-keycloak-authorizer-0.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-server-0.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-server-plain-0.8.1.jar:/opt/kafka/bin/../libs/kafka-quotas-plugin-0.2.0.jar:/opt/kafka/bin/../libs/kafka-raft-2.8.1.jar:/opt/kafka/bin/../libs/kafka-shell-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-examples-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-scala_2.13-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-test-utils-2.8.1.jar:/opt/kafka/bin/../libs/kafka-tools-2.8.1.jar:/opt/kafka/bin/../libs/kafka_2.13-2.8.1-sources.jar:/opt/kafka/bin/../libs/kafka_2.13-2.8.1.jar:/opt/kafka/bin/../libs/kotlin-stdlib-1.4.10.jar:/opt/kafka/bin/../libs/kotlin-stdlib-common-1.4.0.jar:/opt/kafka/bin/../libs/kubernetes-client-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-apps-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-batch-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-common-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-core-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-extensions-5.8.0.jar:/opt/kafka/bin/../libs/libthrift-0.14.1.jar:/opt/kafka/bin/../libs/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/kafka/bin/../libs/log4j-1.2.17.jar:/opt/kafka/bin/../libs/logging-interceptor-3.12.12.jar:/opt/kafka/bin/../libs/lz4-java-1.7.1.jar:/opt/kafka/bin/../libs/maven-artifact-3.8.1.jar:/opt/kafka/bin/../libs/metrics-core-2.2.0.jar:/opt/kafka/bin/../libs/mirror-maker-2-extensions-1.0.0.jar:/opt/kafka/bin/../libs/mirror-maker-agent-0.27.1.jar:/opt/kafka/bin/../libs/netty-buffer-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-codec-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-common-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-handler-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-resolver-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-transport-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-transport-native-epoll-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-transport-native-unix-common-4.1.62.Final.jar:/opt/kafka/bin/../libs/nimbus-jose-jwt-9.10.jar:/opt/kafka/bin/../libs/okhttp-4.9.0.jar:/opt/kafka/bin/../libs/okio-2.8.0.jar:/opt/kafka/bin/../libs/opa.jar:/opt/kafka/bin/../libs/opentracing-api-0.33.0.jar:/opt/kafka/bin/../libs/opentracing-kafka-client-0.1.15.jar:/opt/kafka/bin/../libs/opentracing-noop-0.33.0.jar:/opt/kafka/bin/../libs/opentracing-tracerresolver-0.1.8.jar:/opt/kafka/bin/../libs/opentracing-util-0.33.0.jar:/opt/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/opt/kafka/bin/../libs/paranamer-2.8.jar:/opt/kafka/bin/../libs/plexus-utils-3.2.1.jar:/opt/kafka/bin/../libs/reflections-0.9.12.jar:/opt/kafka/bin/../libs/rocksdbjni-5.18.4.jar:/opt/kafka/bin/../libs/scala-collection-compat_2.13-2.3.0.jar:/opt/kafka/bin/../libs/scala-java8-compat_2.13-0.9.1.jar:/opt/kafka/bin/../libs/scala-library-2.13.5.jar:/opt/kafka/bin/../libs/scala-logging_2.13-3.9.2.jar:/opt/kafka/bin/../libs/scala-reflect-2.13.5.jar:/opt/kafka/bin/../libs/slf4j-api-1.7.30.jar:/opt/kafka/bin/../libs/slf4j-log4j12-1.7.30.jar:/opt/kafka/bin/../libs/snakeyaml-1.33.jar:/opt/kafka/bin/../libs/snappy-java-1.1.8.1.jar:/opt/kafka/bin/../libs/tracing-agent-0.27.1.jar:/opt/kafka/bin/../libs/zjsonpatch-0.3.0.jar:/opt/kafka/bin/../libs/zookeeper-3.5.9.jar:/opt/kafka/bin/../libs/zookeeper-jute-3.5.9.jar:/opt/kafka/bin/../libs/zstd-jni-1.4.9-1.jar -javaagent:/opt/kafka/libs/kafka-agent-0.27.1.jar=/var/opt/kafka/kafka-ready:/var/opt/kafka/zk-connected -Dcom.redhat.fips=false -javaagent:/opt/kafka/libs/jmx_prometheus_javaagent-0.16.1.jar=9404:/opt/kafka/custom-config/metrics-config.json kafka.Kafka /tmp/strimzi.properties
+root      120029  0.0  0.0  12372  3336 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      120035  0.0  0.0  47680  4216 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: kafka-test-shard-kafka-0 : 
+64 kafka.Kafka
+120037 jdk.jcmd/sun.tools.jps.Jps
+******************************
+kafka-test-shard-zookeeper-0|10.2.30.65|ip-10-20-10-74.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0   4440  1000 ?        Ss   Apr23   0:01 /usr/bin/tini -w -e 143 -- /opt/kafka/bin/zookeeper-server-start.sh /tmp/zookeeper.properties
+root          71  0.1  0.2 5910004 332824 ?      Sl   Apr23   2:21 /usr/lib/jvm/jre-11/bin/java -Xms1143535042 -Xmx1143535042 -server -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+ExplicitGCInvokesConcurrent -XX:MaxInlineLevel=15 -Djava.awt.headless=true -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dkafka.logs.dir=/var/lib/zookeeper/logs -Dlog4j.configuration=file:/opt/kafka/custom-config/log4j.properties -cp /opt/kafka/bin/../libs/accessors-smart-2.4.7.jar:/opt/kafka/bin/../libs/activation-1.1.1.jar:/opt/kafka/bin/../libs/annotations-13.0.jar:/opt/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/opt/kafka/bin/../libs/argparse4j-0.7.0.jar:/opt/kafka/bin/../libs/audience-annotations-0.5.0.jar:/opt/kafka/bin/../libs/automaton-1.11-8.jar:/opt/kafka/bin/../libs/checker-qual-3.5.0.jar:/opt/kafka/bin/../libs/commons-cli-1.4.jar:/opt/kafka/bin/../libs/commons-lang-2.6.jar:/opt/kafka/bin/../libs/commons-lang3-3.8.1.jar:/opt/kafka/bin/../libs/connect-api-2.8.1.jar:/opt/kafka/bin/../libs/connect-basic-auth-extension-2.8.1.jar:/opt/kafka/bin/../libs/connect-file-2.8.1.jar:/opt/kafka/bin/../libs/connect-json-2.8.1.jar:/opt/kafka/bin/../libs/connect-mirror-2.8.1.jar:/opt/kafka/bin/../libs/connect-mirror-client-2.8.1.jar:/opt/kafka/bin/../libs/connect-runtime-2.8.1.jar:/opt/kafka/bin/../libs/connect-transforms-2.8.1.jar:/opt/kafka/bin/../libs/cruise-control-metrics-reporter-2.5.80.jar:/opt/kafka/bin/../libs/error_prone_annotations-2.3.4.jar:/opt/kafka/bin/../libs/failureaccess-1.0.1.jar:/opt/kafka/bin/../libs/generex-1.0.2.jar:/opt/kafka/bin/../libs/gson-2.8.6.jar:/opt/kafka/bin/../libs/guava-30.1-jre.jar:/opt/kafka/bin/../libs/hk2-api-2.6.1.jar:/opt/kafka/bin/../libs/hk2-locator-2.6.1.jar:/opt/kafka/bin/../libs/hk2-utils-2.6.1.jar:/opt/kafka/bin/../libs/j2objc-annotations-1.3.jar:/opt/kafka/bin/../libs/jackson-annotations-2.10.5.jar:/opt/kafka/bin/../libs/jackson-core-2.10.5.jar:/opt/kafka/bin/../libs/jackson-databind-2.10.5.1.jar:/opt/kafka/bin/../libs/jackson-dataformat-csv-2.10.5.jar:/opt/kafka/bin/../libs/jackson-dataformat-yaml-2.11.2.jar:/opt/kafka/bin/../libs/jackson-datatype-jdk8-2.10.5.jar:/opt/kafka/bin/../libs/jackson-datatype-jsr310-2.11.2.jar:/opt/kafka/bin/../libs/jackson-jaxrs-base-2.10.5.jar:/opt/kafka/bin/../libs/jackson-jaxrs-json-provider-2.10.5.jar:/opt/kafka/bin/../libs/jackson-module-jaxb-annotations-2.10.5.jar:/opt/kafka/bin/../libs/jackson-module-paranamer-2.10.5.jar:/opt/kafka/bin/../libs/jackson-module-scala_2.13-2.10.5.jar:/opt/kafka/bin/../libs/jaeger-client-1.6.0.jar:/opt/kafka/bin/../libs/jaeger-core-1.6.0.jar:/opt/kafka/bin/../libs/jaeger-thrift-1.6.0.jar:/opt/kafka/bin/../libs/jaeger-tracerresolver-1.6.0.jar:/opt/kafka/bin/../libs/jakarta.activation-api-1.2.1.jar:/opt/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/opt/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/opt/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/opt/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/opt/kafka/bin/../libs/jakarta.xml.bind-api-2.3.2.jar:/opt/kafka/bin/../libs/javassist-3.27.0-GA.jar:/opt/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/opt/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/opt/kafka/bin/../libs/jaxb-api-2.3.0.jar:/opt/kafka/bin/../libs/jersey-client-2.34.jar:/opt/kafka/bin/../libs/jersey-common-2.34.jar:/opt/kafka/bin/../libs/jersey-container-servlet-2.34.jar:/opt/kafka/bin/../libs/jersey-container-servlet-core-2.34.jar:/opt/kafka/bin/../libs/jersey-hk2-2.34.jar:/opt/kafka/bin/../libs/jersey-server-2.34.jar:/opt/kafka/bin/../libs/jetty-client-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-continuation-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-http-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-io-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-security-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-server-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-servlet-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-servlets-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-util-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-util-ajax-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jline-3.12.1.jar:/opt/kafka/bin/../libs/jmx_prometheus_javaagent-0.16.1.jar:/opt/kafka/bin/../libs/jopt-simple-5.0.4.jar:/opt/kafka/bin/../libs/json-path-2.6.0.jar:/opt/kafka/bin/../libs/json-smart-2.4.7.jar:/opt/kafka/bin/../libs/jsonevent-layout-1.7.jar:/opt/kafka/bin/../libs/jsr305-3.0.2.jar:/opt/kafka/bin/../libs/kafka-agent-0.27.1.jar:/opt/kafka/bin/../libs/kafka-clients-2.8.1.jar:/opt/kafka/bin/../libs/kafka-env-var-config-provider-0.1.1.jar:/opt/kafka/bin/../libs/kafka-kubernetes-config-provider-0.1.1.jar:/opt/kafka/bin/../libs/kafka-log4j-appender-2.8.1.jar:/opt/kafka/bin/../libs/kafka-metadata-2.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-client-0.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-common-0.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-keycloak-authorizer-0.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-server-0.8.1.jar:/opt/kafka/bin/../libs/kafka-oauth-server-plain-0.8.1.jar:/opt/kafka/bin/../libs/kafka-quotas-plugin-0.2.0.jar:/opt/kafka/bin/../libs/kafka-raft-2.8.1.jar:/opt/kafka/bin/../libs/kafka-shell-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-examples-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-scala_2.13-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-test-utils-2.8.1.jar:/opt/kafka/bin/../libs/kafka-tools-2.8.1.jar:/opt/kafka/bin/../libs/kafka_2.13-2.8.1-sources.jar:/opt/kafka/bin/../libs/kafka_2.13-2.8.1.jar:/opt/kafka/bin/../libs/kotlin-stdlib-1.4.10.jar:/opt/kafka/bin/../libs/kotlin-stdlib-common-1.4.0.jar:/opt/kafka/bin/../libs/kubernetes-client-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-apps-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-batch-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-common-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-core-5.8.0.jar:/opt/kafka/bin/../libs/kubernetes-model-extensions-5.8.0.jar:/opt/kafka/bin/../libs/libthrift-0.14.1.jar:/opt/kafka/bin/../libs/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/kafka/bin/../libs/log4j-1.2.17.jar:/opt/kafka/bin/../libs/logging-interceptor-3.12.12.jar:/opt/kafka/bin/../libs/lz4-java-1.7.1.jar:/opt/kafka/bin/../libs/maven-artifact-3.8.1.jar:/opt/kafka/bin/../libs/metrics-core-2.2.0.jar:/opt/kafka/bin/../libs/mirror-maker-2-extensions-1.0.0.jar:/opt/kafka/bin/../libs/mirror-maker-agent-0.27.1.jar:/opt/kafka/bin/../libs/netty-buffer-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-codec-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-common-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-handler-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-resolver-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-transport-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-transport-native-epoll-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-transport-native-unix-common-4.1.62.Final.jar:/opt/kafka/bin/../libs/nimbus-jose-jwt-9.10.jar:/opt/kafka/bin/../libs/okhttp-4.9.0.jar:/opt/kafka/bin/../libs/okio-2.8.0.jar:/opt/kafka/bin/../libs/opa.jar:/opt/kafka/bin/../libs/opentracing-api-0.33.0.jar:/opt/kafka/bin/../libs/opentracing-kafka-client-0.1.15.jar:/opt/kafka/bin/../libs/opentracing-noop-0.33.0.jar:/opt/kafka/bin/../libs/opentracing-tracerresolver-0.1.8.jar:/opt/kafka/bin/../libs/opentracing-util-0.33.0.jar:/opt/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/opt/kafka/bin/../libs/paranamer-2.8.jar:/opt/kafka/bin/../libs/plexus-utils-3.2.1.jar:/opt/kafka/bin/../libs/reflections-0.9.12.jar:/opt/kafka/bin/../libs/rocksdbjni-5.18.4.jar:/opt/kafka/bin/../libs/scala-collection-compat_2.13-2.3.0.jar:/opt/kafka/bin/../libs/scala-java8-compat_2.13-0.9.1.jar:/opt/kafka/bin/../libs/scala-library-2.13.5.jar:/opt/kafka/bin/../libs/scala-logging_2.13-3.9.2.jar:/opt/kafka/bin/../libs/scala-reflect-2.13.5.jar:/opt/kafka/bin/../libs/slf4j-api-1.7.30.jar:/opt/kafka/bin/../libs/slf4j-log4j12-1.7.30.jar:/opt/kafka/bin/../libs/snakeyaml-1.33.jar:/opt/kafka/bin/../libs/snappy-java-1.1.8.1.jar:/opt/kafka/bin/../libs/tracing-agent-0.27.1.jar:/opt/kafka/bin/../libs/zjsonpatch-0.3.0.jar:/opt/kafka/bin/../libs/zookeeper-3.5.9.jar:/opt/kafka/bin/../libs/zookeeper-jute-3.5.9.jar:/opt/kafka/bin/../libs/zstd-jni-1.4.9-1.jar -javaagent:/opt/kafka/libs/jmx_prometheus_javaagent-0.16.1.jar=9404:/opt/kafka/custom-config/metrics-config.json -Dcom.redhat.fips=false -Dzookeeper.skipACL=yes org.apache.zookeeper.server.quorum.QuorumPeerMain /tmp/zookeeper.properties
+root      143955  0.0  0.0  12376  3200 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root      143961  0.0  0.0  47680  4360 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: kafka-test-shard-zookeeper-0 : 
+71 org.apache.zookeeper.server.quorum.QuorumPeerMain
+143963 jdk.jcmd/sun.tools.jps.Jps
+******************************
+key-manager-594cb6458b-cxb42|10.2.61.253|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26124  8068 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root        3231  3.4  0.9 7488256 1220056 ?     Sl   17:29   7:09 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=key-manager -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/key-manager/heapdump.1682357355.hprof -XX:ErrorFile=/databricks/logs/key-manager/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/key-manager/gc.log.1682357355 -XX:+UseG1GC -Xmx900M -Xms900M -cp /databricks/jars/manifest.jar com.databricks.keymanager.KeyManagerService
+root        3763  0.0  0.0  20644  3788 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3770  0.0  0.0  36144  3364 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: key-manager-594cb6458b-cxb42 : 
+3772 sun.tools.jps.Jps
+3231 com.databricks.keymanager.KeyManagerService
+******************************
+lakeview-config-5c9d8f57f7-q4f8q|10.2.179.14|ip-10-20-9-223.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26124  8196 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         990  3.0  0.5 8849952 755560 ?      Sl   Apr23  39:40 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=lakeview-config -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/lakeview-config/heapdump.1682290789.hprof -XX:ErrorFile=/databricks/logs/lakeview-config/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/lakeview-config/gc.log.1682290789 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.lakeviewconfig.LakeviewConfigService
+root        3266  0.0  0.0  20644  4056 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3272  0.0  0.0  36144  3396 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: lakeview-config-5c9d8f57f7-q4f8q : 
+3274 sun.tools.jps.Jps
+990 com.databricks.lakeviewconfig.LakeviewConfigService
+******************************
+lakeview-query-6f59dd4c7-484gq|10.2.152.173|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8120 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.7  0.5 8565264 662788 ?      Sl   Apr23  36:53 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=lakeview-query -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/lakeview-query/heapdump.1682289673.hprof -XX:ErrorFile=/databricks/logs/lakeview-query/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/lakeview-query/gc.log.1682289673 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.lakeviewquery.LakeviewQueryService
+root        2021  0.0  0.0  20644  3936 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2027  0.0  0.0  36144  3316 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: lakeview-query-6f59dd4c7-484gq : 
+7 com.databricks.lakeviewquery.LakeviewQueryService
+2029 sun.tools.jps.Jps
+******************************
+legacy-handlers-55df96d6f6-h8dtr|10.2.236.23|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  7992 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.7  1.4 10872808 1875092 ?    Sl   Apr23  36:51 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=legacy-handlers -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/legacy-handlers/heapdump.1682289809.hprof -XX:ErrorFile=/databricks/logs/legacy-handlers/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/legacy-handlers/gc.log.1682289809 -XX:+UseG1GC -Xmx1200M -cp /databricks/jars/manifest.jar com.databricks.legacyhandlers.LegacyHandlersService
+root        2042  0.0  0.0  20644  3908 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2048  0.0  0.0  36144  3316 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: legacy-handlers-55df96d6f6-h8dtr : 
+2050 sun.tools.jps.Jps
+7 com.databricks.legacyhandlers.LegacyHandlersService
+******************************
+lethe-proxy-mt-5496c64586-4gs6n|10.2.236.24|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  64136  9476 ?        Ss   Apr23   0:00 nginx: master process /usr/local/bin/nginx -c /usr/local/nginx/conf/nginx-no-proxy-protocol-client-ssl.conf -g daemon off;
+syslog         9  0.0  0.0 193468  3868 ?        Ssl  Apr23   0:00 rsyslogd
+root          13  0.0  0.0  30088  2768 ?        Ss   Apr23   0:00 cron
+nobody        16  0.0  0.0  72976 13084 ?        S    Apr23   0:02 nginx: worker process
+root        1098  0.0  0.0  20508  3928 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1104  0.0  0.0  38436  3720 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: lethe-proxy-mt-5496c64586-4gs6n : 
+1106 sun.tools.jps.Jps
+******************************
+maintenance-auto-compute-54579ddccd-wbkwn|10.2.211.124|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26124  8228 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         157  2.8  0.6 9408656 895848 ?      Sl   Apr23  37:52 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=maintenance-auto-compute -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/maintenance-auto-compute/heapdump.1682290812.hprof -XX:ErrorFile=/databricks/logs/maintenance-auto-compute/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/maintenance-auto-compute/gc.log.1682290812 -XX:+UseG1GC -Xmx750M -cp /databricks/jars/manifest.jar com.databricks.maintenanceautocompute.MaintenanceAutoComputeService
+root        3195  2.0  0.0  20644  3968 pts/0    Ss+  20:53   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3200  0.0  0.0  36144  3172 pts/0    R+   20:53   0:00 ps -aux
+Java Services running on Pod: maintenance-auto-compute-54579ddccd-wbkwn : 
+3202 sun.tools.jps.Jps
+157 com.databricks.maintenanceautocompute.MaintenanceAutoComputeService
+******************************
+managed-catalog-b5685957-sk28b|10.2.191.189|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25032  7940 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  3.5  0.8 11167608 1061804 ?    Sl   Apr23  46:49 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=managed-catalog -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/managed-catalog/heapdump.1682290707.hprof -XX:ErrorFile=/databricks/logs/managed-catalog/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/managed-catalog/gc.log.1682290707 -XX:+UseG1GC -Xmx750M -cp /databricks/jars/manifest.jar com.databricks.managedcatalog.ManagedCatalogService
+root        5546  0.0  0.0  20652  3956 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        5551  0.0  0.0  36152  3316 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: managed-catalog-b5685957-sk28b : 
+5553 sun.tools.jps.Jps
+7 com.databricks.managedcatalog.ManagedCatalogService
+******************************
+marketplace-7f7778d65c-kbwdw|10.2.12.185|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  7964 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.7  0.5 9848560 743948 ?      Sl   Apr23  36:12 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=marketplace -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/marketplace/heapdump.1682289729.hprof -XX:ErrorFile=/databricks/logs/marketplace/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/marketplace/gc.log.1682289729 -XX:+UseG1GC -Xmx1G -cp /databricks/jars/manifest.jar com.databricks.marketplace.MarketplaceService
+root        2033  0.0  0.0  20644  3948 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2039  0.0  0.0  36144  3296 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: marketplace-7f7778d65c-kbwdw : 
+6 com.databricks.marketplace.MarketplaceService
+2041 sun.tools.jps.Jps
+******************************
+marketplace-metadata-7dc7b7d5b7-69z4h|10.2.152.174|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26120  8036 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root        1088  2.6  0.7 9367888 941276 ?      Sl   Apr23  34:43 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=marketplace-metadata -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/marketplace-metadata/heapdump.1682290793.hprof -XX:ErrorFile=/databricks/logs/marketplace-metadata/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/marketplace-metadata/gc.log.1682290793 -XX:+UseG1GC -Xmx1G -cp /databricks/jars/manifest.jar com.databricks.marketplacemetadata.MarketplaceMetadataService
+root        4023  0.0  0.0  20644  3936 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        4030  0.0  0.0  36144  3300 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: marketplace-metadata-7dc7b7d5b7-69z4h : 
+1088 com.databricks.marketplacemetadata.MarketplaceMetadataService
+4032 sun.tools.jps.Jps
+******************************
+metadata-lineage-api-server-6d9b8c485f-x5qgn|10.2.191.190|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26132  7956 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         667  2.9  0.5 10283500 734568 ?     Sl   Apr23  38:08 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=metadata-lineage-api-server -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/metadata-lineage-api-server/heapdump.1682290778.hprof -XX:ErrorFile=/databricks/logs/metadata-lineage-api-server/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/metadata-lineage-api-server/gc.log.1682290778 -XX:+UseG1GC -Xmx300M -cp /databricks/jars/manifest.jar com.databricks.metadatalineageapiserver.MetadataLineageApiServerService
+root       29342  0.0  0.0  20648  3956 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root       29348  0.0  0.0  36148  3384 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: metadata-lineage-api-server-6d9b8c485f-x5qgn : 
+29352 sun.tools.jps.Jps
+667 com.databricks.metadatalineageapiserver.MetadataLineageApiServerService
+******************************
+mlflow-64c5cd6db-d6qfg|10.2.152.175|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26140  8228 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         281  2.3  1.5 12393492 1971700 ?    Sl   Apr23  31:20 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=mlflow -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/mlflow/heapdump.1682290784.hprof -XX:ErrorFile=/databricks/logs/mlflow/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/mlflow/gc.log.1682290784 -XX:+UseG1GC -Xmx1600M -cp /databricks/jars/manifest.jar com.databricks.mlflow.Mlflow
+root        5824  0.0  0.0  20652  4016 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        5829  0.0  0.0  36152  3352 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: mlflow-64c5cd6db-d6qfg : 
+5831 sun.tools.jps.Jps
+281 com.databricks.mlflow.Mlflow
+******************************
+mlflow-serving-5d6f9ccbc9-q6ksh|10.2.64.43|ip-10-20-8-172.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25032  8044 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  3.5  1.3 8470132 1794700 ?     Sl   Apr23  46:52 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=mlflow-serving -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/mlflow-serving/heapdump.1682290850.hprof -XX:ErrorFile=/databricks/logs/mlflow-serving/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/mlflow-serving/gc.log.1682290850 -XX:+UseG1GC -Xmx950M -cp /databricks/jars/manifest.jar com.databricks.mlflow.serving.ServingMain
+root        2759  1.0  0.0  20652  3916 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2765  0.0  0.0  36152  3444 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: mlflow-serving-5d6f9ccbc9-q6ksh : 
+7 com.databricks.mlflow.serving.ServingMain
+2767 sun.tools.jps.Jps
+******************************
+model-serving-api-5b7d659b6f-l6rw2|10.2.64.44|ip-10-20-8-172.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26140  8320 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         409  2.8  1.4 11415384 1895948 ?    Sl   Apr23  37:42 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=model-serving-api -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/model-serving-api/heapdump.1682290869.hprof -XX:ErrorFile=/databricks/logs/model-serving-api/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/model-serving-api/gc.log.1682290869 -XX:+UseG1GC -Xmx1425M -cp /databricks/jars/manifest.jar com.databricks.modelservingapi.ModelServingApiService
+root        3882  0.0  0.0  20652  3996 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3887  0.0  0.0  36152  3328 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: model-serving-api-5b7d659b6f-l6rw2 : 
+3889 sun.tools.jps.Jps
+409 com.databricks.modelservingapi.ModelServingApiService
+******************************
+model-serving-proxy-667ccdb58f-pvrsl|10.2.179.15|ip-10-20-9-223.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25024  8128 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.6  0.5 9445140 690944 ?      Sl   Apr23  35:15 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=model-serving-proxy -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/model-serving-proxy/heapdump.1682291005.hprof -XX:ErrorFile=/databricks/logs/model-serving-proxy/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/model-serving-proxy/gc.log.1682291005 -XX:+UseG1GC -Xmx700M -cp /databricks/jars/manifest.jar com.databricks.modelservingproxy.ModelServingProxyService
+root        5243  0.0  0.0  20648  3820 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        5249  0.0  0.0  36148  3204 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: model-serving-proxy-667ccdb58f-pvrsl : 
+5251 sun.tools.jps.Jps
+7 com.databricks.modelservingproxy.ModelServingProxyService
+******************************
+onboarding-7b89897895-p2sds|10.2.61.254|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26124  8260 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root        1006  2.6  0.5 8780316 721888 ?      Sl   Apr23  35:17 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=onboarding -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/onboarding/heapdump.1682290750.hprof -XX:ErrorFile=/databricks/logs/onboarding/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/onboarding/gc.log.1682290750 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.onboarding.OnboardingService
+root        3294  0.0  0.0  20644  3888 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3300  0.0  0.0  36144  3228 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: onboarding-7b89897895-p2sds : 
+3302 sun.tools.jps.Jps
+1006 com.databricks.onboarding.OnboardingService
+******************************
+partnerhub-bb8d7f7fb-6t2fz|10.2.98.206|ip-10-20-11-193.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25024  8304 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.4  0.5 7588160 751716 ?      Sl   Apr23  31:56 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=partnerhub -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/partnerhub/heapdump.1682290747.hprof -XX:ErrorFile=/databricks/logs/partnerhub/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/partnerhub/gc.log.1682290747 -XX:+UseG1GC -Xmx350M -cp /databricks/jars/manifest.jar com.databricks.partnerhub.PartnerhubService
+root        2684  0.0  0.0  20648  3864 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2690  0.0  0.0  36148  3320 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: partnerhub-bb8d7f7fb-6t2fz : 
+2693 sun.tools.jps.Jps
+7 com.databricks.partnerhub.PartnerhubService
+******************************
+projects-proxy-67bf648bf8-rjhdj|10.2.184.220|ip-10-20-9-105.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.6  0.0 2549964 60300 ?       Ssl  18:55   0:49 /usr/local/bin/envoy --config-path /databricks/envoy-config/envoy-config-197e6ec4afeb2a7f7b99b11d71cb381f --service-cluster envoy --log-level debug --log-format %Y-%m-%d %T.%e [%t][%l][%n] %v --log-path /databricks/logs/envoy/envoy-service.log
+syslog        12  0.0  0.0 154536  2500 ?        Ssl  18:55   0:00 rsyslogd
+root          16  0.0  0.0   6876  2624 ?        Ss   18:55   0:00 cron
+root         150  0.0  0.0   7428  3704 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root         156  0.0  0.0   8948  3208 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: projects-proxy-67bf648bf8-rjhdj : 
+bash: jps: command not found
+******************************
+ratelimit-v2-66655f9546-xpznl|10.2.236.25|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8100 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.5  0.6 8354448 893472 ?      Sl   Apr23  33:47 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=ratelimit-v2 -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/ratelimit-v2/heapdump.1682289832.hprof -XX:ErrorFile=/databricks/logs/ratelimit-v2/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/ratelimit-v2/gc.log.1682289832 -XX:+UseG1GC -Xmx1705M -Xms500M -cp /databricks/jars/manifest.jar com.databricks.ratelimitv2.RatelimitV2Service
+root        2005  0.0  0.0  20644  3932 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2011  0.0  0.0  36144  3372 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: ratelimit-v2-66655f9546-xpznl : 
+6 com.databricks.ratelimitv2.RatelimitV2Service
+2013 sun.tools.jps.Jps
+******************************
+ratelimit-v2-redis-75b968b698-9vpzx|10.2.247.19|ip-10-20-9-238.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  20640  4060 ?        Ss   Apr23   0:08 bash /init_redis.sh /config/redis.conf --protected-mode no
+root           7  0.1  0.0  70532 10692 ?        Sl   Apr23   1:51 redis-server *:6379
+root       32479  0.0  0.0   6712  1936 ?        S    20:54   0:00 nc -l -p 8088
+root       32480  0.0  0.0  20508  3872 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root       32486  0.0  0.0  36140  3444 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: ratelimit-v2-redis-75b968b698-9vpzx : 
+32488 sun.tools.jps.Jps
+******************************
+redash-async-d5b464c6-trj5r|10.2.236.26|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 1153500 210820 ?      Ssl  Apr23   0:11 /usr/bin/python /usr/local/bin/gunicorn -k gevent -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w3 managed_redash.app:create_app() --max-requests 0 --max-requests-jitter 0
+root          16  0.0  0.0  66928 20868 ?        Ss   Apr23   0:11 /usr/bin/python /usr/local/bin/supervisord -c server.conf
+root          18  0.0  0.0 301228 22836 ?        Sl   Apr23   0:46 python ./sidecar.py
+root          41  0.1  0.1 1354460 225796 ?      Sl   Apr23   1:44 /usr/bin/python /usr/local/bin/gunicorn -k gevent -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w3 managed_redash.app:create_app() --max-requests 0 --max-requests-jitter 0
+root          42  0.1  0.1 1378712 250104 ?      Sl   Apr23   1:43 /usr/bin/python /usr/local/bin/gunicorn -k gevent -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w3 managed_redash.app:create_app() --max-requests 0 --max-requests-jitter 0
+root          45  0.1  0.2 1390492 261880 ?      Sl   Apr23   1:40 /usr/bin/python /usr/local/bin/gunicorn -k gevent -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w3 managed_redash.app:create_app() --max-requests 0 --max-requests-jitter 0
+root         533  0.0  0.0  20644  3940 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root         539  0.0  0.0  36144  3372 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: redash-async-d5b464c6-trj5r : 
+541 sun.tools.jps.Jps
+******************************
+redash-b6777b664-bsnkp|10.2.61.255|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.2 1937384 276324 ?      Ssl  Apr23   1:58 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w4 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          16  0.0  0.0  66928 20952 ?        Ss   Apr23   0:12 /usr/bin/python /usr/local/bin/supervisord -c server.conf
+root          18  0.0  0.0 301372 22824 ?        Sl   Apr23   0:43 python ./sidecar.py
+root          52  0.0  0.1 1936404 200396 ?      Sl   Apr23   0:04 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w4 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          53  0.0  0.1 1936396 200384 ?      Sl   Apr23   0:04 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w4 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          56  0.0  0.1 1936388 200348 ?      Sl   Apr23   0:04 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w4 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          57  0.0  0.1 1936388 200488 ?      Sl   Apr23   0:04 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w4 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root         541  0.0  0.0  20644  3912 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root         547  0.0  0.0  36144  3308 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: redash-b6777b664-bsnkp : 
+549 sun.tools.jps.Jps
+******************************
+redash-jobs-7bcbd49999-dwq9p|10.2.191.191|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.2 1937892 277832 ?      Ssl  Apr23   2:04 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          16  0.0  0.0  66928 20712 ?        Ss   Apr23   0:12 /usr/bin/python /usr/local/bin/supervisord -c server.conf
+root          18  0.0  0.0 301360 22332 ?        Sl   Apr23   0:56 python ./sidecar.py
+root          52  0.0  0.1 1936376 199764 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          54  0.0  0.1 1936360 199836 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          56  0.0  0.1 1936360 200248 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          58  0.0  0.1 1936252 201644 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          59  0.0  0.1 1937460 202700 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          61  0.0  0.1 1937460 203784 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          63  0.0  0.1 1936252 203956 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          65  0.0  0.1 1937460 205096 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          68  0.0  0.1 1937460 207168 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          70  0.0  0.1 1937456 209264 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          72  0.0  0.1 1936252 209360 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root          73  0.0  0.1 1937460 210980 ?      Sl   Apr23   0:02 /usr/bin/python /usr/local/bin/gunicorn -k sync -c gunicorn.conf.py -b 0.0.0.0:5000 --name redash -w12 managed_redash.app:create_app() --max-requests 1000 --max-requests-jitter 100
+root         555  0.0  0.0  20644  4040 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root         561  0.0  0.0  36144  3364 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: redash-jobs-7bcbd49999-dwq9p : 
+563 sun.tools.jps.Jps
+******************************
+redash-scheduler-6758fd9647-phdcr|10.2.211.125|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.2 1955940 293688 ?      Ssl  Apr23   1:08 python /app/manage.py rq scheduler
+root          17  0.0  0.0  66928 20620 ?        Ss   Apr23   0:13 /usr/bin/python /usr/local/bin/supervisord -c server.conf
+root          19  0.0  0.0 307732 23500 ?        Sl   Apr23   1:15 python ./sidecar.py
+root       37282  0.0  0.0  20644  3980 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root       37288  0.0  0.0  36144  3204 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: redash-scheduler-6758fd9647-phdcr : 
+37290 sun.tools.jps.Jps
+******************************
+redash-v2-679b79c457-4zx4q|10.2.61.202|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25024  7996 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.8  0.6 9646448 872632 ?      Sl   Apr23  36:48 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=redash-v2 -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/redash-v2/heapdump.1682290902.hprof -XX:ErrorFile=/databricks/logs/redash-v2/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/redash-v2/gc.log.1682290902 -XX:+UseG1GC -Xmx450M -cp /databricks/jars/manifest.jar com.databricks.redashv2.RedashV2Service
+root        2937  0.0  0.0  20648  3928 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2943  0.0  0.0  36148  3312 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: redash-v2-679b79c457-4zx4q : 
+2945 sun.tools.jps.Jps
+7 com.databricks.redashv2.RedashV2Service
+******************************
+redash-worker-8f75c7b45-69b8m|10.2.152.176|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  67452 24520 ?        Ss   Apr23   0:43 /usr/bin/python /usr/local/bin/supervisord -c worker.conf
+root          16  0.0  0.2 2247048 290920 ?      Sl   Apr23   1:08 python ./manage.py rq healthcheck
+root          17  0.0  0.0  20644  4000 ?        S    Apr23   0:00 /bin/bash ./bin/chrome-cleanup
+root          18  0.0  0.0 301372 22992 ?        Sl   Apr23   0:54 python ./sidecar.py
+root          19  0.1  0.2 1971584 301696 ?      Sl   Apr23   1:35 python ./manage.py rq worker scheduled_queries queries periodic schemas emails default workspace_migration jobs_migration
+root          20  0.1  0.2 2036832 291456 ?      Sl   Apr23   1:36 python ./manage.py rq worker scheduled_queries queries periodic schemas emails default workspace_migration jobs_migration
+root          21  0.1  0.2 2036904 301376 ?      Sl   Apr23   1:36 python ./manage.py rq worker scheduled_queries queries periodic schemas emails default workspace_migration jobs_migration
+root          22  0.1  0.2 2036800 301116 ?      Sl   Apr23   1:36 python ./manage.py rq worker scheduled_queries queries periodic schemas emails default workspace_migration jobs_migration
+root       51730  0.0  0.0      0     0 ?        Z    20:02   0:00 [gzip] <defunct>
+root       53267  0.0  0.0   6244   864 ?        S    20:38   0:00 sleep 1800
+root       53903  0.0  0.0  20644  3884 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root       53909  0.0  0.0  36144  3384 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: redash-worker-8f75c7b45-69b8m : 
+53911 sun.tools.jps.Jps
+******************************
+release-test-service-848f74484d-z84tm|10.2.98.215|ip-10-20-11-193.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8064 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.7  0.4 5518688 527832 ?      Sl   Apr23  36:04 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=release-test-service -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/release-test-service/heapdump.1682290311.hprof -XX:ErrorFile=/databricks/logs/release-test-service/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/release-test-service/gc.log.1682290311 -XX:+UseG1GC -Xmx250M -cp /databricks/jars/manifest.jar com.databricks.releasetestservice.ReleaseTestServiceService
+root        1978  0.0  0.0  20644  3792 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1984  0.0  0.0  36144  3180 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: release-test-service-848f74484d-z84tm : 
+1986 sun.tools.jps.Jps
+6 com.databricks.releasetestservice.ReleaseTestServiceService
+******************************
+route-discovery-service-7f455df6c9-k7stz|10.2.211.126|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8192 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.8  1.1 7702856 1563396 ?     Sl   Apr23  37:48 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=route-discovery-service -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/route-discovery-service/heapdump.1682289801.hprof -XX:ErrorFile=/databricks/logs/route-discovery-service/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/route-discovery-service/gc.log.1682289801 -XX:+UseG1GC -Xmx1G -cp /databricks/jars/manifest.jar com.databricks.routediscoveryservice.RouteDiscoveryServiceMain
+root        2801  0.0  0.0  20644  3884 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2807  0.0  0.0  36144  3220 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: route-discovery-service-7f455df6c9-k7stz : 
+7 com.databricks.routediscoveryservice.RouteDiscoveryServiceMain
+2809 sun.tools.jps.Jps
+******************************
+secret-manager-78c675f8cd-ncz7x|10.2.12.186|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26128  8136 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         170  2.8  0.6 8202096 800716 ?      Sl   Apr23  38:08 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=secret-manager -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/secret-manager/heapdump.1682290728.hprof -XX:ErrorFile=/databricks/logs/secret-manager/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/secret-manager/gc.log.1682290728 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.secretmanager.SecretManagerService
+root        5491  0.0  0.0  20648  3928 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        5497  0.0  0.0  36148  3332 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: secret-manager-78c675f8cd-ncz7x : 
+170 com.databricks.secretmanager.SecretManagerService
+5500 sun.tools.jps.Jps
+******************************
+serving-scheduler-8b5d548c-wwz2v|10.2.236.27|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26140  8312 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root          78  1.8  0.9 7143012 1199192 ?     Sl   Apr23  24:49 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=serving-scheduler -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/serving-scheduler/heapdump.1682290737.hprof -XX:ErrorFile=/databricks/logs/serving-scheduler/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/serving-scheduler/gc.log.1682290737 -XX:+UseG1GC -Xmx950M -cp /databricks/jars/manifest.jar com.databricks.servingscheduler.ServingSchedulerService
+root        1981  0.0  0.0  20652  4028 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1987  0.0  0.0  36152  3376 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: serving-scheduler-8b5d548c-wwz2v : 
+1989 sun.tools.jps.Jps
+78 com.databricks.servingscheduler.ServingSchedulerService
+******************************
+settings-policy-69d99d586f-9v924|10.2.211.128|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26124  8120 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         830  2.5  0.6 7660016 802588 ?      Sl   Apr23  33:26 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=settings-policy -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/settings-policy/heapdump.1682290877.hprof -XX:ErrorFile=/databricks/logs/settings-policy/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/settings-policy/gc.log.1682290877 -XX:+UseG1GC -Xmx1000M -cp /databricks/jars/manifest.jar com.databricks.settingspolicy.SettingsPolicyService
+root        2878  0.0  0.0  20644  3936 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2884  0.0  0.0  36144  3256 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: settings-policy-69d99d586f-9v924 : 
+2886 sun.tools.jps.Jps
+830 com.databricks.settingspolicy.SettingsPolicyService
+******************************
+softclient-74bcfcd4f8-kw2n9|10.2.12.187|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  24992  8284 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           8  3.8  0.5 8116828 678752 ?      Sl   Apr23  50:53 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=softclient -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/softclient/heapdump.1682289771.hprof -XX:ErrorFile=/databricks/logs/softclient/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/softclient/gc.log.1682289771 -XX:+UseG1GC -Xmx700M -cp /databricks/jars/manifest.jar com.databricks.softstore.softclient.SoftclientMain
+root        2108  2.0  0.0  20640  3912 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2114  0.0  0.0  36140  3292 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: softclient-74bcfcd4f8-kw2n9 : 
+2116 sun.tools.jps.Jps
+8 com.databricks.softstore.softclient.SoftclientMain
+******************************
+softstore-storelet-0|10.2.152.178|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8068 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  9.4  0.6 11199628 799448 ?     Sl   Apr23 126:14 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=softstore-storelet -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/softstore-storelet/heapdump.1682289802.hprof -XX:ErrorFile=/databricks/logs/softstore-storelet/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/softstore-storelet/gc.log.1682289802 -XX:+UseG1GC -Xmx700M -cp /databricks/jars/manifest.jar com.databricks.softstore.storelet.StoreletMain
+root        2150  0.0  0.0  20644  3928 pts/0    Ss+  20:54   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2157  0.0  0.0  36144  3392 pts/0    R+   20:54   0:00 ps -aux
+Java Services running on Pod: softstore-storelet-0 : 
+7 com.databricks.softstore.storelet.StoreletMain
+2159 sun.tools.jps.Jps
+******************************
+spark-connect-router-8f7486d9c-4vqrr|10.2.236.28|ip-10-20-9-44.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8032 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.5  0.6 9726424 836456 ?      Sl   Apr23  33:27 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=spark-connect-router -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/spark-connect-router/heapdump.1682289933.hprof -XX:ErrorFile=/databricks/logs/spark-connect-router/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/spark-connect-router/gc.log.1682289933 -XX:+UseG1GC -Xmx1000M -cp /databricks/jars/manifest.jar com.databricks.sparkconnectrouter.SparkConnectRouterService
+root        2033  0.0  0.0  20644  4048 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2039  0.0  0.0  36144  3432 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: spark-connect-router-8f7486d9c-4vqrr : 
+7 com.databricks.sparkconnectrouter.SparkConnectRouterService
+2041 sun.tools.jps.Jps
+******************************
+sql-cloud-results-gc-546d9d7c49-82tmk|10.2.98.216|ip-10-20-11-193.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  7984 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.5  0.5 2823076 715540 ?      Sl   Apr23  34:06 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=sql-cloud-results-gc -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/sql-cloud-results-gc/heapdump.1682290356.hprof -XX:ErrorFile=/databricks/logs/sql-cloud-results-gc/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/sql-cloud-results-gc/gc.log.1682290356 -XX:+UseG1GC -Xmx500M -cp /databricks/jars/manifest.jar com.databricks.sqlcloudresultsgc.SqlCloudResultsGcService
+root        2099  0.0  0.0  20644  3980 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2105  0.0  0.0  36144  3360 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: sql-cloud-results-gc-546d9d7c49-82tmk : 
+6 com.databricks.sqlcloudresultsgc.SqlCloudResultsGcService
+2107 sun.tools.jps.Jps
+******************************
+sql-exec-api-66889b5694-746nm|10.2.211.127|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25020  8096 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.8  1.1 9340800 1544864 ?     Sl   Apr23  38:07 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=sql-exec-api -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/sql-exec-api/heapdump.1682289845.hprof -XX:ErrorFile=/databricks/logs/sql-exec-api/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/sql-exec-api/gc.log.1682289845 -XX:+UseG1GC -Xms1200M -Xmx1200M -cp /databricks/jars/manifest.jar com.databricks.sqlexecapi.SqlExecApiService
+root        2025  0.0  0.0  20644  4008 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2030  0.0  0.0  36144  3300 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: sql-exec-api-66889b5694-746nm : 
+2032 sun.tools.jps.Jps
+6 com.databricks.sqlexecapi.SqlExecApiService
+******************************
+sqlacl-sisyphus-c4fb4d997-cpmxz|10.2.62.0|ip-10-20-11-150.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25024  8040 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.3  0.6 9352712 875960 ?      Sl   Apr23  31:15 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=sisyphus -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/sisyphus/heapdump.1682289804.hprof -XX:ErrorFile=/databricks/logs/sisyphus/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/sisyphus/gc.log.1682289804 -Xmx750M -XX:+UseG1GC -XX:NativeMemoryTracking=summary -XX:+UnlockDiagnosticVMOptions -XX:+PrintNMTStatistics -cp /databricks/jars/manifest.jar com.databricks.backend.daemon.data.server.meta.MetaService
+root        1964  0.0  0.0  20648  3996 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1970  0.0  0.0  36148  3204 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: sqlacl-sisyphus-c4fb4d997-cpmxz : 
+1972 sun.tools.jps.Jps
+6 com.databricks.backend.daemon.data.server.meta.MetaService
+******************************
+sqlgateway-history-67d585ff87-gk7d7|10.2.12.188|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26132  8204 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root          87  2.9  2.5 13811192 3346240 ?    Sl   Apr23  38:29 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=sqlgateway-history -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/sqlgateway-history/heapdump.1682290750.hprof -XX:ErrorFile=/databricks/logs/sqlgateway-history/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/sqlgateway-history/gc.log.1682290750 -XX:+UseG1GC -Xms3915M -Xmx3915M -cp /databricks/jars/manifest.jar com.databricks.sqlgateway.history.HistoryService
+root        4681  0.0  0.0  20648  3952 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        4687  0.0  0.0  36148  3368 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: sqlgateway-history-67d585ff87-gk7d7 : 
+4689 sun.tools.jps.Jps
+87 com.databricks.sqlgateway.history.HistoryService
+******************************
+sqlgateway-history-db-admin-5c6cdbf4b7-665qf|10.2.98.213|ip-10-20-11-193.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26124  8088 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root         441  2.8  0.4 7024044 646716 ?      Sl   Apr23  37:09 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=sqlgateway-history-db-admin -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/sqlgateway-history-db-admin/heapdump.1682290749.hprof -XX:ErrorFile=/databricks/logs/sqlgateway-history-db-admin/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/sqlgateway-history-db-admin/gc.log.1682290749 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.sqlgateway.history.historydbadmin.SqlgatewayHistoryDbAdminService
+root        2433  2.0  0.0  20644  3836 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2439  0.0  0.0  36144  3312 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: sqlgateway-history-db-admin-5c6cdbf4b7-665qf : 
+441 com.databricks.sqlgateway.history.historydbadmin.SqlgatewayHistoryDbAdminService
+2441 sun.tools.jps.Jps
+******************************
+sqlgateway-proxy-6d746ff9c9-9l6nq|10.2.98.205|ip-10-20-11-193.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25032  8328 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  3.3  2.7 14377496 3620488 ?    Sl   Apr23  43:36 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=sqlgateway-proxy -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/sqlgateway-proxy/heapdump.1682291014.hprof -XX:ErrorFile=/databricks/logs/sqlgateway-proxy/hs_err_pid%p.log -Ddatabricks.useDiffAuditLogging=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/sqlgateway-proxy/gc.log.1682291014 -XX:+UseG1GC -Xms4400M -Xmx4400M -cp /databricks/jars/manifest.jar com.databricks.sqlgateway.proxy.ProxyService
+root        2379  0.0  0.0  20652  4084 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2385  0.0  0.0  36152  3264 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: sqlgateway-proxy-6d746ff9c9-9l6nq : 
+2387 sun.tools.jps.Jps
+7 com.databricks.sqlgateway.proxy.ProxyService
+******************************
+sqlgateway-scheduler-0|10.2.98.202|ip-10-20-11-193.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25184  8460 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  5.3  3.3 15947012 4330664 ?    Sl   Apr23  70:52 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=sqlgateway-scheduler -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/sqlgateway-scheduler/heapdump.1682290726.hprof -XX:ErrorFile=/databricks/logs/sqlgateway-scheduler/hs_err_pid%p.log -Ddatabricks.useDiffAuditLogging=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/sqlgateway-scheduler/gc.log.1682290726 -XX:+UseG1GC -Xms4425M -Xmx4425M -cp /databricks/jars/manifest.jar com.databricks.sqlgateway.scheduler.service.SchedulerService
+root       62085  0.0  0.0  21152  4792 pts/0    Ss+  17:31   0:00 bash
+root       73852  0.0  0.0  20940  4516 pts/1    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root       73858  0.0  0.0  36228  3440 pts/1    R+   20:55   0:00 ps -aux
+Java Services running on Pod: sqlgateway-scheduler-0 : 
+73860 sun.tools.jps.Jps
+7 com.databricks.sqlgateway.scheduler.service.SchedulerService
+******************************
+strimzi-cluster-operator-5b55f5b6-qvmjl|10.2.152.177|ip-10-20-10-162.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0   4452   924 ?        Ss   Apr23   0:01 /usr/bin/tini -w -e 143 -- java -Dlog4j2.configurationFile=file:/opt/strimzi/custom-config/log4j2.properties -Dvertx.cacheDirBase=/tmp/vertx-cache -Djava.security.egd=file:/dev/./urandom --illegal-access=deny -Dcom.redhat.fips=false -classpath lib/io.strimzi.cluster-operator-0.27.1.jar:lib/io.netty.netty-common-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-flowcontrol-5.10.2.jar:lib/io.fabric8.kubernetes-model-node-5.10.2.jar:lib/io.fabric8.kubernetes-model-metrics-5.10.2.jar:lib/io.netty.netty-codec-http2-4.1.71.Final.jar:lib/io.fabric8.openshift-model-machineconfig-5.10.2.jar:lib/io.fabric8.openshift-model-machine-5.10.2.jar:lib/org.apache.kafka.kafka-clients-3.0.0.jar:lib/org.hdrhistogram.HdrHistogram-2.1.11.jar:lib/com.fasterxml.jackson.core.jackson-databind-2.11.3.jar:lib/com.squareup.okhttp3.logging-interceptor-3.12.12.jar:lib/io.fabric8.openshift-model-5.10.2.jar:lib/io.fabric8.openshift-model-operatorhub-5.10.2.jar:lib/org.apache.zookeeper.zookeeper-jute-3.6.3.jar:lib/io.netty.netty-handler-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-admissionregistration-5.10.2.jar:lib/io.fabric8.kubernetes-model-apps-5.10.2.jar:lib/org.apache.logging.log4j.log4j-core-2.17.1.jar:lib/io.fabric8.kubernetes-model-extensions-5.10.2.jar:lib/org.apache.zookeeper.zookeeper-3.6.3.jar:lib/net.minidev.accessors-smart-2.4.7.jar:lib/com.fasterxml.jackson.dataformat.jackson-dataformat-yaml-2.10.5.jar:lib/io.fabric8.kubernetes-model-batch-5.10.2.jar:lib/io.fabric8.kubernetes-model-scheduling-5.10.2.jar:lib/io.fabric8.openshift-model-clusterautoscaling-5.10.2.jar:lib/com.github.mifmif.generex-1.0.2.jar:lib/io.strimzi.certificate-manager-0.27.1.jar:lib/org.xerial.snappy.snappy-java-1.1.8.1.jar:lib/io.strimzi.crd-annotations-0.27.1.jar:lib/io.fabric8.kubernetes-client-5.10.2.jar:lib/org.yaml.snakeyaml-1.26.jar:lib/io.fabric8.kubernetes-model-coordination-5.10.2.jar:lib/io.netty.netty-resolver-dns-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-discovery-5.10.2.jar:lib/org.lz4.lz4-java-1.7.1.jar:lib/io.fabric8.kubernetes-model-apiextensions-5.10.2.jar:lib/io.strimzi.kafka-oauth-client-0.8.1.jar:lib/io.fabric8.openshift-model-whereabouts-5.10.2.jar:lib/io.netty.netty-codec-socks-4.1.71.Final.jar:lib/io.netty.netty-handler-proxy-4.1.71.Final.jar:lib/io.netty.netty-resolver-4.1.71.Final.jar:lib/io.strimzi.operator-common-0.27.1.jar:lib/com.jayway.jsonpath.json-path-2.6.0.jar:lib/net.minidev.json-smart-2.4.7.jar:lib/io.fabric8.zjsonpatch-0.3.0.jar:lib/io.strimzi.kafka-oauth-server-0.8.1.jar:lib/io.vertx.vertx-micrometer-metrics-4.2.1.jar:lib/com.squareup.okhttp3.okhttp-3.12.6.jar:lib/io.netty.netty-codec-dns-4.1.71.Final.jar:lib/io.netty.netty-transport-native-unix-common-4.1.71.Final.jar:lib/io.netty.netty-transport-native-epoll-4.1.71.Final.jar:lib/com.github.luben.zstd-jni-1.5.0-2.jar:lib/io.strimzi.config-model-0.27.1.jar:lib/io.vertx.vertx-core-4.2.1.jar:lib/org.quartz-scheduler.quartz-2.3.2.jar:lib/io.prometheus.simpleclient_common-0.7.0.jar:lib/org.apache.logging.log4j.log4j-slf4j-impl-2.17.1.jar:lib/io.netty.netty-buffer-4.1.71.Final.jar:lib/io.fabric8.openshift-model-console-5.10.2.jar:lib/io.fabric8.kubernetes-model-certificates-5.10.2.jar:lib/com.squareup.okio.okio-1.15.0.jar:lib/io.fabric8.openshift-model-storageversionmigrator-5.10.2.jar:lib/io.fabric8.kubernetes-model-policy-5.10.2.jar:lib/io.strimzi.api-0.27.1.jar:lib/io.prometheus.simpleclient-0.7.0.jar:lib/io.fabric8.openshift-model-miscellaneous-5.10.2.jar:lib/io.netty.netty-transport-native-epoll-4.1.71.Final-linux-x86_64.jar:lib/org.apache.yetus.audience-annotations-0.5.0.jar:lib/io.fabric8.kubernetes-model-core-5.10.2.jar:lib/com.fasterxml.jackson.core.jackson-annotations-2.11.3.jar:lib/io.fabric8.openshift-model-operator-5.10.2.jar:lib/io.micrometer.micrometer-core-1.3.1.jar:lib/io.netty.netty-codec-4.1.71.Final.jar:lib/com.nimbusds.nimbus-jose-jwt-9.10.jar:lib/io.netty.netty-codec-http-4.1.71.Final.jar:lib/com.fasterxml.jackson.core.jackson-core-2.11.3.jar:lib/com.github.stephenc.jcip.jcip-annotations-1.0-1.jar:lib/io.fabric8.kubernetes-model-autoscaling-5.10.2.jar:lib/io.fabric8.openshift-model-tuned-5.10.2.jar:lib/io.fabric8.kubernetes-model-common-5.10.2.jar:lib/io.strimzi.kafka-oauth-server-plain-0.8.1.jar:lib/io.fabric8.kubernetes-model-events-5.10.2.jar:lib/io.fabric8.openshift-client-5.10.2.jar:lib/dk.brics.automaton.automaton-1.11-8.jar:lib/io.fabric8.kubernetes-model-rbac-5.10.2.jar:lib/org.apache.logging.log4j.log4j-api-2.17.1.jar:lib/io.strimzi.kafka-oauth-common-0.8.1.jar:lib/io.netty.netty-transport-classes-epoll-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-networking-5.10.2.jar:lib/io.fabric8.kubernetes-model-storageclass-5.10.2.jar:lib/io.fabric8.openshift-model-monitoring-5.10.2.jar:lib/org.slf4j.slf4j-api-1.7.25.jar:lib/org.latencyutils.LatencyUtils-2.0.3.jar:lib/com.fasterxml.jackson.datatype.jackson-datatype-jsr310-2.13.0.jar:lib/io.netty.netty-tcnative-classes-2.0.46.Final.jar:lib/io.netty.netty-transport-4.1.71.Final.jar:lib/io.micrometer.micrometer-registry-prometheus-1.3.1.jar io.strimzi.operator.cluster.Main
+root          12  0.4  0.3 2307864 468892 ?      Sl   Apr23   6:23 java -Dlog4j2.configurationFile=file:/opt/strimzi/custom-config/log4j2.properties -Dvertx.cacheDirBase=/tmp/vertx-cache -Djava.security.egd=file:/dev/./urandom --illegal-access=deny -Dcom.redhat.fips=false -classpath lib/io.strimzi.cluster-operator-0.27.1.jar:lib/io.netty.netty-common-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-flowcontrol-5.10.2.jar:lib/io.fabric8.kubernetes-model-node-5.10.2.jar:lib/io.fabric8.kubernetes-model-metrics-5.10.2.jar:lib/io.netty.netty-codec-http2-4.1.71.Final.jar:lib/io.fabric8.openshift-model-machineconfig-5.10.2.jar:lib/io.fabric8.openshift-model-machine-5.10.2.jar:lib/org.apache.kafka.kafka-clients-3.0.0.jar:lib/org.hdrhistogram.HdrHistogram-2.1.11.jar:lib/com.fasterxml.jackson.core.jackson-databind-2.11.3.jar:lib/com.squareup.okhttp3.logging-interceptor-3.12.12.jar:lib/io.fabric8.openshift-model-5.10.2.jar:lib/io.fabric8.openshift-model-operatorhub-5.10.2.jar:lib/org.apache.zookeeper.zookeeper-jute-3.6.3.jar:lib/io.netty.netty-handler-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-admissionregistration-5.10.2.jar:lib/io.fabric8.kubernetes-model-apps-5.10.2.jar:lib/org.apache.logging.log4j.log4j-core-2.17.1.jar:lib/io.fabric8.kubernetes-model-extensions-5.10.2.jar:lib/org.apache.zookeeper.zookeeper-3.6.3.jar:lib/net.minidev.accessors-smart-2.4.7.jar:lib/com.fasterxml.jackson.dataformat.jackson-dataformat-yaml-2.10.5.jar:lib/io.fabric8.kubernetes-model-batch-5.10.2.jar:lib/io.fabric8.kubernetes-model-scheduling-5.10.2.jar:lib/io.fabric8.openshift-model-clusterautoscaling-5.10.2.jar:lib/com.github.mifmif.generex-1.0.2.jar:lib/io.strimzi.certificate-manager-0.27.1.jar:lib/org.xerial.snappy.snappy-java-1.1.8.1.jar:lib/io.strimzi.crd-annotations-0.27.1.jar:lib/io.fabric8.kubernetes-client-5.10.2.jar:lib/org.yaml.snakeyaml-1.26.jar:lib/io.fabric8.kubernetes-model-coordination-5.10.2.jar:lib/io.netty.netty-resolver-dns-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-discovery-5.10.2.jar:lib/org.lz4.lz4-java-1.7.1.jar:lib/io.fabric8.kubernetes-model-apiextensions-5.10.2.jar:lib/io.strimzi.kafka-oauth-client-0.8.1.jar:lib/io.fabric8.openshift-model-whereabouts-5.10.2.jar:lib/io.netty.netty-codec-socks-4.1.71.Final.jar:lib/io.netty.netty-handler-proxy-4.1.71.Final.jar:lib/io.netty.netty-resolver-4.1.71.Final.jar:lib/io.strimzi.operator-common-0.27.1.jar:lib/com.jayway.jsonpath.json-path-2.6.0.jar:lib/net.minidev.json-smart-2.4.7.jar:lib/io.fabric8.zjsonpatch-0.3.0.jar:lib/io.strimzi.kafka-oauth-server-0.8.1.jar:lib/io.vertx.vertx-micrometer-metrics-4.2.1.jar:lib/com.squareup.okhttp3.okhttp-3.12.6.jar:lib/io.netty.netty-codec-dns-4.1.71.Final.jar:lib/io.netty.netty-transport-native-unix-common-4.1.71.Final.jar:lib/io.netty.netty-transport-native-epoll-4.1.71.Final.jar:lib/com.github.luben.zstd-jni-1.5.0-2.jar:lib/io.strimzi.config-model-0.27.1.jar:lib/io.vertx.vertx-core-4.2.1.jar:lib/org.quartz-scheduler.quartz-2.3.2.jar:lib/io.prometheus.simpleclient_common-0.7.0.jar:lib/org.apache.logging.log4j.log4j-slf4j-impl-2.17.1.jar:lib/io.netty.netty-buffer-4.1.71.Final.jar:lib/io.fabric8.openshift-model-console-5.10.2.jar:lib/io.fabric8.kubernetes-model-certificates-5.10.2.jar:lib/com.squareup.okio.okio-1.15.0.jar:lib/io.fabric8.openshift-model-storageversionmigrator-5.10.2.jar:lib/io.fabric8.kubernetes-model-policy-5.10.2.jar:lib/io.strimzi.api-0.27.1.jar:lib/io.prometheus.simpleclient-0.7.0.jar:lib/io.fabric8.openshift-model-miscellaneous-5.10.2.jar:lib/io.netty.netty-transport-native-epoll-4.1.71.Final-linux-x86_64.jar:lib/org.apache.yetus.audience-annotations-0.5.0.jar:lib/io.fabric8.kubernetes-model-core-5.10.2.jar:lib/com.fasterxml.jackson.core.jackson-annotations-2.11.3.jar:lib/io.fabric8.openshift-model-operator-5.10.2.jar:lib/io.micrometer.micrometer-core-1.3.1.jar:lib/io.netty.netty-codec-4.1.71.Final.jar:lib/com.nimbusds.nimbus-jose-jwt-9.10.jar:lib/io.netty.netty-codec-http-4.1.71.Final.jar:lib/com.fasterxml.jackson.core.jackson-core-2.11.3.jar:lib/com.github.stephenc.jcip.jcip-annotations-1.0-1.jar:lib/io.fabric8.kubernetes-model-autoscaling-5.10.2.jar:lib/io.fabric8.openshift-model-tuned-5.10.2.jar:lib/io.fabric8.kubernetes-model-common-5.10.2.jar:lib/io.strimzi.kafka-oauth-server-plain-0.8.1.jar:lib/io.fabric8.kubernetes-model-events-5.10.2.jar:lib/io.fabric8.openshift-client-5.10.2.jar:lib/dk.brics.automaton.automaton-1.11-8.jar:lib/io.fabric8.kubernetes-model-rbac-5.10.2.jar:lib/org.apache.logging.log4j.log4j-api-2.17.1.jar:lib/io.strimzi.kafka-oauth-common-0.8.1.jar:lib/io.netty.netty-transport-classes-epoll-4.1.71.Final.jar:lib/io.fabric8.kubernetes-model-networking-5.10.2.jar:lib/io.fabric8.kubernetes-model-storageclass-5.10.2.jar:lib/io.fabric8.openshift-model-monitoring-5.10.2.jar:lib/org.slf4j.slf4j-api-1.7.25.jar:lib/org.latencyutils.LatencyUtils-2.0.3.jar:lib/com.fasterxml.jackson.datatype.jackson-datatype-jsr310-2.13.0.jar:lib/io.netty.netty-tcnative-classes-2.0.46.Final.jar:lib/io.netty.netty-transport-4.1.71.Final.jar:lib/io.micrometer.micrometer-registry-prometheus-1.3.1.jar io.strimzi.operator.cluster.Main
+root        7633  0.0  0.0  12376  3276 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        7639  0.0  0.0  47680  4300 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: strimzi-cluster-operator-5b55f5b6-qvmjl : 
+bash: jps: command not found
+******************************
+test-shard-local-database-64dbd96db6-lj5kn|10.2.152.179|ip-10-20-10-162.ec2.internal
+bash: ps: command not found
+Java Services running on Pod: test-shard-local-database-64dbd96db6-lj5kn : 
+bash: jps: command not found
+******************************
+uc-model-registry-c6cc85977-4qt87|10.2.191.193|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8052 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.8  0.5 8595556 658568 ?      Sl   Apr23  37:43 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=uc-model-registry -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/uc-model-registry/heapdump.1682289857.hprof -XX:ErrorFile=/databricks/logs/uc-model-registry/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/uc-model-registry/gc.log.1682289857 -XX:+UseG1GC -Xmx750M -cp /databricks/jars/manifest.jar com.databricks.ucmodelregistry.UcModelRegistryService
+root        2156  0.0  0.0  20644  3928 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        2161  0.0  0.0  36144  3208 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: uc-model-registry-c6cc85977-4qt87 : 
+2163 sun.tools.jps.Jps
+6 com.databricks.ucmodelregistry.UcModelRegistryService
+******************************
+ui-555774c89b-nwcn9|10.2.12.189|ip-10-20-11-183.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8132 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  3.1  0.5 11056820 704276 ?     Sl   Apr23  42:21 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=ui -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/ui/heapdump.1682289863.hprof -XX:ErrorFile=/databricks/logs/ui/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/ui/gc.log.1682289863 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.ui.UiService
+root        6760  0.0  0.0  20644  3944 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        6765  0.0  0.0  36144  3376 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: ui-555774c89b-nwcn9 : 
+6 com.databricks.ui.UiService
+6767 sun.tools.jps.Jps
+******************************
+user-activity-7c96cb868d-9gnkl|10.2.50.107|ip-10-20-9-127.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  26124  8064 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root        1325  2.7  0.5 8839724 712180 ?      Sl   Apr23  36:11 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=user-activity -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/user-activity/heapdump.1682290866.hprof -XX:ErrorFile=/databricks/logs/user-activity/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/user-activity/gc.log.1682290866 -XX:+UseG1GC -Xmx600M -cp /databricks/jars/manifest.jar com.databricks.useractivity.UserActivityService
+root        3597  0.0  0.0  20644  3880 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3603  0.0  0.0  36144  3224 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: user-activity-7c96cb868d-9gnkl : 
+3605 sun.tools.jps.Jps
+1325 com.databricks.useractivity.UserActivityService
+******************************
+webhook-notifications-859444dcd7-ndmsq|10.2.191.194|ip-10-20-9-181.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8036 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           7  2.8  0.6 10844500 912572 ?     Sl   Apr23  37:45 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=webhook-notifications -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/webhook-notifications/heapdump.1682290729.hprof -XX:ErrorFile=/databricks/logs/webhook-notifications/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/webhook-notifications/gc.log.1682290729 -XX:+UseG1GC -Xmx1200M -cp /databricks/jars/manifest.jar com.databricks.webhooknotifications.WebhookNotificationsService
+root        2997  0.0  0.0  20644  4068 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        3003  0.0  0.0  36144  3364 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: webhook-notifications-859444dcd7-ndmsq : 
+7 com.databricks.webhooknotifications.WebhookNotificationsService
+3005 sun.tools.jps.Jps
+******************************
+workspace-files-gc-65475f8b68-swphd|10.2.211.129|ip-10-20-11-81.ec2.internal
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  25016  8180 ?        Ss   Apr23   0:00 python /databricks/dev_container_supervisor.py /databricks/dev_container_supervisor_command
+root           6  2.4  0.6 8015648 820008 ?      Sl   Apr23  33:10 /graalvm-ce-java11-22.3.1/bin/java -server -Dlog4j2.formatMsgNoLookups=true -Ddatabricks.serviceName=workspace-files-gc -Djavax.net.ssl.sessionCacheSize=10000 -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+UseMontgomeryMultiplyIntrinsic -XX:+UseMontgomerySquareIntrinsic -XX:MaxInlineLevel=15 -Xlog:jfr=debug:stdout --add-exports jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+PrintFlagsFinal -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/databricks/logs/workspace-files-gc/heapdump.1682289915.hprof -XX:ErrorFile=/databricks/logs/workspace-files-gc/hs_err_pid%p.log -Ddatabricks.useAsyncServiceLogs=true -Ddatabricks.useAsyncUsageLogs=true -verbose:gc -XX:+PrintGCDetails -Xloggc:/databricks/logs/workspace-files-gc/gc.log.1682289915 -XX:+UseG1GC -Xmx500M -cp /databricks/jars/manifest.jar com.databricks.workspacefilesgc.WorkspaceFilesGcService
+root        1951  0.0  0.0  20644  3964 pts/0    Ss+  20:55   0:00 bash -c ps -aux > /tmp/mohit; cat /tmp/mohit
+root        1956  0.0  0.0  36144  3380 pts/0    R+   20:55   0:00 ps -aux
+Java Services running on Pod: workspace-files-gc-65475f8b68-swphd : 
+1958 sun.tools.jps.Jps
+6 com.databricks.workspacefilesgc.WorkspaceFilesGcService
+******************************

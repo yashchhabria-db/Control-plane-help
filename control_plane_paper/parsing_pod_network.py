@@ -21,8 +21,6 @@ pod_net_f.close()
 pod_parsed = {}
 
 
-
-
 for i in range(0,len(pod_net_list)):
     try:
         if pod_net_list[i].startswith("****"):
@@ -34,12 +32,14 @@ for i in range(0,len(pod_net_list)):
             pod_parsed[pod_info[0]] = {
                 'pod_ip': pod_info[1],
                 'node_ip': node_ip,
-                'pod_internal_ec2_ip': pod_info[2],
                 'listening_ports': [],
+                'ougoing_ports' : [],
                 'incomming_connections': [], 
-                'pid': [], 
-                'connected_service_names': [],
-                'connected_pod_names': []
+                'incomming_connected_service_names': [],
+                'incomming_connected_pod_names': [],
+                'outgoing_connections': [], 
+                'outgoing_connected_service_names': [],
+                'outgoing_connected_pod_names': []
             }
 
             i=i+3 #skip bs lines
@@ -47,43 +47,89 @@ for i in range(0,len(pod_net_list)):
             line = pod_net_list[i]
             while not line.startswith("****") and len(line)>1:
                 connection_line = line.strip().split()
+                pod_port = connection_line[3].split(":")[-1]
+                
+                # if connection_line[6] not in pod_parsed[pod_info[0]]['pid'] and len(connection_line[6])>1:
+                #         pod_parsed[pod_info[0]]['pid'].append(connection_line[6])
 
-                #check if its connected to pod ip append the open port and add the appropriate connection
                 if connection_line[5].startswith("LISTEN"):
-                    pod_port = connection_line[3].split(":")[-1]
                     if pod_port not in pod_parsed[pod_info[0]]['listening_ports']:
                         pod_parsed[pod_info[0]]['listening_ports'].append(pod_port)  
 
-                elif not connection_line[3].startswith("127"): #ignore local host stuff
-                    foreign_ip = connection_line[4]
-                    ip_wo_port = foreign_ip.split(":")[0]
+                elif connection_line[5].startswith("WAIT") or connection_line[5].startswith("ESTABLISHED"):
+                    if pod_port not in pod_parsed[pod_info[0]]['ougoing_ports']:
+                        pod_parsed[pod_info[0]]['ougoing_ports'].append(pod_port)  
 
-                    if foreign_ip.startswith("10.3."): #if service ip lookup service name
-                        if ip_wo_port in ip_service_dict.keys():
-                            connection_tuple = (connection_line[3], (foreign_ip, ip_service_dict[ip_wo_port])) 
-                            if ip_service_dict[ip_wo_port] not in pod_parsed[pod_info[0]]['connected_service_names']:
-                                pod_parsed[pod_info[0]]['connected_service_names'].append(ip_service_dict[ip_wo_port])
+
+                if not connection_line[3].startswith("127") and not connection_line[5].startswith("LISTEN"):
+                    if pod_port in pod_parsed[pod_info[0]]['listening_ports']:  #incomming connection
+                    #ignore local host stuff and check if listening port. I can do this because all the listening ports are listed first in netstat output
+                    
+                        foreign_ip = connection_line[4]
+                        ip_wo_port = foreign_ip.split(":")[0]
+
+                        #should probably put this if else into a function tbh 
+                        if foreign_ip.startswith("10.3."): #if service ip lookup service name
+                            if ip_wo_port in ip_service_dict.keys():
+                                connection_tuple = (connection_line[3], (foreign_ip, ip_service_dict[ip_wo_port])) 
+                                if ip_service_dict[ip_wo_port] not in pod_parsed[pod_info[0]]['incomming_connected_service_names']:
+                                    pod_parsed[pod_info[0]]['incomming_connected_service_names'].append(ip_service_dict[ip_wo_port])
+                            else:
+                                connection_tuple = (connection_line[3], (foreign_ip, "no_service_found")) 
+
+                        elif foreign_ip.startswith("10.2."):
+                            if ip_wo_port in ip_pod_dict.keys():
+                                connection_tuple = (connection_line[3], (foreign_ip, ip_pod_dict[ip_wo_port]))
+                                if ip_pod_dict[ip_wo_port] not in pod_parsed[pod_info[0]]['incomming_connected_pod_names']:
+                                    pod_parsed[pod_info[0]]['incomming_connected_pod_names'].append(ip_pod_dict[ip_wo_port])
+                            else:
+                                connection_tuple = connection_tuple + ("no_pod_found", )
+
+                        elif foreign_ip.startswith("10.20."):
+                            if foreign_ip.startswith(node_ip):
+                                connection_tuple = (connection_line[3], (foreign_ip, "node"))
+                            else:
+                                connection_tuple = (connection_line[3], (foreign_ip, "external node"))
                         else:
-                            connection_tuple = (connection_line[3], (foreign_ip, "no_service_found")) 
+                            connection_tuple = (connection_line[3], (foreign_ip, "not_found"))
 
-                    elif foreign_ip.startswith("10.2."):
-                        if ip_wo_port in ip_pod_dict.keys():
-                            connection_tuple = (connection_line[3], (foreign_ip, ip_pod_dict[ip_wo_port]))
-                            if ip_pod_dict[ip_wo_port] not in pod_parsed[pod_info[0]]['connected_pod_names']:
-                                pod_parsed[pod_info[0]]['connected_pod_names'].append(ip_pod_dict[ip_wo_port])
+                        connection_tuple = connection_tuple + (connection_line[5], connection_line[6])
+                        pod_parsed[pod_info[0]]['incomming_connections'].append(connection_tuple)
+
+                    else: 
+
+                        #for outgoing connections
+                        foreign_ip = connection_line[4]
+                        ip_wo_port = foreign_ip.split(":")[0]
+
+                        #should probably put this if else into a function tbh 
+                        if foreign_ip.startswith("10.3."): #if service ip lookup service name
+                            if ip_wo_port in ip_service_dict.keys():
+                                connection_tuple = (connection_line[3], (foreign_ip, ip_service_dict[ip_wo_port])) 
+                                if ip_service_dict[ip_wo_port] not in pod_parsed[pod_info[0]]['outgoing_connected_service_names']:
+                                    pod_parsed[pod_info[0]]['outgoing_connected_service_names'].append(ip_service_dict[ip_wo_port])
+                            else:
+                                connection_tuple = (connection_line[3], (foreign_ip, "no_service_found")) 
+
+                        elif foreign_ip.startswith("10.2."):
+                            if ip_wo_port in ip_pod_dict.keys():
+                                connection_tuple = (connection_line[3], (foreign_ip, ip_pod_dict[ip_wo_port]))
+                                if ip_pod_dict[ip_wo_port] not in pod_parsed[pod_info[0]]['outgoing_connected_pod_names']:
+                                    pod_parsed[pod_info[0]]['outgoing_connected_pod_names'].append(ip_pod_dict[ip_wo_port])
+                            else:
+                                connection_tuple = connection_tuple + ("no_pod_found", )
+
+                        elif foreign_ip.startswith("10.20."):
+                            if foreign_ip.startswith(node_ip):
+                                connection_tuple = (connection_line[3], (foreign_ip, "node"))
+                            else:
+                                connection_tuple = (connection_line[3], (foreign_ip, "external node"))
                         else:
-                            connection_tuple = connection_tuple + ("no_pod_found", )
+                            connection_tuple = (connection_line[3], (foreign_ip, "not_found"))
 
-                    elif foreign_ip.startswith("10.20."):
-                        connection_tuple = (connection_line[3], (foreign_ip, "node"))
-
-                    else:
-                        connection_tuple = (connection_line[3], (foreign_ip, "not_found"))
-
-                    connection_tuple = connection_tuple + (connection_line[5], connection_line[6])
-                    pod_parsed[pod_info[0]]['outgoing_connections'].append(connection_tuple)
-                    if connection_line[6] not in pod_parsed[pod_info[0]]['pid'] and len(connection_line[6])>1:
-                        pod_parsed[pod_info[0]]['pid'].append(connection_line[6])
+                        connection_tuple = connection_tuple + (connection_line[5], connection_line[6])
+                        pod_parsed[pod_info[0]]['outgoing_connections'].append(connection_tuple)
+                    
 
 
 
