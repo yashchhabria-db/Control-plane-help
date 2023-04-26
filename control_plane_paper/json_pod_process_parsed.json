@@ -1,0 +1,407 @@
+{
+    "access-control-78c6d875b8-rk98n": {
+        "7": "com.databricks.accesscontrol.AccessControlService",
+        "4606": "sun.tools.jps.Jps"
+    },
+    "acl-manager-867cc96fcc-d2p49": {
+        "7": "com.databricks.aclmanager.AclManagerService",
+        "2460": "sun.tools.jps.Jps"
+    },
+    "apiproxy-68d6bc64fc-88tpk": {
+        "1": "/usr/local/bin/envoy --config-path /databricks/envoy-config/envoy-config-5928d29713f030fd8d072d66ca4302ae.yaml",
+        "13": "rsyslogd",
+        "17": "cron",
+        "1127": "bash -c ps",
+        "1133": "ps -aux"
+    },
+    "auth-c5944fbbf-cktr8": {
+        "160562": "sun.tools.jps.Jps",
+        "6": "com.databricks.auth.server.service.AuthService"
+    },
+    "auth-high-qps-6c786dd5b9-9wvj9": {
+        "159922": "sun.tools.jps.Jps",
+        "7": "com.databricks.auth.server.service.AuthService"
+    },
+    "auth-v2-74df99ddbc-89jwg": {
+        "2037": "sun.tools.jps.Jps",
+        "6": "com.databricks.authv2.server.AuthV2Service"
+    },
+    "automl-895b5bb78-pxlxn": {
+        "7": "com.databricks.automl.AutomlService",
+        "2060": "sun.tools.jps.Jps"
+    },
+    "billing-ingester-5584b47b6c-fbn2d": {
+        "2064": "sun.tools.jps.Jps",
+        "7": "com.databricks.billingingester.BillingIngesterService"
+    },
+    "cloudmock-794bc6696b-h2lkv": {
+        "1956": "sun.tools.jps.Jps",
+        "7": "com.databricks.cloudmock.CloudmockService"
+    },
+    "cluster-events-5b4fdfb55d-z57mw": {
+        "1939": "sun.tools.jps.Jps",
+        "7": "com.databricks.clusterevents.ClusterEventsService"
+    },
+    "cluster-identity-7dc49d5fc4-fmq7f": {
+        "2305": "sun.tools.jps.Jps",
+        "6": "com.databricks.clusteridentity.ClusterIdentityService"
+    },
+    "cluster-libraries-89855b5cc-zjv9z": {
+        "7": "com.databricks.clusterlibraries.ClusterLibrariesService",
+        "122444": "sun.tools.jps.Jps"
+    },
+    "cluster-manager-k8s-57f4d497bc-k6m4c": {
+        "2849": "sun.tools.jps.Jps",
+        "7": "com.databricks.clustermanagerk8s.ClusterManagerK8sService"
+    },
+    "cluster-metrics-6865bbf9f5-4z994": {
+        "7": "com.databricks.clustermetrics.ClusterMetricsService",
+        "2121": "sun.tools.jps.Jps"
+    },
+    "cluster-monitor-0": {
+        "32353": "sun.tools.jps.Jps",
+        "7": "com.databricks.clustermonitor.ClusterMonitorService"
+    },
+    "clusters-database-monitor-56c5f797c7-t5d22": {
+        "433": "sun.tools.jps.Jps",
+        "7": "com.databricks.clustersdatabasemonitor.ClustersDatabaseMonitorService"
+    },
+    "cmapiserver-695cbbc467-zjddt": {
+        "285588": "sun.tools.jps.Jps",
+        "6": "com.databricks.backend.cmapiserver.CmApiRpcServer"
+    },
+    "cons-delegate-76586f55c-b6g62": {
+        "8": "com.databricks.backend.delegate.DelegateRPCServer",
+        "5258": "sun.tools.jps.Jps"
+    },
+    "cons-jobs-0": {
+        "7": "com.databricks.jobs.core.main.ElasticSparkService",
+        "240260": "sun.tools.jps.Jps"
+    },
+    "cons-jobs-proxy-77dc498f9d-48v99": {
+        "921": "sun.tools.jps.Jps"
+    },
+    "cons-jobs-runner-9766899db-9fdjh": {
+        "6": "com.databricks.elasticspark.runner.JobRunnerMain",
+        "239224": "sun.tools.jps.Jps"
+    },
+    "cons-manager-0": {
+        "323": "com.databricks.backend.manager.ClusterManagerRPCServer",
+        "9767": "sun.tools.jps.Jps"
+    },
+    "cons-projects-0": {
+        "3413": "sun.tools.jps.Jps",
+        "7": "com.databricks.projects.Projects"
+    },
+    "cons-s3-commit-84dd85fcf6-bmxzx": {
+        "4519": "com.databricks.s3commit.S3CommitService",
+        "4671": "sun.tools.jps.Jps"
+    },
+    "cons-shs-8589bdf6c6-rddhj": {
+        "2052": "sun.tools.jps.Jps",
+        "7": "com.databricks.sparkhistoryserver.SparkHistoryServerServiceMain"
+    },
+    "cons-sisyphus-74ddbdc456-99g8v": {
+        "160886": "com.databricks.backend.daemon.data.server.meta.MetaService",
+        "161469": "sun.tools.jps.Jps"
+    },
+    "cons-webapp-0": {
+        "8": "com.databricks.webapp.WebappService",
+        "201899": "sun.tools.jps.Jps"
+    },
+    "consul-0": {
+        "223425": "sun.tools.jps.Jps"
+    },
+    "credentials-manager-5b99dc45b5-dl6r6": {
+        "6": "com.databricks.credentialsmanager.CredentialsManagerService",
+        "2761": "sun.tools.jps.Jps"
+    },
+    "data-monitoring-76d6b96c54-zw5ch": {
+        "112": "com.databricks.datamonitoring.DataMonitoringService",
+        "2139": "sun.tools.jps.Jps"
+    },
+    "data-plane-router-578cfb7d9f-whs7z": {
+        "7": "com.databricks.dataplanerouter.DataPlaneRouterService",
+        "3274": "sun.tools.jps.Jps"
+    },
+    "delta-pipelines-74878b6ff5-qctqv": {
+        "2192": "sun.tools.jps.Jps",
+        "78": "com.databricks.pipelines.deployment.server.DeltaPipelinesRPCServer"
+    },
+    "delta-pipelines-manager-758cc8cbd-jjgpf": {
+        "81": "com.databricks.pipelines.deployment.server.DeltaPipelinesRPCServer",
+        "2473": "sun.tools.jps.Jps"
+    },
+    "dicer-assigner-5f765f7bc7-2c2xc": {
+        "7": "com.databricks.dicer.assigner.AssignerMain",
+        "2105": "sun.tools.jps.Jps"
+    },
+    "dicer-etcd-0": {
+        "424": "sun.tools.jps.Jps"
+    },
+    "directory-599fdd8684-dk7bz": {
+        "83": "com.databricks.directory.DirectoryService",
+        "2943": "sun.tools.jps.Jps"
+    },
+    "dummyservice-b9d44d4cb-6kr6z": {
+        "7": "com.databricks.dummyservice.DummyServiceMain",
+        "1928": "sun.tools.jps.Jps"
+    },
+    "email-notifications-b4877896f-48fnn": {
+        "7": "com.databricks.emailnotifications.EmailNotificationsService",
+        "2008": "sun.tools.jps.Jps"
+    },
+    "endpoint-discovery-service-548f7fd597-h64pw": {
+        "2132": "sun.tools.jps.Jps",
+        "7": "com.databricks.endpointdiscoveryservice.server.EndpointDiscoveryServiceServer"
+    },
+    "feature-store-5bcd995f68-8c8tf": {
+        "3141": "sun.tools.jps.Jps",
+        "74": "com.databricks.featurestore.FeatureStoreService"
+    },
+    "graphql-6bcc6c57bc-876cs": {
+        "2198": "sun.tools.jps.Jps",
+        "7": "com.databricks.graphql.core.Graphql"
+    },
+    "groot-5c9bc8b6c8-w8db6": {
+        "2036": "sun.tools.jps.Jps",
+        "7": "com.databricks.groot.GrootService"
+    },
+    "ingestion-5568dcbd69-ktjvn": {
+        "6": "com.databricks.ingestion.IngestionService",
+        "2039": "sun.tools.jps.Jps"
+    },
+    "instance-manager-5d875f84d8-f2ts8": {
+        "7": "com.databricks.backend.instancemanager.InstanceManagerRPCServer",
+        "4573": "sun.tools.jps.Jps"
+    },
+    "instance-pool-659b447f59-bwndl": {
+        "3344": "sun.tools.jps.Jps",
+        "7": "com.databricks.backend.instancepool.InstancePoolRPCServer"
+    },
+    "jobs-api-776b6dfbb5-fcspg": {
+        "147": "com.databricks.jobsapi.JobsApiService",
+        "240967": "sun.tools.jps.Jps"
+    },
+    "jobs-housekeeper-9c7596dbc-mgm6n": {
+        "4531": "sun.tools.jps.Jps",
+        "7": "com.databricks.jobshousekeeper.JobsHousekeeperService"
+    },
+    "jobs-observability-5f5f74ddc-rs2vw": {
+        "6": "com.databricks.jobsobservability.JobsObservabilityService",
+        "5725": "sun.tools.jps.Jps"
+    },
+    "jobs-ops-7fcf6b7f86-lcxhp": {
+        "4322": "sun.tools.jps.Jps",
+        "134": "com.databricks.jobsops.JobsOpsService"
+    },
+    "jobs-orchestrator-74c5f446c8-5bf7f": {
+        "2772": "com.databricks.jobsorchestrator.JobsOrchestratorService",
+        "4444": "sun.tools.jps.Jps"
+    },
+    "kafka-consumer-proxy-887d7f7b-lcfwb": {
+        "6": "com.databricks.kafkaconsumerproxy.KafkaConsumerProxyService",
+        "2333": "sun.tools.jps.Jps"
+    },
+    "kafka-producer-proxy-5c67f8d7d7-tv644": {
+        "7": "com.databricks.kafkaproducerproxy.KafkaProducerProxyService",
+        "1931": "sun.tools.jps.Jps"
+    },
+    "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s": {
+        "1": "/usr/bin/tini -w -e",
+        "29": "java -Dlog4j2.configurationFile=file:/opt/topic-operator/custom-config/log4j2.properties -Dvertx.cacheDirBase=/tmp/vertx-cache",
+        "2279": "bash -c ps",
+        "2285": "ps -aux"
+    },
+    "kafka-test-shard-kafka-0": {
+        "64": "kafka.Kafka",
+        "120037": "jdk.jcmd/sun.tools.jps.Jps"
+    },
+    "kafka-test-shard-zookeeper-0": {
+        "71": "org.apache.zookeeper.server.quorum.QuorumPeerMain",
+        "143963": "jdk.jcmd/sun.tools.jps.Jps"
+    },
+    "key-manager-594cb6458b-cxb42": {
+        "3772": "sun.tools.jps.Jps",
+        "3231": "com.databricks.keymanager.KeyManagerService"
+    },
+    "lakeview-config-5c9d8f57f7-q4f8q": {
+        "3274": "sun.tools.jps.Jps",
+        "990": "com.databricks.lakeviewconfig.LakeviewConfigService"
+    },
+    "lakeview-query-6f59dd4c7-484gq": {
+        "7": "com.databricks.lakeviewquery.LakeviewQueryService",
+        "2029": "sun.tools.jps.Jps"
+    },
+    "legacy-handlers-55df96d6f6-h8dtr": {
+        "2050": "sun.tools.jps.Jps",
+        "7": "com.databricks.legacyhandlers.LegacyHandlersService"
+    },
+    "lethe-proxy-mt-5496c64586-4gs6n": {
+        "1106": "sun.tools.jps.Jps"
+    },
+    "maintenance-auto-compute-54579ddccd-wbkwn": {
+        "3202": "sun.tools.jps.Jps",
+        "157": "com.databricks.maintenanceautocompute.MaintenanceAutoComputeService"
+    },
+    "managed-catalog-b5685957-sk28b": {
+        "5553": "sun.tools.jps.Jps",
+        "7": "com.databricks.managedcatalog.ManagedCatalogService"
+    },
+    "marketplace-7f7778d65c-kbwdw": {
+        "6": "com.databricks.marketplace.MarketplaceService",
+        "2041": "sun.tools.jps.Jps"
+    },
+    "marketplace-metadata-7dc7b7d5b7-69z4h": {
+        "1088": "com.databricks.marketplacemetadata.MarketplaceMetadataService",
+        "4032": "sun.tools.jps.Jps"
+    },
+    "metadata-lineage-api-server-6d9b8c485f-x5qgn": {
+        "29352": "sun.tools.jps.Jps",
+        "667": "com.databricks.metadatalineageapiserver.MetadataLineageApiServerService"
+    },
+    "mlflow-64c5cd6db-d6qfg": {
+        "5831": "sun.tools.jps.Jps",
+        "281": "com.databricks.mlflow.Mlflow"
+    },
+    "mlflow-serving-5d6f9ccbc9-q6ksh": {
+        "7": "com.databricks.mlflow.serving.ServingMain",
+        "2767": "sun.tools.jps.Jps"
+    },
+    "model-serving-api-5b7d659b6f-l6rw2": {
+        "3889": "sun.tools.jps.Jps",
+        "409": "com.databricks.modelservingapi.ModelServingApiService"
+    },
+    "model-serving-proxy-667ccdb58f-pvrsl": {
+        "5251": "sun.tools.jps.Jps",
+        "7": "com.databricks.modelservingproxy.ModelServingProxyService"
+    },
+    "onboarding-7b89897895-p2sds": {
+        "3302": "sun.tools.jps.Jps",
+        "1006": "com.databricks.onboarding.OnboardingService"
+    },
+    "partnerhub-bb8d7f7fb-6t2fz": {
+        "2693": "sun.tools.jps.Jps",
+        "7": "com.databricks.partnerhub.PartnerhubService"
+    },
+    "projects-proxy-67bf648bf8-rjhdj": {
+        "1": "/usr/local/bin/envoy --config-path /databricks/envoy-config/envoy-config-197e6ec4afeb2a7f7b99b11d71cb381f",
+        "12": "rsyslogd",
+        "16": "cron",
+        "150": "bash -c ps",
+        "156": "ps -aux"
+    },
+    "ratelimit-v2-66655f9546-xpznl": {
+        "6": "com.databricks.ratelimitv2.RatelimitV2Service",
+        "2013": "sun.tools.jps.Jps"
+    },
+    "ratelimit-v2-redis-75b968b698-9vpzx": {
+        "32488": "sun.tools.jps.Jps"
+    },
+    "redash-async-d5b464c6-trj5r": {
+        "541": "sun.tools.jps.Jps"
+    },
+    "redash-b6777b664-bsnkp": {
+        "549": "sun.tools.jps.Jps"
+    },
+    "redash-jobs-7bcbd49999-dwq9p": {
+        "563": "sun.tools.jps.Jps"
+    },
+    "redash-scheduler-6758fd9647-phdcr": {
+        "37290": "sun.tools.jps.Jps"
+    },
+    "redash-v2-679b79c457-4zx4q": {
+        "2945": "sun.tools.jps.Jps",
+        "7": "com.databricks.redashv2.RedashV2Service"
+    },
+    "redash-worker-8f75c7b45-69b8m": {
+        "53911": "sun.tools.jps.Jps"
+    },
+    "release-test-service-848f74484d-z84tm": {
+        "1986": "sun.tools.jps.Jps",
+        "6": "com.databricks.releasetestservice.ReleaseTestServiceService"
+    },
+    "route-discovery-service-7f455df6c9-k7stz": {
+        "7": "com.databricks.routediscoveryservice.RouteDiscoveryServiceMain",
+        "2809": "sun.tools.jps.Jps"
+    },
+    "secret-manager-78c675f8cd-ncz7x": {
+        "170": "com.databricks.secretmanager.SecretManagerService",
+        "5500": "sun.tools.jps.Jps"
+    },
+    "serving-scheduler-8b5d548c-wwz2v": {
+        "1989": "sun.tools.jps.Jps",
+        "78": "com.databricks.servingscheduler.ServingSchedulerService"
+    },
+    "settings-policy-69d99d586f-9v924": {
+        "2886": "sun.tools.jps.Jps",
+        "830": "com.databricks.settingspolicy.SettingsPolicyService"
+    },
+    "softclient-74bcfcd4f8-kw2n9": {
+        "2116": "sun.tools.jps.Jps",
+        "8": "com.databricks.softstore.softclient.SoftclientMain"
+    },
+    "softstore-storelet-0": {
+        "7": "com.databricks.softstore.storelet.StoreletMain",
+        "2159": "sun.tools.jps.Jps"
+    },
+    "spark-connect-router-8f7486d9c-4vqrr": {
+        "7": "com.databricks.sparkconnectrouter.SparkConnectRouterService",
+        "2041": "sun.tools.jps.Jps"
+    },
+    "sql-cloud-results-gc-546d9d7c49-82tmk": {
+        "6": "com.databricks.sqlcloudresultsgc.SqlCloudResultsGcService",
+        "2107": "sun.tools.jps.Jps"
+    },
+    "sql-exec-api-66889b5694-746nm": {
+        "2032": "sun.tools.jps.Jps",
+        "6": "com.databricks.sqlexecapi.SqlExecApiService"
+    },
+    "sqlacl-sisyphus-c4fb4d997-cpmxz": {
+        "1972": "sun.tools.jps.Jps",
+        "6": "com.databricks.backend.daemon.data.server.meta.MetaService"
+    },
+    "sqlgateway-history-67d585ff87-gk7d7": {
+        "4689": "sun.tools.jps.Jps",
+        "87": "com.databricks.sqlgateway.history.HistoryService"
+    },
+    "sqlgateway-history-db-admin-5c6cdbf4b7-665qf": {
+        "441": "com.databricks.sqlgateway.history.historydbadmin.SqlgatewayHistoryDbAdminService",
+        "2441": "sun.tools.jps.Jps"
+    },
+    "sqlgateway-proxy-6d746ff9c9-9l6nq": {
+        "2387": "sun.tools.jps.Jps",
+        "7": "com.databricks.sqlgateway.proxy.ProxyService"
+    },
+    "sqlgateway-scheduler-0": {
+        "73860": "sun.tools.jps.Jps",
+        "7": "com.databricks.sqlgateway.scheduler.service.SchedulerService"
+    },
+    "strimzi-cluster-operator-5b55f5b6-qvmjl": {
+        "1": "/usr/bin/tini -w -e",
+        "12": "java -Dlog4j2.configurationFile=file:/opt/strimzi/custom-config/log4j2.properties -Dvertx.cacheDirBase=/tmp/vertx-cache",
+        "7633": "bash -c ps",
+        "7639": "ps -aux"
+    },
+    "test-shard-local-database-64dbd96db6-lj5kn": {},
+    "uc-model-registry-c6cc85977-4qt87": {
+        "2163": "sun.tools.jps.Jps",
+        "6": "com.databricks.ucmodelregistry.UcModelRegistryService"
+    },
+    "ui-555774c89b-nwcn9": {
+        "6": "com.databricks.ui.UiService",
+        "6767": "sun.tools.jps.Jps"
+    },
+    "user-activity-7c96cb868d-9gnkl": {
+        "3605": "sun.tools.jps.Jps",
+        "1325": "com.databricks.useractivity.UserActivityService"
+    },
+    "webhook-notifications-859444dcd7-ndmsq": {
+        "7": "com.databricks.webhooknotifications.WebhookNotificationsService",
+        "3005": "sun.tools.jps.Jps"
+    },
+    "workspace-files-gc-65475f8b68-swphd": {
+        "1958": "sun.tools.jps.Jps",
+        "6": "com.databricks.workspacefilesgc.WorkspaceFilesGcService"
+    }
+}

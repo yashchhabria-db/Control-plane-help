@@ -2,7 +2,6 @@
     "access-control-78c6d875b8-rk98n": {
         "pod_ip": "10.2.236.15",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "5678",
             "4051",
@@ -40,7 +39,7 @@
                 "10.2.236.15:7777",
                 [
                     "10.20.9.44:56510",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -49,7 +48,7 @@
                 "10.2.236.15:7777",
                 [
                     "10.20.9.44:41742",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -289,12 +288,12 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "acl-manager-867cc96fcc-d2p49": {
         "pod_ip": "10.2.236.16",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "39442",
             "4051",
@@ -372,12 +371,12 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "apiproxy-68d6bc64fc-88tpk": {
         "pod_ip": "10.2.211.115",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "7080",
             "9643",
@@ -1226,12 +1225,12 @@
         "outgoing_connected_service_names": [
             "endpoint-discovery-service-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "auth-c5944fbbf-cktr8": {
         "pod_ip": "10.2.152.169",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "5290",
             "6000",
@@ -1851,12 +1850,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "auth-high-qps-6c786dd5b9-9wvj9": {
         "pod_ip": "10.2.191.184",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "7777",
             "5290",
@@ -1880,7 +1879,7 @@
                 "10.2.191.184:7777",
                 [
                     "10.20.9.181:48466",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -1983,12 +1982,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "auth-v2-74df99ddbc-89jwg": {
         "pod_ip": "10.2.152.170",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "4051",
             "443",
@@ -2000,7 +1999,7 @@
                 "10.2.152.170:7777",
                 [
                     "10.20.10.162:37936",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2009,7 +2008,7 @@
                 "10.2.152.170:7777",
                 [
                     "10.20.10.162:39172",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2018,7 +2017,7 @@
                 "10.2.152.170:7777",
                 [
                     "10.20.10.162:56128",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2027,7 +2026,7 @@
                 "10.2.152.170:7777",
                 [
                     "10.20.10.162:39206",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2036,7 +2035,7 @@
                 "10.2.152.170:7777",
                 [
                     "10.20.10.162:39200",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2045,7 +2044,7 @@
                 "10.2.152.170:7777",
                 [
                     "10.20.10.162:55074",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2054,7 +2053,7 @@
                 "10.2.152.170:7777",
                 [
                     "10.20.10.162:55076",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2063,7 +2062,7 @@
                 "10.2.152.170:7777",
                 [
                     "10.20.10.162:56136",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2073,12 +2072,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "automl-895b5bb78-pxlxn": {
         "pod_ip": "10.2.211.116",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "7777",
             "5678",
@@ -2092,7 +2091,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:41668",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2101,7 +2100,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:41648",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2110,7 +2109,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:48846",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2119,7 +2118,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:41670",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2128,7 +2127,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:48872",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2137,7 +2136,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:51366",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2146,7 +2145,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:45860",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2155,7 +2154,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:51368",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2164,7 +2163,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:48850",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2173,7 +2172,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:42838",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2182,7 +2181,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:42846",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2191,7 +2190,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:45864",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2200,7 +2199,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:44702",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2209,7 +2208,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:46122",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2218,7 +2217,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:46128",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2227,7 +2226,7 @@
                 "10.2.211.116:7777",
                 [
                     "10.20.11.81:48864",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2249,12 +2248,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "billing-ingester-5584b47b6c-fbn2d": {
         "pod_ip": "10.2.61.248",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "7777",
             "5678",
@@ -2268,7 +2267,7 @@
                 "10.2.61.248:7777",
                 [
                     "10.20.11.150:54360",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2277,7 +2276,7 @@
                 "10.2.61.248:7777",
                 [
                     "10.20.11.150:56462",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2286,7 +2285,7 @@
                 "10.2.61.248:7777",
                 [
                     "10.20.11.150:36278",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2295,7 +2294,7 @@
                 "10.2.61.248:7777",
                 [
                     "10.20.11.150:36080",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2317,12 +2316,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cloudmock-794bc6696b-h2lkv": {
         "pod_ip": "10.2.12.179",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "4051",
             "18426",
@@ -2359,12 +2358,12 @@
         "outgoing_connected_service_names": [],
         "outgoing_connected_pod_names": [
             "kafka-test-shard-kafka-0"
-        ]
+        ],
+        "pid": []
     },
     "cluster-events-5b4fdfb55d-z57mw": {
         "pod_ip": "10.2.179.8",
         "node_ip": "10.20.9.223",
-        "pod_internal_ec2_ip": "ip-10-20-9-223.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -2376,12 +2375,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cluster-identity-7dc49d5fc4-fmq7f": {
         "pod_ip": "10.2.12.180",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "7777",
             "9900",
@@ -2407,12 +2406,12 @@
         "outgoing_connected_service_names": [
             "directory-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cluster-libraries-89855b5cc-zjv9z": {
         "pod_ip": "10.2.61.249",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "61801",
             "4051",
@@ -2477,12 +2476,12 @@
             "cmapiserver-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cluster-manager-k8s-57f4d497bc-k6m4c": {
         "pod_ip": "10.2.236.17",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "10086",
             "4051",
@@ -2631,12 +2630,12 @@
         ],
         "outgoing_connected_pod_names": [
             "kafka-test-shard-kafka-0"
-        ]
+        ],
+        "pid": []
     },
     "cluster-metrics-6865bbf9f5-4z994": {
         "pod_ip": "10.2.179.9",
         "node_ip": "10.20.9.223",
-        "pod_internal_ec2_ip": "ip-10-20-9-223.ec2.internal",
         "listening_ports": [
             "5678",
             "4051",
@@ -2650,7 +2649,7 @@
                 "10.2.179.9:7777",
                 [
                     "10.20.9.223:57244",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2659,7 +2658,7 @@
                 "10.2.179.9:7777",
                 [
                     "10.20.9.223:39188",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2668,7 +2667,7 @@
                 "10.2.179.9:7777",
                 [
                     "10.20.9.223:43952",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2677,7 +2676,7 @@
                 "10.2.179.9:7777",
                 [
                     "10.20.9.223:35884",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2686,7 +2685,7 @@
                 "10.2.179.9:7777",
                 [
                     "10.20.9.223:35906",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2695,7 +2694,7 @@
                 "10.2.179.9:7777",
                 [
                     "10.20.9.223:43970",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -2727,12 +2726,12 @@
             "cmapiserver-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cluster-monitor-0": {
         "pod_ip": "10.2.62.1",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "25936",
             "4051",
@@ -2787,12 +2786,12 @@
             "directory-service",
             "cmapiserver-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "clusters-database-monitor-56c5f797c7-t5d22": {
         "pod_ip": "10.2.191.185",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "7777",
             "20402",
@@ -3067,12 +3066,12 @@
             "test-shard-local-database-service",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cmapiserver-695cbbc467-zjddt": {
         "pod_ip": "10.2.211.117",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "8888",
             "5050",
@@ -3112,7 +3111,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:47766",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3130,7 +3129,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:54998",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3148,7 +3147,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:39396",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3157,7 +3156,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:59430",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3166,7 +3165,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:56078",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3193,7 +3192,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:59428",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3202,7 +3201,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:55000",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3211,7 +3210,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:56080",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3229,7 +3228,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:39398",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3238,7 +3237,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:51500",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3247,7 +3246,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:51502",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3283,7 +3282,7 @@
                 "10.2.211.117:8888",
                 [
                     "10.20.11.81:47762",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3504,12 +3503,12 @@
             "directory-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-delegate-76586f55c-b6g62": {
         "pod_ip": "10.2.152.171",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "4051",
             "5555",
@@ -3545,12 +3544,12 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-jobs-0": {
         "pod_ip": "10.2.62.2",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "7777"
         ],
@@ -3560,7 +3559,7 @@
                 "10.2.62.2:7777",
                 [
                     "10.20.11.150:49136",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3569,7 +3568,7 @@
                 "10.2.62.2:7777",
                 [
                     "10.20.11.150:56766",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3578,7 +3577,7 @@
                 "10.2.62.2:7777",
                 [
                     "10.20.11.150:36582",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3588,12 +3587,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-jobs-proxy-77dc498f9d-48v99": {
         "pod_ip": "10.2.211.118",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "443",
             "7907",
@@ -3605,12 +3604,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-jobs-runner-9766899db-9fdjh": {
         "pod_ip": "10.2.211.119",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "7777"
         ],
@@ -3645,7 +3644,7 @@
                 "10.2.211.119:7777",
                 [
                     "10.20.11.81:49302",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3654,7 +3653,7 @@
                 "10.2.211.119:7777",
                 [
                     "10.20.11.81:41634",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -3884,12 +3883,12 @@
             "test-shard-local-database-service",
             "cmapiserver-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-manager-0": {
         "pod_ip": "10.2.12.190",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "5050",
             "5051",
@@ -5569,12 +5568,12 @@
             "instance-manager-service",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-projects-0": {
         "pod_ip": "10.2.191.192",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "4051",
             "3412",
@@ -5605,7 +5604,7 @@
                 "10.2.191.192:7777",
                 [
                     "10.20.9.181:58342",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -5614,7 +5613,7 @@
                 "10.2.191.192:7777",
                 [
                     "10.20.9.181:46796",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -5623,7 +5622,7 @@
                 "10.2.191.192:7777",
                 [
                     "10.20.9.181:58340",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -5763,12 +5762,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-s3-commit-84dd85fcf6-bmxzx": {
         "pod_ip": "10.2.211.120",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "7777",
             "7500",
@@ -5794,12 +5793,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-shs-8589bdf6c6-rddhj": {
         "pod_ip": "10.2.236.18",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "4051",
             "5431",
@@ -5812,12 +5811,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-sisyphus-74ddbdc456-99g8v": {
         "pod_ip": "10.2.211.121",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -5853,12 +5852,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "cons-webapp-0": {
         "pod_ip": "10.2.64.46",
         "node_ip": "10.20.8.172",
-        "pod_internal_ec2_ip": "ip-10-20-8-172.ec2.internal",
         "listening_ports": [
             "8080",
             "4051",
@@ -6024,7 +6023,7 @@
                 "10.2.64.46:7777",
                 [
                     "10.20.8.172:39154",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -6033,7 +6032,7 @@
                 "10.2.64.46:7777",
                 [
                     "10.20.8.172:39168",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -6051,7 +6050,7 @@
                 "10.2.64.46:7777",
                 [
                     "10.20.8.172:45134",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -7465,12 +7464,12 @@
         ],
         "outgoing_connected_pod_names": [
             "cons-webapp-0"
-        ]
+        ],
+        "pid": []
     },
     "consul-0": {
         "pod_ip": "10.2.242.208",
         "node_ip": "10.20.8.11",
-        "pod_internal_ec2_ip": "ip-10-20-8-11.ec2.internal",
         "listening_ports": [
             "8500",
             "8600",
@@ -7966,12 +7965,12 @@
         "outgoing_connected_service_names": [],
         "outgoing_connected_pod_names": [
             "consul-0"
-        ]
+        ],
+        "pid": []
     },
     "credentials-manager-5b99dc45b5-dl6r6": {
         "pod_ip": "10.2.50.106",
         "node_ip": "10.20.9.127",
-        "pod_internal_ec2_ip": "ip-10-20-9-127.ec2.internal",
         "listening_ports": [
             "31515",
             "7777",
@@ -8148,12 +8147,12 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "data-monitoring-76d6b96c54-zw5ch": {
         "pod_ip": "10.2.12.181",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "7777",
             "5678",
@@ -8167,7 +8166,7 @@
                 "10.2.12.181:7777",
                 [
                     "10.20.11.183:35748",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8176,7 +8175,7 @@
                 "10.2.12.181:7777",
                 [
                     "10.20.11.183:59266",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8185,7 +8184,7 @@
                 "10.2.12.181:7777",
                 [
                     "10.20.11.183:46188",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8194,7 +8193,7 @@
                 "10.2.12.181:7777",
                 [
                     "10.20.11.183:33600",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8203,7 +8202,7 @@
                 "10.2.12.181:7777",
                 [
                     "10.20.11.183:33622",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8212,7 +8211,7 @@
                 "10.2.12.181:7777",
                 [
                     "10.20.11.183:42616",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8221,7 +8220,7 @@
                 "10.2.12.181:7777",
                 [
                     "10.20.11.183:60444",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8243,12 +8242,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "data-plane-router-578cfb7d9f-whs7z": {
         "pod_ip": "10.2.64.42",
         "node_ip": "10.20.8.172",
-        "pod_internal_ec2_ip": "ip-10-20-8-172.ec2.internal",
         "listening_ports": [
             "39999",
             "7777"
@@ -8273,12 +8272,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "delta-pipelines-74878b6ff5-qctqv": {
         "pod_ip": "10.2.179.10",
         "node_ip": "10.20.9.223",
-        "pod_internal_ec2_ip": "ip-10-20-9-223.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -8315,12 +8314,12 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "delta-pipelines-manager-758cc8cbd-jjgpf": {
         "pod_ip": "10.2.12.182",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "7777",
             "6788",
@@ -8368,12 +8367,12 @@
             "cmapiserver-service",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "dicer-assigner-5f765f7bc7-2c2xc": {
         "pod_ip": "10.2.12.183",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "7777",
             "4051",
@@ -8387,7 +8386,7 @@
                 "10.2.12.183:7777",
                 [
                     "10.20.11.183:48894",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8396,7 +8395,7 @@
                 "10.2.12.183:7777",
                 [
                     "10.20.11.183:38770",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8405,7 +8404,7 @@
                 "10.2.12.183:7777",
                 [
                     "10.20.11.183:57928",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8414,7 +8413,7 @@
                 "10.2.12.183:7777",
                 [
                     "10.20.11.183:41794",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8432,7 +8431,7 @@
                 "10.2.12.183:7777",
                 [
                     "10.20.11.183:33872",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8450,7 +8449,7 @@
                 "10.2.12.183:7777",
                 [
                     "10.20.11.183:43366",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8459,7 +8458,7 @@
                 "10.2.12.183:7777",
                 [
                     "10.20.11.183:36032",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8468,7 +8467,7 @@
                 "10.2.12.183:7777",
                 [
                     "10.20.11.183:48896",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8481,12 +8480,12 @@
         ],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "dicer-etcd-0": {
         "pod_ip": "10.2.12.191",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "7777",
             "2379",
@@ -8501,12 +8500,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "directory-599fdd8684-dk7bz": {
         "pod_ip": "10.2.211.122",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "443",
             "7777",
@@ -8564,7 +8563,7 @@
                 "10.2.211.122:7907",
                 [
                     "10.20.11.81:36320",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8591,7 +8590,7 @@
                 "10.2.211.122:7777",
                 [
                     "10.20.11.81:40598",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8600,7 +8599,7 @@
                 "10.2.211.122:7777",
                 [
                     "10.20.11.81:43736",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8627,7 +8626,7 @@
                 "10.2.211.122:7907",
                 [
                     "10.20.11.81:36200",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8636,7 +8635,7 @@
                 "10.2.211.122:7777",
                 [
                     "10.20.11.81:40610",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8645,7 +8644,7 @@
                 "10.2.211.122:7907",
                 [
                     "10.20.11.81:50818",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8663,7 +8662,7 @@
                 "10.2.211.122:7777",
                 [
                     "10.20.11.81:38202",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8672,7 +8671,7 @@
                 "10.2.211.122:7907",
                 [
                     "10.20.11.81:49728",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8681,7 +8680,7 @@
                 "10.2.211.122:7777",
                 [
                     "10.20.11.81:44888",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8699,7 +8698,7 @@
                 "10.2.211.122:7907",
                 [
                     "10.20.11.81:60458",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8708,7 +8707,7 @@
                 "10.2.211.122:7777",
                 [
                     "10.20.11.81:38198",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8726,7 +8725,7 @@
                 "10.2.211.122:7777",
                 [
                     "10.20.11.81:38972",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8735,7 +8734,7 @@
                 "10.2.211.122:7777",
                 [
                     "10.20.11.81:43734",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8744,7 +8743,7 @@
                 "10.2.211.122:7907",
                 [
                     "10.20.11.81:39582",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -8780,7 +8779,7 @@
                 "10.2.211.122:7777",
                 [
                     "10.20.11.81:44894",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9048,12 +9047,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "dummyservice-b9d44d4cb-6kr6z": {
         "pod_ip": "10.2.191.186",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "38686",
             "7777"
@@ -9064,12 +9063,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "email-notifications-b4877896f-48fnn": {
         "pod_ip": "10.2.61.250",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -9096,12 +9095,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "endpoint-discovery-service-548f7fd597-h64pw": {
         "pod_ip": "10.2.61.251",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "4051",
             "11000",
@@ -9125,7 +9124,7 @@
                 "10.2.61.251:7777",
                 [
                     "10.20.11.150:52604",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9134,7 +9133,7 @@
                 "10.2.61.251:7777",
                 [
                     "10.20.11.150:52600",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9156,12 +9155,12 @@
             ]
         ],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "feature-store-5bcd995f68-8c8tf": {
         "pod_ip": "10.2.236.19",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "7777",
             "30123",
@@ -9289,12 +9288,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "graphql-6bcc6c57bc-876cs": {
         "pod_ip": "10.2.179.11",
         "node_ip": "10.20.9.223",
-        "pod_internal_ec2_ip": "ip-10-20-9-223.ec2.internal",
         "listening_ports": [
             "3000",
             "3001",
@@ -9323,7 +9322,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:53992",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9332,7 +9331,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:53974",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9341,7 +9340,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:33074",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9350,7 +9349,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:49898",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9359,7 +9358,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:34748",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9377,7 +9376,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:53972",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9395,7 +9394,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:49886",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9404,7 +9403,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:49802",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9413,7 +9412,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:34760",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9422,7 +9421,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:51938",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9431,7 +9430,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:51940",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9440,7 +9439,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:51968",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9449,7 +9448,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:49888",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9458,7 +9457,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:33054",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9467,7 +9466,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:33052",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9476,7 +9475,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:49806",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9485,7 +9484,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:49788",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9494,7 +9493,7 @@
                 "10.2.179.11:3001",
                 [
                     "10.20.9.223:34756",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9566,12 +9565,12 @@
         "outgoing_connected_pod_names": [
             "graphql-6bcc6c57bc-876cs",
             "kafka-test-shard-kafka-0"
-        ]
+        ],
+        "pid": []
     },
     "groot-5c9bc8b6c8-w8db6": {
         "pod_ip": "10.2.236.20",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "7777",
             "5678",
@@ -9585,7 +9584,7 @@
                 "10.2.236.20:7777",
                 [
                     "10.20.9.44:58086",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9594,7 +9593,7 @@
                 "10.2.236.20:7777",
                 [
                     "10.20.9.44:58084",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9603,7 +9602,7 @@
                 "10.2.236.20:7777",
                 [
                     "10.20.9.44:55356",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9612,7 +9611,7 @@
                 "10.2.236.20:7777",
                 [
                     "10.20.9.44:55368",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9621,7 +9620,7 @@
                 "10.2.236.20:7777",
                 [
                     "10.20.9.44:60022",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9630,7 +9629,7 @@
                 "10.2.236.20:7777",
                 [
                     "10.20.9.44:54692",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9639,7 +9638,7 @@
                 "10.2.236.20:7777",
                 [
                     "10.20.9.44:60010",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9648,7 +9647,7 @@
                 "10.2.236.20:7777",
                 [
                     "10.20.9.44:54710",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9657,7 +9656,7 @@
                 "10.2.236.20:7777",
                 [
                     "10.20.9.44:58100",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9679,12 +9678,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "ingestion-5568dcbd69-ktjvn": {
         "pod_ip": "10.2.179.12",
         "node_ip": "10.20.9.223",
-        "pod_internal_ec2_ip": "ip-10-20-9-223.ec2.internal",
         "listening_ports": [
             "443",
             "7777",
@@ -9698,7 +9697,7 @@
                 "10.2.179.12:7777",
                 [
                     "10.20.9.223:36252",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9707,7 +9706,7 @@
                 "10.2.179.12:7777",
                 [
                     "10.20.9.223:33428",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9716,7 +9715,7 @@
                 "10.2.179.12:7777",
                 [
                     "10.20.9.223:33422",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9725,7 +9724,7 @@
                 "10.2.179.12:7777",
                 [
                     "10.20.9.223:54486",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -9747,12 +9746,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "instance-manager-5d875f84d8-f2ts8": {
         "pod_ip": "10.2.211.123",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "4051",
             "2333",
@@ -10903,12 +10902,12 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "instance-pool-659b447f59-bwndl": {
         "pod_ip": "10.2.152.172",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "7986",
             "4051",
@@ -11135,12 +11134,12 @@
             "test-shard-local-database-service",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "jobs-api-776b6dfbb5-fcspg": {
         "pod_ip": "10.2.179.13",
         "node_ip": "10.20.9.223",
-        "pod_internal_ec2_ip": "ip-10-20-9-223.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -11190,7 +11189,7 @@
                 "10.2.179.13:7777",
                 [
                     "10.20.9.223:33360",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -11539,12 +11538,12 @@
             "cons-auth",
             "cmapiserver-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "jobs-housekeeper-9c7596dbc-mgm6n": {
         "pod_ip": "10.2.12.184",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -11603,7 +11602,7 @@
                 "10.2.12.184:7777",
                 [
                     "10.20.11.183:45724",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -11612,7 +11611,7 @@
                 "10.2.12.184:7777",
                 [
                     "10.20.11.183:45702",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -11621,7 +11620,7 @@
                 "10.2.12.184:7777",
                 [
                     "10.20.11.183:39510",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -11630,7 +11629,7 @@
                 "10.2.12.184:7777",
                 [
                     "10.20.11.183:50700",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -11639,7 +11638,7 @@
                 "10.2.12.184:7777",
                 [
                     "10.20.11.183:43586",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -11648,7 +11647,7 @@
                 "10.2.12.184:7777",
                 [
                     "10.20.11.183:39494",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -11657,7 +11656,7 @@
                 "10.2.12.184:7777",
                 [
                     "10.20.11.183:54136",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -12096,12 +12095,12 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "jobs-observability-5f5f74ddc-rs2vw": {
         "pod_ip": "10.2.61.252",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "5678",
             "4051",
@@ -12170,7 +12169,7 @@
                 "10.2.61.252:7777",
                 [
                     "10.20.11.150:58012",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -12688,12 +12687,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "jobs-ops-7fcf6b7f86-lcxhp": {
         "pod_ip": "10.2.236.21",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "7777",
             "4051",
@@ -12737,7 +12736,7 @@
                 "10.2.236.21:7777",
                 [
                     "10.20.9.44:60618",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -12746,7 +12745,7 @@
                 "10.2.236.21:7777",
                 [
                     "10.20.9.44:56174",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -12755,7 +12754,7 @@
                 "10.2.236.21:7777",
                 [
                     "10.20.9.44:56162",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -12764,7 +12763,7 @@
                 "10.2.236.21:7777",
                 [
                     "10.20.9.44:41982",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -12773,7 +12772,7 @@
                 "10.2.236.21:7777",
                 [
                     "10.20.9.44:60628",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -12782,7 +12781,7 @@
                 "10.2.236.21:7777",
                 [
                     "10.20.9.44:38576",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -13075,12 +13074,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "jobs-orchestrator-74c5f446c8-5bf7f": {
         "pod_ip": "10.2.191.187",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -13116,7 +13115,7 @@
                 "10.2.191.187:7777",
                 [
                     "10.20.9.181:34234",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -13125,7 +13124,7 @@
                 "10.2.191.187:7777",
                 [
                     "10.20.9.181:37072",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -13134,7 +13133,7 @@
                 "10.2.191.187:7777",
                 [
                     "10.20.9.181:37044",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -13143,7 +13142,7 @@
                 "10.2.191.187:7777",
                 [
                     "10.20.9.181:47222",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -13152,7 +13151,7 @@
                 "10.2.191.187:7777",
                 [
                     "10.20.9.181:37422",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -13375,12 +13374,12 @@
             "cons-auth",
             "directory-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "kafka-consumer-proxy-887d7f7b-lcfwb": {
         "pod_ip": "10.2.191.188",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "4051",
             "8084",
@@ -16399,12 +16398,12 @@
         ],
         "outgoing_connected_pod_names": [
             "kafka-test-shard-kafka-0"
-        ]
+        ],
+        "pid": []
     },
     "kafka-producer-proxy-5c67f8d7d7-tv644": {
         "pod_ip": "10.2.236.22",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "5678",
             "4051",
@@ -16430,12 +16429,12 @@
         "outgoing_connected_service_names": [],
         "outgoing_connected_pod_names": [
             "kafka-test-shard-kafka-0"
-        ]
+        ],
+        "pid": []
     },
     "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s": {
         "pod_ip": "10.2.30.77",
         "node_ip": "10.20.10.74",
-        "pod_internal_ec2_ip": "ip-10-20-10-74.ec2.internal",
         "listening_ports": [],
         "ougoing_ports": [],
         "incomming_connections": [],
@@ -16443,12 +16442,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "kafka-test-shard-kafka-0": {
         "pod_ip": "10.2.30.72",
         "node_ip": "10.20.10.74",
-        "pod_internal_ec2_ip": "ip-10-20-10-74.ec2.internal",
         "listening_ports": [
             "9404",
             "9090",
@@ -19324,12 +19323,12 @@
         "outgoing_connected_service_names": [
             "kafka-test-shard-zookeeper-client"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "kafka-test-shard-zookeeper-0": {
         "pod_ip": "10.2.30.65",
         "node_ip": "10.20.10.74",
-        "pod_internal_ec2_ip": "ip-10-20-10-74.ec2.internal",
         "listening_ports": [
             "9404",
             "40833",
@@ -19371,12 +19370,12 @@
         ],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "key-manager-594cb6458b-cxb42": {
         "pod_ip": "10.2.61.253",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "4051",
             "31002",
@@ -19439,7 +19438,7 @@
                 "10.2.61.253:7777",
                 [
                     "10.20.11.150:39804",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -19448,7 +19447,7 @@
                 "10.2.61.253:7777",
                 [
                     "10.20.11.150:45044",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -19911,12 +19910,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "lakeview-config-5c9d8f57f7-q4f8q": {
         "pod_ip": "10.2.179.14",
         "node_ip": "10.20.9.223",
-        "pod_internal_ec2_ip": "ip-10-20-9-223.ec2.internal",
         "listening_ports": [
             "5678",
             "4051",
@@ -19933,7 +19932,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:33852",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -19942,7 +19941,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:44078",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -19951,7 +19950,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:44064",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -19960,7 +19959,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:46616",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -19969,7 +19968,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:32812",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -19978,7 +19977,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:33870",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -19987,7 +19986,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:44048",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -19996,7 +19995,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:33878",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20005,7 +20004,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:60396",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20014,7 +20013,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:60366",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20023,7 +20022,7 @@
                 "10.2.179.14:7777",
                 [
                     "10.20.9.223:43334",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20073,12 +20072,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "lakeview-query-6f59dd4c7-484gq": {
         "pod_ip": "10.2.152.173",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "7777",
             "5678",
@@ -20092,7 +20091,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:52176",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20101,7 +20100,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:51924",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20110,7 +20109,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:48100",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20119,7 +20118,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:52196",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20128,7 +20127,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:54706",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20137,7 +20136,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:51894",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20146,7 +20145,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:43622",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20155,7 +20154,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:51908",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20164,7 +20163,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:43596",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20173,7 +20172,7 @@
                 "10.2.152.173:7777",
                 [
                     "10.20.10.162:52188",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20195,12 +20194,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "legacy-handlers-55df96d6f6-h8dtr": {
         "pod_ip": "10.2.236.23",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "7777",
             "5678"
@@ -20213,7 +20212,7 @@
                 "10.2.236.23:7777",
                 [
                     "10.20.9.44:40886",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20222,7 +20221,7 @@
                 "10.2.236.23:7777",
                 [
                     "10.20.9.44:43760",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20231,7 +20230,7 @@
                 "10.2.236.23:7777",
                 [
                     "10.20.9.44:49048",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20240,7 +20239,7 @@
                 "10.2.236.23:7777",
                 [
                     "10.20.9.44:49074",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20249,7 +20248,7 @@
                 "10.2.236.23:7777",
                 [
                     "10.20.9.44:40892",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20271,12 +20270,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "lethe-proxy-mt-5496c64586-4gs6n": {
         "pod_ip": "10.2.236.24",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "80",
             "443",
@@ -20290,7 +20289,7 @@
                 "10.2.236.24:7778",
                 [
                     "10.20.9.44:43510",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20299,7 +20298,7 @@
                 "10.2.236.24:7778",
                 [
                     "10.20.9.44:39160",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20308,7 +20307,7 @@
                 "10.2.236.24:7778",
                 [
                     "10.20.9.44:43520",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20317,7 +20316,7 @@
                 "10.2.236.24:7778",
                 [
                     "10.20.9.44:38202",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20326,7 +20325,7 @@
                 "10.2.236.24:7778",
                 [
                     "10.20.9.44:39166",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20335,7 +20334,7 @@
                 "10.2.236.24:7778",
                 [
                     "10.20.9.44:46744",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20344,7 +20343,7 @@
                 "10.2.236.24:7778",
                 [
                     "10.20.9.44:39028",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20353,7 +20352,7 @@
                 "10.2.236.24:7778",
                 [
                     "10.20.9.44:43518",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20362,7 +20361,7 @@
                 "10.2.236.24:7778",
                 [
                     "10.20.9.44:39018",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20372,12 +20371,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "maintenance-auto-compute-54579ddccd-wbkwn": {
         "pod_ip": "10.2.211.124",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "5678",
             "4051",
@@ -20404,7 +20403,7 @@
                 "10.2.211.124:7777",
                 [
                     "10.20.11.81:46784",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20413,7 +20412,7 @@
                 "10.2.211.124:7777",
                 [
                     "10.20.11.81:36974",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20422,7 +20421,7 @@
                 "10.2.211.124:7777",
                 [
                     "10.20.11.81:59436",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20431,7 +20430,7 @@
                 "10.2.211.124:7777",
                 [
                     "10.20.11.81:39704",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20440,7 +20439,7 @@
                 "10.2.211.124:7777",
                 [
                     "10.20.11.81:46810",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20449,7 +20448,7 @@
                 "10.2.211.124:7777",
                 [
                     "10.20.11.81:36982",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20458,7 +20457,7 @@
                 "10.2.211.124:7777",
                 [
                     "10.20.11.81:40528",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20467,7 +20466,7 @@
                 "10.2.211.124:7777",
                 [
                     "10.20.11.81:39684",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -20607,12 +20606,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "managed-catalog-b5685957-sk28b": {
         "pod_ip": "10.2.191.189",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "7777",
             "15213",
@@ -21668,12 +21667,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "marketplace-7f7778d65c-kbwdw": {
         "pod_ip": "10.2.12.185",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "7777",
             "23333",
@@ -21689,7 +21688,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:33992",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21698,7 +21697,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:35846",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21707,7 +21706,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:38982",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21716,7 +21715,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:39006",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21725,7 +21724,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:33988",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21734,7 +21733,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:33982",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21743,7 +21742,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:60076",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21752,7 +21751,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:58532",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21761,7 +21760,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:34004",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21770,7 +21769,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:40732",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21779,7 +21778,7 @@
                 "10.2.12.185:7777",
                 [
                     "10.20.11.183:58516",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21801,12 +21800,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "marketplace-metadata-7dc7b7d5b7-69z4h": {
         "pod_ip": "10.2.152.174",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "443",
             "7777",
@@ -21833,7 +21832,7 @@
                 "10.2.152.174:7777",
                 [
                     "10.20.10.162:59026",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21842,7 +21841,7 @@
                 "10.2.152.174:7777",
                 [
                     "10.20.10.162:41676",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21851,7 +21850,7 @@
                 "10.2.152.174:7777",
                 [
                     "10.20.10.162:59008",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21860,7 +21859,7 @@
                 "10.2.152.174:7777",
                 [
                     "10.20.10.162:48938",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21869,7 +21868,7 @@
                 "10.2.152.174:7777",
                 [
                     "10.20.10.162:56988",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21878,7 +21877,7 @@
                 "10.2.152.174:7777",
                 [
                     "10.20.10.162:42306",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21887,7 +21886,7 @@
                 "10.2.152.174:7777",
                 [
                     "10.20.10.162:42304",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -21896,7 +21895,7 @@
                 "10.2.152.174:7777",
                 [
                     "10.20.10.162:48958",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -22036,12 +22035,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "metadata-lineage-api-server-6d9b8c485f-x5qgn": {
         "pod_ip": "10.2.191.190",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "7777",
             "4678",
@@ -22719,12 +22718,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "mlflow-64c5cd6db-d6qfg": {
         "pod_ip": "10.2.152.175",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "7777",
             "4051",
@@ -23102,12 +23101,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "mlflow-serving-5d6f9ccbc9-q6ksh": {
         "pod_ip": "10.2.64.43",
         "node_ip": "10.20.8.172",
-        "pod_internal_ec2_ip": "ip-10-20-8-172.ec2.internal",
         "listening_ports": [
             "7777",
             "4051",
@@ -23223,12 +23222,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "model-serving-api-5b7d659b6f-l6rw2": {
         "pod_ip": "10.2.64.44",
         "node_ip": "10.20.8.172",
-        "pod_internal_ec2_ip": "ip-10-20-8-172.ec2.internal",
         "listening_ports": [
             "7777",
             "5678",
@@ -23245,7 +23244,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:37398",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23254,7 +23253,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:58248",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23263,7 +23262,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:37380",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23272,7 +23271,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:54832",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23281,7 +23280,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:53216",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23290,7 +23289,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:42416",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23299,7 +23298,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:42450",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23308,7 +23307,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:54844",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23317,7 +23316,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:42938",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23326,7 +23325,7 @@
                 "10.2.64.44:7777",
                 [
                     "10.20.8.172:37396",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23376,12 +23375,12 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "model-serving-proxy-667ccdb58f-pvrsl": {
         "pod_ip": "10.2.179.15",
         "node_ip": "10.20.9.223",
-        "pod_internal_ec2_ip": "ip-10-20-9-223.ec2.internal",
         "listening_ports": [
             "34522",
             "7777"
@@ -23507,12 +23506,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "onboarding-7b89897895-p2sds": {
         "pod_ip": "10.2.61.254",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "4051",
             "443",
@@ -23529,7 +23528,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:43110",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23538,7 +23537,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:52008",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23547,7 +23546,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:39346",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23556,7 +23555,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:52006",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23565,7 +23564,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:35382",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23574,7 +23573,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:51988",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23583,7 +23582,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:48402",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23592,7 +23591,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:39364",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23601,7 +23600,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:43132",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23610,7 +23609,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:35410",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23619,7 +23618,7 @@
                 "10.2.61.254:7777",
                 [
                     "10.20.11.150:43828",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23669,12 +23668,12 @@
             "cons-auth",
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "partnerhub-bb8d7f7fb-6t2fz": {
         "pod_ip": "10.2.98.206",
         "node_ip": "10.20.11.193",
-        "pod_internal_ec2_ip": "ip-10-20-11-193.ec2.internal",
         "listening_ports": [
             "7777",
             "1453",
@@ -23791,12 +23790,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "projects-proxy-67bf648bf8-rjhdj": {
         "pod_ip": "10.2.184.220",
         "node_ip": "10.20.9.105",
-        "pod_internal_ec2_ip": "ip-10-20-9-105.ec2.internal",
         "listening_ports": [
             "12345",
             "7777",
@@ -23808,12 +23807,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "ratelimit-v2-66655f9546-xpznl": {
         "pod_ip": "10.2.236.25",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "1081",
             "7777",
@@ -23829,7 +23828,7 @@
                 "10.2.236.25:7777",
                 [
                     "10.20.9.44:57688",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23838,7 +23837,7 @@
                 "10.2.236.25:7777",
                 [
                     "10.20.9.44:46828",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23847,7 +23846,7 @@
                 "10.2.236.25:7777",
                 [
                     "10.20.9.44:38300",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -23887,12 +23886,12 @@
         "outgoing_connected_service_names": [
             "cons-ratelimit-v2-redis"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "ratelimit-v2-redis-75b968b698-9vpzx": {
         "pod_ip": "10.2.247.19",
         "node_ip": "10.20.9.238",
-        "pod_internal_ec2_ip": "ip-10-20-9-238.ec2.internal",
         "listening_ports": [
             "6379",
             "6389",
@@ -23937,12 +23936,12 @@
         ],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "redash-async-d5b464c6-trj5r": {
         "pod_ip": "10.2.236.26",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "5000",
             "5001",
@@ -24136,12 +24135,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "redash-b6777b664-bsnkp": {
         "pod_ip": "10.2.61.255",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "5000",
             "5001",
@@ -24256,12 +24255,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "redash-jobs-7bcbd49999-dwq9p": {
         "pod_ip": "10.2.191.191",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "5000",
             "5001",
@@ -24292,7 +24291,7 @@
                 "10.2.191.191:5000",
                 [
                     "10.20.9.181:39844",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -24476,12 +24475,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "redash-scheduler-6758fd9647-phdcr": {
         "pod_ip": "10.2.211.125",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "8125",
             "9102"
@@ -24555,12 +24554,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "redash-v2-679b79c457-4zx4q": {
         "pod_ip": "10.2.61.202",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -24587,7 +24586,7 @@
                 "10.2.61.202:7777",
                 [
                     "10.20.11.150:47040",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -24596,7 +24595,7 @@
                 "10.2.61.202:7777",
                 [
                     "10.20.11.150:39648",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -24605,7 +24604,7 @@
                 "10.2.61.202:7777",
                 [
                     "10.20.11.150:46700",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -24745,12 +24744,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "redash-worker-8f75c7b45-69b8m": {
         "pod_ip": "10.2.152.176",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "8125",
             "9102"
@@ -25269,12 +25268,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "release-test-service-848f74484d-z84tm": {
         "pod_ip": "10.2.98.215",
         "node_ip": "10.20.11.193",
-        "pod_internal_ec2_ip": "ip-10-20-11-193.ec2.internal",
         "listening_ports": [
             "7777",
             "5678",
@@ -25286,12 +25285,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "route-discovery-service-7f455df6c9-k7stz": {
         "pod_ip": "10.2.211.126",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "11000",
             "7777"
@@ -25304,7 +25303,7 @@
                 "10.2.211.126:7777",
                 [
                     "10.20.11.81:57794",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25313,7 +25312,7 @@
                 "10.2.211.126:7777",
                 [
                     "10.20.11.81:33122",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25322,7 +25321,7 @@
                 "10.2.211.126:7777",
                 [
                     "10.20.11.81:40104",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25331,7 +25330,7 @@
                 "10.2.211.126:7777",
                 [
                     "10.20.11.81:40098",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25340,7 +25339,7 @@
                 "10.2.211.126:7777",
                 [
                     "10.20.11.81:43780",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25349,7 +25348,7 @@
                 "10.2.211.126:7777",
                 [
                     "10.20.11.81:57798",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25369,12 +25368,12 @@
             ]
         ],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "secret-manager-78c675f8cd-ncz7x": {
         "pod_ip": "10.2.12.186",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "30002",
             "4051",
@@ -25397,7 +25396,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:59090",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25406,7 +25405,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:37224",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25415,7 +25414,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:35226",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25424,7 +25423,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:40230",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25433,7 +25432,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:40226",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25442,7 +25441,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:35212",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25451,7 +25450,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:59078",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25460,7 +25459,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:35206",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25469,7 +25468,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:33778",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25478,7 +25477,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:37242",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25487,7 +25486,7 @@
                 "10.2.12.186:7777",
                 [
                     "10.20.11.183:33798",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25590,12 +25589,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "serving-scheduler-8b5d548c-wwz2v": {
         "pod_ip": "10.2.236.27",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "5678",
             "4051",
@@ -25607,12 +25606,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "settings-policy-69d99d586f-9v924": {
         "pod_ip": "10.2.211.128",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "4051",
             "7871",
@@ -25633,7 +25632,7 @@
                 "10.2.211.128:7777",
                 [
                     "10.20.11.81:40820",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25642,7 +25641,7 @@
                 "10.2.211.128:7777",
                 [
                     "10.20.11.81:43604",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25651,7 +25650,7 @@
                 "10.2.211.128:7907",
                 [
                     "10.20.11.81:57690",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25660,7 +25659,7 @@
                 "10.2.211.128:7777",
                 [
                     "10.20.11.81:40826",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25669,7 +25668,7 @@
                 "10.2.211.128:7907",
                 [
                     "10.20.11.81:48206",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25678,7 +25677,7 @@
                 "10.2.211.128:7777",
                 [
                     "10.20.11.81:60094",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25687,7 +25686,7 @@
                 "10.2.211.128:7907",
                 [
                     "10.20.11.81:58446",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25696,7 +25695,7 @@
                 "10.2.211.128:7777",
                 [
                     "10.20.11.81:60100",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25705,7 +25704,7 @@
                 "10.2.211.128:7907",
                 [
                     "10.20.11.81:53370",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25714,7 +25713,7 @@
                 "10.2.211.128:7907",
                 [
                     "10.20.11.81:40972",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25723,7 +25722,7 @@
                 "10.2.211.128:7777",
                 [
                     "10.20.11.81:58648",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25732,7 +25731,7 @@
                 "10.2.211.128:7907",
                 [
                     "10.20.11.81:51300",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25741,7 +25740,7 @@
                 "10.2.211.128:7777",
                 [
                     "10.20.11.81:56966",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25799,12 +25798,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "softclient-74bcfcd4f8-kw2n9": {
         "pod_ip": "10.2.12.187",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "24577",
             "7777",
@@ -25819,7 +25818,7 @@
                 "10.2.12.187:7777",
                 [
                     "10.20.11.183:41238",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25828,7 +25827,7 @@
                 "10.2.12.187:7777",
                 [
                     "10.20.11.183:43102",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25837,7 +25836,7 @@
                 "10.2.12.187:7777",
                 [
                     "10.20.11.183:50002",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25846,7 +25845,7 @@
                 "10.2.12.187:7777",
                 [
                     "10.20.11.183:43082",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25855,7 +25854,7 @@
                 "10.2.12.187:7777",
                 [
                     "10.20.11.183:38368",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25888,12 +25887,12 @@
         ],
         "outgoing_connected_pod_names": [
             "softstore-storelet-0"
-        ]
+        ],
+        "pid": []
     },
     "softstore-storelet-0": {
         "pod_ip": "10.2.152.178",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "4051",
             "24510",
@@ -25909,7 +25908,7 @@
                 "10.2.152.178:7777",
                 [
                     "10.20.10.162:33522",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25918,7 +25917,7 @@
                 "10.2.152.178:7777",
                 [
                     "10.20.10.162:33536",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25927,7 +25926,7 @@
                 "10.2.152.178:7777",
                 [
                     "10.20.10.162:33516",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25945,7 +25944,7 @@
                 "10.2.152.178:7777",
                 [
                     "10.20.10.162:44472",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25969,12 +25968,12 @@
         "outgoing_connected_service_names": [
             "dicer-assigner-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "spark-connect-router-8f7486d9c-4vqrr": {
         "pod_ip": "10.2.236.28",
         "node_ip": "10.20.9.44",
-        "pod_internal_ec2_ip": "ip-10-20-9-44.ec2.internal",
         "listening_ports": [
             "4051",
             "7101",
@@ -25988,7 +25987,7 @@
                 "10.2.236.28:7777",
                 [
                     "10.20.9.44:54030",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -25997,7 +25996,7 @@
                 "10.2.236.28:7777",
                 [
                     "10.20.9.44:33746",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26006,7 +26005,7 @@
                 "10.2.236.28:7777",
                 [
                     "10.20.9.44:50062",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26015,7 +26014,7 @@
                 "10.2.236.28:7777",
                 [
                     "10.20.9.44:34868",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26024,7 +26023,7 @@
                 "10.2.236.28:7777",
                 [
                     "10.20.9.44:54052",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26046,12 +26045,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "sql-cloud-results-gc-546d9d7c49-82tmk": {
         "pod_ip": "10.2.98.216",
         "node_ip": "10.20.11.193",
-        "pod_internal_ec2_ip": "ip-10-20-11-193.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -26063,12 +26062,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "sql-exec-api-66889b5694-746nm": {
         "pod_ip": "10.2.211.127",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "7777",
             "4051",
@@ -26082,7 +26081,7 @@
                 "10.2.211.127:7777",
                 [
                     "10.20.11.81:34620",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26091,7 +26090,7 @@
                 "10.2.211.127:7777",
                 [
                     "10.20.11.81:58182",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26100,7 +26099,7 @@
                 "10.2.211.127:7777",
                 [
                     "10.20.11.81:34602",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26109,7 +26108,7 @@
                 "10.2.211.127:7777",
                 [
                     "10.20.11.81:41120",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26118,7 +26117,7 @@
                 "10.2.211.127:7777",
                 [
                     "10.20.11.81:41114",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26140,12 +26139,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "sqlacl-sisyphus-c4fb4d997-cpmxz": {
         "pod_ip": "10.2.62.0",
         "node_ip": "10.20.11.150",
-        "pod_internal_ec2_ip": "ip-10-20-11-150.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -26172,12 +26171,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "sqlgateway-history-67d585ff87-gk7d7": {
         "pod_ip": "10.2.12.188",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "37777",
             "4051",
@@ -26244,7 +26243,7 @@
                 "10.2.12.188:7777",
                 [
                     "10.20.11.183:35140",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26253,7 +26252,7 @@
                 "10.2.12.188:7777",
                 [
                     "10.20.11.183:59730",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26262,7 +26261,7 @@
                 "10.2.12.188:7777",
                 [
                     "10.20.11.183:37814",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26271,7 +26270,7 @@
                 "10.2.12.188:7777",
                 [
                     "10.20.11.183:50898",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26280,7 +26279,7 @@
                 "10.2.12.188:7777",
                 [
                     "10.20.11.183:50912",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26289,7 +26288,7 @@
                 "10.2.12.188:7777",
                 [
                     "10.20.11.183:37828",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26789,12 +26788,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "sqlgateway-history-db-admin-5c6cdbf4b7-665qf": {
         "pod_ip": "10.2.98.213",
         "node_ip": "10.20.11.193",
-        "pod_internal_ec2_ip": "ip-10-20-11-193.ec2.internal",
         "listening_ports": [
             "7777",
             "37778",
@@ -26806,7 +26805,7 @@
                 "10.2.98.213:7777",
                 [
                     "10.20.11.193:50860",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26815,7 +26814,7 @@
                 "10.2.98.213:7777",
                 [
                     "10.20.11.193:53988",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -26825,12 +26824,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "sqlgateway-proxy-6d746ff9c9-9l6nq": {
         "pod_ip": "10.2.98.205",
         "node_ip": "10.20.11.193",
-        "pod_internal_ec2_ip": "ip-10-20-11-193.ec2.internal",
         "listening_ports": [
             "6688",
             "7777",
@@ -26908,12 +26907,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "sqlgateway-scheduler-0": {
         "pod_ip": "10.2.98.202",
         "node_ip": "10.20.11.193",
-        "pod_internal_ec2_ip": "ip-10-20-11-193.ec2.internal",
         "listening_ports": [
             "4051",
             "7100",
@@ -27039,12 +27038,12 @@
         "outgoing_connected_service_names": [
             "test-shard-local-database-service"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "strimzi-cluster-operator-5b55f5b6-qvmjl": {
         "pod_ip": "10.2.152.177",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [],
         "ougoing_ports": [],
         "incomming_connections": [],
@@ -27052,12 +27051,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "test-shard-local-database-64dbd96db6-lj5kn": {
         "pod_ip": "10.2.152.179",
         "node_ip": "10.20.10.162",
-        "pod_internal_ec2_ip": "ip-10-20-10-162.ec2.internal",
         "listening_ports": [
             "6379",
             "5432",
@@ -38410,12 +38409,12 @@
         ],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "uc-model-registry-c6cc85977-4qt87": {
         "pod_ip": "10.2.191.193",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "4051",
             "7777",
@@ -38429,7 +38428,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:34856",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38438,7 +38437,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:58706",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38447,7 +38446,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:47988",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38456,7 +38455,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:40660",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38465,7 +38464,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:40646",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38474,7 +38473,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:48004",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38483,7 +38482,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:60014",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38492,7 +38491,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:58724",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38501,7 +38500,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:59992",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38510,7 +38509,7 @@
                 "10.2.191.193:7777",
                 [
                     "10.20.9.181:40674",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38532,12 +38531,12 @@
         "outgoing_connected_service_names": [
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "ui-555774c89b-nwcn9": {
         "pod_ip": "10.2.12.189",
         "node_ip": "10.20.11.183",
-        "pod_internal_ec2_ip": "ip-10-20-11-183.ec2.internal",
         "listening_ports": [
             "5678",
             "5679",
@@ -38552,7 +38551,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:51882",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38561,7 +38560,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:58872",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38570,7 +38569,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:57280",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38579,7 +38578,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:51880",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38588,7 +38587,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:57266",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38597,7 +38596,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:49996",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38606,7 +38605,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:57282",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38615,7 +38614,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:51900",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38624,7 +38623,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:49998",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38633,7 +38632,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:58100",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38642,7 +38641,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:51892",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38651,7 +38650,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:43676",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38660,7 +38659,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:50026",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38669,7 +38668,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:58080",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38678,7 +38677,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:58858",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38687,7 +38686,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:58078",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38696,7 +38695,7 @@
                 "10.2.12.189:7777",
                 [
                     "10.20.11.183:43662",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38706,12 +38705,12 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "user-activity-7c96cb868d-9gnkl": {
         "pod_ip": "10.2.50.107",
         "node_ip": "10.20.9.127",
-        "pod_internal_ec2_ip": "ip-10-20-9-127.ec2.internal",
         "listening_ports": [
             "4051",
             "443",
@@ -38728,7 +38727,7 @@
                 "10.2.50.107:7777",
                 [
                     "10.20.9.127:47598",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38737,7 +38736,7 @@
                 "10.2.50.107:7777",
                 [
                     "10.20.9.127:50372",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38746,7 +38745,7 @@
                 "10.2.50.107:7777",
                 [
                     "10.20.9.127:47582",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38755,7 +38754,7 @@
                 "10.2.50.107:7777",
                 [
                     "10.20.9.127:47572",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38764,7 +38763,7 @@
                 "10.2.50.107:7777",
                 [
                     "10.20.9.127:52302",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38773,7 +38772,7 @@
                 "10.2.50.107:7777",
                 [
                     "10.20.9.127:51100",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38782,7 +38781,7 @@
                 "10.2.50.107:7777",
                 [
                     "10.20.9.127:50352",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38791,7 +38790,7 @@
                 "10.2.50.107:7777",
                 [
                     "10.20.9.127:55148",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38841,12 +38840,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "webhook-notifications-859444dcd7-ndmsq": {
         "pod_ip": "10.2.191.194",
         "node_ip": "10.20.9.181",
-        "pod_internal_ec2_ip": "ip-10-20-9-181.ec2.internal",
         "listening_ports": [
             "5678",
             "4051",
@@ -38873,7 +38872,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:57304",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38882,7 +38881,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:33140",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38891,7 +38890,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:55120",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38900,7 +38899,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:57296",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38909,7 +38908,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:49044",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38918,7 +38917,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:58202",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38927,7 +38926,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:49064",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38936,7 +38935,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:57082",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38945,7 +38944,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:57294",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38954,7 +38953,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:33126",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38963,7 +38962,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:49058",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38972,7 +38971,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:33106",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -38981,7 +38980,7 @@
                 "10.2.191.194:7777",
                 [
                     "10.20.9.181:55118",
-                    "node"
+                    "same_node"
                 ],
                 "TIME_WAIT",
                 "-"
@@ -39121,12 +39120,12 @@
             "test-shard-local-database-service",
             "cons-auth"
         ],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     },
     "workspace-files-gc-65475f8b68-swphd": {
         "pod_ip": "10.2.211.129",
         "node_ip": "10.20.11.81",
-        "pod_internal_ec2_ip": "ip-10-20-11-81.ec2.internal",
         "listening_ports": [
             "5678",
             "4051",
@@ -39138,6 +39137,7 @@
         "incomming_connected_pod_names": [],
         "outgoing_connections": [],
         "outgoing_connected_service_names": [],
-        "outgoing_connected_pod_names": []
+        "outgoing_connected_pod_names": [],
+        "pid": []
     }
 }
