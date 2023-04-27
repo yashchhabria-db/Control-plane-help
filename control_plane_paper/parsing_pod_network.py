@@ -47,8 +47,7 @@ if __name__ == '__main__':
                     'incomming_connected_pod_names': [],
                     'outgoing_connections': [], 
                     'outgoing_connected_service_names': [],
-                    'outgoing_connected_pod_names': [],
-                    
+                    'outgoing_connected_pod_names': [],    
                 }
 
                 i=i+3 #skip bs lines
@@ -58,28 +57,28 @@ if __name__ == '__main__':
                     connection_line = line.strip().split()
                     pod_port = connection_line[3].split(":")[-1]
 
-
-                    #getting process names from the parsed dict coming from json_pod_parsed file
-                    
-                    if connection_line[6] not in pod_parsed[pod_info[0]]['pid'] and len(connection_line[6])>1:
-                            process_id = connection_line[6].split("/")[0]
-                            if process_id in process_pod_dict[pod_info[0]]:
-                                id_name_tuple = (process_id,process_pod_dict[pod_info[0]][process_id])
-                                if id_name_tuple not in pod_parsed[pod_info[0]]['pid']:
-                                    pod_parsed[pod_info[0]]['pid'].append(id_name_tuple)
-                            else:
-                                id_unknown_tuple  = (process_id, "process_name_not_found")
-                                if id_unknown_tuple not in pod_parsed[pod_info[0]]['pid']:
-                                    pod_parsed[pod_info[0]]['pid'].append(id_unknown_tuple)
-
                             
 
 
                     #Setting incomming and outgoing ports list
 
-                    if connection_line[5].startswith("LISTEN"):
+                    if connection_line[5].startswith("LISTEN") and not connection_line[3].startswith("127"):
                         if pod_port not in pod_parsed[pod_info[0]]['listening_ports']:
-                            pod_parsed[pod_info[0]]['listening_ports'].append(pod_port)  
+                            pod_parsed[pod_info[0]]['listening_ports'].append(pod_port) 
+
+                        #getting process names from the parsed dict coming from json_pod_parsed file
+                        
+                        if connection_line[6] not in pod_parsed[pod_info[0]]['pid'] and len(connection_line[6])>1:
+                                process_id = connection_line[6].split("/")[0]
+                                if process_id in process_pod_dict[pod_info[0]]:
+                                    id_name_tuple = (process_id,process_pod_dict[pod_info[0]][process_id])
+                                    if id_name_tuple not in pod_parsed[pod_info[0]]['pid']:
+                                        pod_parsed[pod_info[0]]['pid'].append(id_name_tuple)
+                                else:
+                                    id_unknown_tuple  = (process_id, "process_name_not_found")
+                                    if id_unknown_tuple not in pod_parsed[pod_info[0]]['pid']:
+                                        pod_parsed[pod_info[0]]['pid'].append(id_unknown_tuple)
+                         
 
                     elif connection_line[5].startswith("WAIT") or connection_line[5].startswith("ESTABLISHED"):
                         if pod_port not in pod_parsed[pod_info[0]]['outgoing_ports']:

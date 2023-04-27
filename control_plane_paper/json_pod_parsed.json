@@ -4,7 +4,6 @@
         "node_ip": "10.20.9.44",
         "listening_ports": [
             "5678",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -301,7 +300,6 @@
         "node_ip": "10.20.9.44",
         "listening_ports": [
             "39442",
-            "4051",
             "39443",
             "7777"
         ],
@@ -390,20 +388,12 @@
         "listening_ports": [
             "7080",
             "9643",
-            "7083",
-            "7084",
             "80",
-            "7089",
             "9080",
             "9081",
-            "12345",
-            "12346",
             "8443",
             "443",
-            "12347",
-            "55678",
             "7777",
-            "7778",
             "9443",
             "9444",
             "9543",
@@ -2014,7 +2004,6 @@
         "pod_ip": "10.2.152.170",
         "node_ip": "10.20.10.162",
         "listening_ports": [
-            "4051",
             "443",
             "7777"
         ],
@@ -2110,8 +2099,7 @@
         "node_ip": "10.20.11.81",
         "listening_ports": [
             "7777",
-            "5678",
-            "4051"
+            "5678"
         ],
         "outgoing_ports": [
             "60596"
@@ -2291,8 +2279,7 @@
         "node_ip": "10.20.11.150",
         "listening_ports": [
             "7777",
-            "5678",
-            "4051"
+            "5678"
         ],
         "outgoing_ports": [
             "43704"
@@ -2363,7 +2350,6 @@
         "pod_ip": "10.2.12.179",
         "node_ip": "10.20.11.183",
         "listening_ports": [
-            "4051",
             "18426",
             "18400",
             "7777"
@@ -2410,7 +2396,6 @@
         "pod_ip": "10.2.179.8",
         "node_ip": "10.20.9.223",
         "listening_ports": [
-            "4051",
             "7777",
             "18888"
         ],
@@ -2433,8 +2418,7 @@
         "node_ip": "10.20.11.183",
         "listening_ports": [
             "7777",
-            "9900",
-            "4051"
+            "9900"
         ],
         "outgoing_ports": [
             "48842"
@@ -2469,7 +2453,6 @@
         "node_ip": "10.20.11.150",
         "listening_ports": [
             "61801",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -2544,7 +2527,6 @@
         "node_ip": "10.20.9.44",
         "listening_ports": [
             "10086",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -2703,7 +2685,6 @@
         "node_ip": "10.20.9.223",
         "listening_ports": [
             "5678",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -2804,7 +2785,6 @@
         "node_ip": "10.20.11.150",
         "listening_ports": [
             "25936",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -2869,8 +2849,7 @@
         "node_ip": "10.20.9.181",
         "listening_ports": [
             "7777",
-            "20402",
-            "4051"
+            "20402"
         ],
         "outgoing_ports": [
             "47112",
@@ -3156,8 +3135,7 @@
             "8888",
             "5050",
             "7777",
-            "6665",
-            "4051"
+            "6665"
         ],
         "outgoing_ports": [
             "44138",
@@ -3595,7 +3573,6 @@
         "pod_ip": "10.2.152.171",
         "node_ip": "10.20.10.162",
         "listening_ports": [
-            "4051",
             "5555",
             "7777"
         ],
@@ -3997,8 +3974,7 @@
         "listening_ports": [
             "5050",
             "5051",
-            "7777",
-            "4051"
+            "7777"
         ],
         "outgoing_ports": [
             "48344",
@@ -5685,13 +5661,11 @@
         "pod_ip": "10.2.191.192",
         "node_ip": "10.20.9.181",
         "listening_ports": [
-            "4051",
             "3412",
             "3413",
             "3414",
             "3415",
-            "7777",
-            "40001"
+            "7777"
         ],
         "outgoing_ports": [
             "48888",
@@ -5885,8 +5859,7 @@
         "node_ip": "10.20.11.81",
         "listening_ports": [
             "7777",
-            "7500",
-            "4051"
+            "7500"
         ],
         "outgoing_ports": [
             "43828"
@@ -5920,7 +5893,6 @@
         "pod_ip": "10.2.236.18",
         "node_ip": "10.20.9.44",
         "listening_ports": [
-            "4051",
             "5431",
             "5432",
             "7777"
@@ -5943,7 +5915,6 @@
         "pod_ip": "10.2.211.121",
         "node_ip": "10.20.11.81",
         "listening_ports": [
-            "4051",
             "7777",
             "7075",
             "7076"
@@ -5990,7 +5961,6 @@
         "node_ip": "10.20.8.172",
         "listening_ports": [
             "8080",
-            "4051",
             "443",
             "7777",
             "34562"
@@ -7606,8 +7576,6 @@
         "pod_ip": "10.2.242.208",
         "node_ip": "10.20.8.11",
         "listening_ports": [
-            "8500",
-            "8600",
             "9125",
             "8300",
             "8301",
@@ -8113,8 +8081,7 @@
         "node_ip": "10.20.9.127",
         "listening_ports": [
             "31515",
-            "7777",
-            "4051"
+            "7777"
         ],
         "outgoing_ports": [
             "54964",
@@ -8300,8 +8267,7 @@
         "node_ip": "10.20.11.183",
         "listening_ports": [
             "7777",
-            "5678",
-            "4051"
+            "5678"
         ],
         "outgoing_ports": [
             "50362"
@@ -8434,7 +8400,6 @@
         "pod_ip": "10.2.179.10",
         "node_ip": "10.20.9.223",
         "listening_ports": [
-            "4051",
             "7777",
             "6789"
         ],
@@ -8482,8 +8447,7 @@
         "node_ip": "10.20.11.183",
         "listening_ports": [
             "7777",
-            "6788",
-            "4051"
+            "6788"
         ],
         "outgoing_ports": [
             "60712",
@@ -8540,7 +8504,6 @@
         "node_ip": "10.20.11.183",
         "listening_ports": [
             "7777",
-            "4051",
             "24500"
         ],
         "outgoing_ports": [
@@ -8686,8 +8649,6 @@
             "7777",
             "7907",
             "31313",
-            "4050",
-            "4051",
             "31315",
             "31316",
             "31317",
@@ -9255,7 +9216,6 @@
         "pod_ip": "10.2.61.250",
         "node_ip": "10.20.11.150",
         "listening_ports": [
-            "4051",
             "7777",
             "4678",
             "5678"
@@ -9292,7 +9252,6 @@
         "pod_ip": "10.2.61.251",
         "node_ip": "10.20.11.150",
         "listening_ports": [
-            "4051",
             "11000",
             "7777"
         ],
@@ -9359,8 +9318,7 @@
         "listening_ports": [
             "7777",
             "30123",
-            "30124",
-            "4051"
+            "30124"
         ],
         "outgoing_ports": [
             "43742",
@@ -9778,8 +9736,7 @@
         "node_ip": "10.20.9.44",
         "listening_ports": [
             "7777",
-            "5678",
-            "4051"
+            "5678"
         ],
         "outgoing_ports": [
             "43176"
@@ -9896,8 +9853,7 @@
         "node_ip": "10.20.9.223",
         "listening_ports": [
             "443",
-            "7777",
-            "4051"
+            "7777"
         ],
         "outgoing_ports": [
             "60662"
@@ -9968,7 +9924,6 @@
         "pod_ip": "10.2.211.123",
         "node_ip": "10.20.11.81",
         "listening_ports": [
-            "4051",
             "2333",
             "7777"
         ],
@@ -11130,7 +11085,6 @@
         "node_ip": "10.20.10.162",
         "listening_ports": [
             "7986",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -11366,7 +11320,6 @@
         "pod_ip": "10.2.179.13",
         "node_ip": "10.20.9.223",
         "listening_ports": [
-            "4051",
             "7777",
             "32324",
             "32325"
@@ -11775,7 +11728,6 @@
         "pod_ip": "10.2.12.184",
         "node_ip": "10.20.11.183",
         "listening_ports": [
-            "4051",
             "7777",
             "5678"
         ],
@@ -12338,7 +12290,6 @@
         "node_ip": "10.20.11.150",
         "listening_ports": [
             "5678",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -12935,7 +12886,6 @@
         "node_ip": "10.20.9.44",
         "listening_ports": [
             "7777",
-            "4051",
             "35455"
         ],
         "outgoing_ports": [
@@ -13326,7 +13276,6 @@
         "pod_ip": "10.2.191.187",
         "node_ip": "10.20.9.181",
         "listening_ports": [
-            "4051",
             "7777",
             "5678"
         ],
@@ -13631,7 +13580,6 @@
         "pod_ip": "10.2.191.188",
         "node_ip": "10.20.9.181",
         "listening_ports": [
-            "4051",
             "8084",
             "7777",
             "5678"
@@ -16661,7 +16609,6 @@
         "node_ip": "10.20.9.44",
         "listening_ports": [
             "5678",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -19600,8 +19547,7 @@
             "2181",
             "2888",
             "3888",
-            "8080",
-            "12181"
+            "8080"
         ],
         "outgoing_ports": [
             "2181"
@@ -19647,7 +19593,6 @@
         "pod_ip": "10.2.61.253",
         "node_ip": "10.20.11.150",
         "listening_ports": [
-            "4051",
             "31002",
             "7777"
         ],
@@ -20193,7 +20138,6 @@
         "node_ip": "10.20.9.223",
         "listening_ports": [
             "5678",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -20360,8 +20304,7 @@
         "node_ip": "10.20.10.162",
         "listening_ports": [
             "7777",
-            "5678",
-            "4051"
+            "5678"
         ],
         "outgoing_ports": [
             "56236"
@@ -20674,7 +20617,6 @@
         "node_ip": "10.20.11.81",
         "listening_ports": [
             "5678",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -20914,8 +20856,7 @@
         "node_ip": "10.20.9.181",
         "listening_ports": [
             "7777",
-            "15213",
-            "4051"
+            "15213"
         ],
         "outgoing_ports": [
             "47984",
@@ -21981,8 +21922,6 @@
         "listening_ports": [
             "7777",
             "23333",
-            "4052",
-            "4053",
             "13333"
         ],
         "outgoing_ports": [
@@ -22118,8 +22057,7 @@
         "node_ip": "10.20.10.162",
         "listening_ports": [
             "443",
-            "7777",
-            "4051"
+            "7777"
         ],
         "outgoing_ports": [
             "47904",
@@ -22359,8 +22297,7 @@
         "listening_ports": [
             "7777",
             "4678",
-            "5678",
-            "4051"
+            "5678"
         ],
         "outgoing_ports": [
             "40434",
@@ -23046,7 +22983,6 @@
         "node_ip": "10.20.10.162",
         "listening_ports": [
             "7777",
-            "4051",
             "30003",
             "30004"
         ],
@@ -23434,7 +23370,6 @@
         "node_ip": "10.20.8.172",
         "listening_ports": [
             "7777",
-            "4051",
             "30003"
         ],
         "outgoing_ports": [
@@ -23560,8 +23495,7 @@
         "node_ip": "10.20.8.172",
         "listening_ports": [
             "7777",
-            "5678",
-            "4051"
+            "5678"
         ],
         "outgoing_ports": [
             "48746",
@@ -23853,7 +23787,6 @@
         "pod_ip": "10.2.61.254",
         "node_ip": "10.20.11.150",
         "listening_ports": [
-            "4051",
             "443",
             "7777"
         ],
@@ -24022,8 +23955,7 @@
         "listening_ports": [
             "7777",
             "1453",
-            "5678",
-            "4051"
+            "5678"
         ],
         "outgoing_ports": [
             "41298",
@@ -24148,8 +24080,7 @@
         "node_ip": "10.20.9.105",
         "listening_ports": [
             "12345",
-            "7777",
-            "7778"
+            "7777"
         ],
         "outgoing_ports": [],
         "pid": [
@@ -24170,8 +24101,7 @@
         "node_ip": "10.20.9.44",
         "listening_ports": [
             "1081",
-            "7777",
-            "4051"
+            "7777"
         ],
         "outgoing_ports": [
             "37114",
@@ -24337,18 +24267,6 @@
         "pid": [
             [
                 "1",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "42",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "45",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "41",
                 "/usr/bin/python /usr/local/bin/gunicorn -k"
             ]
         ],
@@ -24547,22 +24465,6 @@
             [
                 "1",
                 "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "52",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "53",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "57",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "56",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
             ]
         ],
         "incomming_connections": [],
@@ -24696,54 +24598,6 @@
         "pid": [
             [
                 "1",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "68",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "61",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "58",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "65",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "54",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "52",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "56",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "63",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "70",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "59",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "72",
-                "/usr/bin/python /usr/local/bin/gunicorn -k"
-            ],
-            [
-                "73",
                 "/usr/bin/python /usr/local/bin/gunicorn -k"
             ]
         ],
@@ -24952,16 +24806,7 @@
             "58902",
             "57514"
         ],
-        "pid": [
-            [
-                "1",
-                "python /app/manage.py rq"
-            ],
-            [
-                "19",
-                "python ./sidecar.py"
-            ]
-        ],
+        "pid": [],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
@@ -25030,7 +24875,6 @@
         "pod_ip": "10.2.61.202",
         "node_ip": "10.20.11.150",
         "listening_ports": [
-            "4051",
             "7777",
             "5678"
         ],
@@ -25257,28 +25101,7 @@
             "38982",
             "60710"
         ],
-        "pid": [
-            [
-                "20",
-                "python ./manage.py rq"
-            ],
-            [
-                "16",
-                "python ./manage.py rq"
-            ],
-            [
-                "19",
-                "python ./manage.py rq"
-            ],
-            [
-                "21",
-                "python ./manage.py rq"
-            ],
-            [
-                "22",
-                "python ./manage.py rq"
-            ]
-        ],
+        "pid": [],
         "incomming_connections": [],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [],
@@ -25771,8 +25594,7 @@
         "node_ip": "10.20.11.193",
         "listening_ports": [
             "7777",
-            "5678",
-            "4051"
+            "5678"
         ],
         "outgoing_ports": [],
         "pid": [
@@ -25881,7 +25703,6 @@
         "node_ip": "10.20.11.183",
         "listening_ports": [
             "30002",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -26107,7 +25928,6 @@
         "node_ip": "10.20.9.44",
         "listening_ports": [
             "5678",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [],
@@ -26128,7 +25948,6 @@
         "pod_ip": "10.2.211.128",
         "node_ip": "10.20.11.81",
         "listening_ports": [
-            "4051",
             "7871",
             "31519",
             "7777",
@@ -26326,8 +26145,7 @@
         "node_ip": "10.20.11.183",
         "listening_ports": [
             "24577",
-            "7777",
-            "4051"
+            "7777"
         ],
         "outgoing_ports": [
             "40960",
@@ -26419,7 +26237,6 @@
         "pod_ip": "10.2.152.178",
         "node_ip": "10.20.10.162",
         "listening_ports": [
-            "4051",
             "24510",
             "24576",
             "7777"
@@ -26505,7 +26322,6 @@
         "pod_ip": "10.2.236.28",
         "node_ip": "10.20.9.44",
         "listening_ports": [
-            "4051",
             "7101",
             "7777"
         ],
@@ -26587,7 +26403,6 @@
         "pod_ip": "10.2.98.216",
         "node_ip": "10.20.11.193",
         "listening_ports": [
-            "4051",
             "7777",
             "25447"
         ],
@@ -26610,7 +26425,6 @@
         "node_ip": "10.20.11.81",
         "listening_ports": [
             "7777",
-            "4051",
             "6677"
         ],
         "outgoing_ports": [
@@ -26691,7 +26505,6 @@
         "pod_ip": "10.2.62.0",
         "node_ip": "10.20.11.150",
         "listening_ports": [
-            "4051",
             "7777",
             "7075",
             "7076"
@@ -26729,7 +26542,6 @@
         "node_ip": "10.20.11.183",
         "listening_ports": [
             "37777",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -27351,8 +27163,7 @@
         "node_ip": "10.20.11.193",
         "listening_ports": [
             "7777",
-            "37778",
-            "4051"
+            "37778"
         ],
         "outgoing_ports": [],
         "pid": [
@@ -27393,7 +27204,6 @@
         "listening_ports": [
             "6688",
             "7777",
-            "4051",
             "7000"
         ],
         "outgoing_ports": [
@@ -27479,7 +27289,6 @@
         "pod_ip": "10.2.98.202",
         "node_ip": "10.20.11.193",
         "listening_ports": [
-            "4051",
             "7100",
             "7777"
         ],
@@ -38986,7 +38795,6 @@
         "pod_ip": "10.2.191.193",
         "node_ip": "10.20.9.181",
         "listening_ports": [
-            "4051",
             "7777",
             "5678"
         ],
@@ -39292,7 +39100,6 @@
         "pod_ip": "10.2.50.107",
         "node_ip": "10.20.9.127",
         "listening_ports": [
-            "4051",
             "443",
             "7777"
         ],
@@ -39433,7 +39240,6 @@
         "node_ip": "10.20.9.181",
         "listening_ports": [
             "5678",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [
@@ -39718,7 +39524,6 @@
         "node_ip": "10.20.11.81",
         "listening_ports": [
             "5678",
-            "4051",
             "7777"
         ],
         "outgoing_ports": [],
