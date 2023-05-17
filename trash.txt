@@ -1,0 +1,64 @@
+"access-control-78c6d875b8-rk98n": {
+        "pod_ip": "10.2.236.15",
+        "node_ip": "10.20.9.44",
+        "listening_ports": [
+            "5678",
+            "7777"
+        ],
+        "outgoing_ports": [
+            "47246",
+            "53488",
+        ],
+        "pid": [
+            [
+                "7",
+                "com.databricks.accesscontrol.AccessControlService"
+            ]
+        ],
+        "incomming_connections": [
+            [
+                "10.2.236.15:7777",
+                [
+                    "10.20.9.44:56510",
+                    "same_node"
+                ],
+                "TIME_WAIT",
+                "-"
+            ],
+            [
+                "10.2.236.15:7777",
+                [
+                    "10.20.9.44:41742",
+                    "same_node"
+                ],
+                "TIME_WAIT",
+                "-"
+            ]
+        ],
+        "incomming_connected_service_names": [],
+        "incomming_connected_pod_names": [],
+        "outgoing_connections": [
+            [
+                "10.2.236.15:47246",
+                [
+                    "10.3.58.124:3306",
+                    "test-shard-local-database-service"
+                ],
+                "ESTABLISHED",
+                "7/java"
+            ],
+            [
+                "10.2.236.15:53488",
+                [
+                    "10.3.58.124:3306",
+                    "test-shard-local-database-service"
+                ],
+                "ESTABLISHED",
+                "7/java"
+            ]
+        ],
+        "outgoing_connected_service_names": [
+            "test-shard-local-database-service",
+        ],
+        "outgoing_connected_pod_names": []
+    }
