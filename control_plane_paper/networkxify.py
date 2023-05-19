@@ -40,7 +40,6 @@ if __name__ == '__main__':
     # nx.draw(G, with_labels=True)
     # plt.show()
     
-    # Assuming you have a networkx graph object called 'nx_graph'
     for node in G.nodes():
         # Convert node attributes to compatible types
         attributes = G.nodes[node]
