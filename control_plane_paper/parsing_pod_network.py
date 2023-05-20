@@ -21,6 +21,8 @@ if __name__ == '__main__':
         ec2_node_ip_pod_dict[ec2_node_ip] = rel_list[4]
 
 
+    # print('10.2.64.43' in ip_pod_dict.keys()) #printed false for ip of mlflow model serving
+
     pod_net_f = open("pod_networking.txt", "r")
     pod_net_list = pod_net_f.readlines()
     pod_net_f.close()
@@ -33,7 +35,13 @@ if __name__ == '__main__':
             if pod_net_list[i].startswith("****"):
                 i += 1
                 pod_info = pod_net_list[i].strip().split("|")
-                
+
+                #fix for chutiya service pod relationship file 
+
+                if pod_info[1] not in ip_pod_dict.keys():
+                    # print(pod_info)
+                    ip_pod_dict[pod_info[1]] = pod_info[0]
+
                 node_ip = ".".join(pod_info[2].split(".")[0].split("-")[1:]) #this is an annoying diff representation for no fucking good reason lol
 
                 pod_parsed[pod_info[0]] = {

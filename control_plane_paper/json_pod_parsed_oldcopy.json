@@ -17162,11 +17162,14 @@
                 "64/java"
             ],
             [
-                "10.2.30.72:9091",
+                "10.2.30.72:9092",
                 [
-                    "10.2.30.77:40866",
-                    "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s"
+                    "10.2.191.188:47406",
+                    "kafka-consumer-proxy-887d7f7b-lcfwb"
                 ],
+                "ESTABLISHED",
+                "64/java",
+                "no_pod_found",
                 "ESTABLISHED",
                 "64/java"
             ],
@@ -17693,11 +17696,14 @@
                 "64/java"
             ],
             [
-                "10.2.30.72:9091",
+                "10.2.30.72:9092",
                 [
-                    "10.2.30.77:40874",
-                    "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s"
+                    "10.2.191.188:46956",
+                    "kafka-consumer-proxy-887d7f7b-lcfwb"
                 ],
+                "ESTABLISHED",
+                "64/java",
+                "no_pod_found",
                 "ESTABLISHED",
                 "64/java"
             ],
@@ -18188,11 +18194,14 @@
                 "64/java"
             ],
             [
-                "10.2.30.72:9091",
+                "10.2.30.72:9092",
                 [
-                    "10.2.30.77:33360",
-                    "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s"
+                    "10.2.191.188:45802",
+                    "kafka-consumer-proxy-887d7f7b-lcfwb"
                 ],
+                "ESTABLISHED",
+                "64/java",
+                "no_pod_found",
                 "ESTABLISHED",
                 "64/java"
             ],
@@ -18287,11 +18296,14 @@
                 "64/java"
             ],
             [
-                "10.2.30.72:9091",
+                "10.2.30.72:9092",
                 [
-                    "10.2.30.77:52918",
-                    "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s"
+                    "10.2.191.188:46152",
+                    "kafka-consumer-proxy-887d7f7b-lcfwb"
                 ],
+                "ESTABLISHED",
+                "64/java",
+                "no_pod_found",
                 "ESTABLISHED",
                 "64/java"
             ],
@@ -18332,11 +18344,14 @@
                 "64/java"
             ],
             [
-                "10.2.30.72:9091",
+                "10.2.30.72:9092",
                 [
-                    "10.2.30.77:51574",
-                    "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s"
+                    "10.2.191.188:46850",
+                    "kafka-consumer-proxy-887d7f7b-lcfwb"
                 ],
+                "ESTABLISHED",
+                "64/java",
+                "no_pod_found",
                 "ESTABLISHED",
                 "64/java"
             ],
@@ -18836,11 +18851,14 @@
                 "64/java"
             ],
             [
-                "10.2.30.72:9091",
+                "10.2.30.72:9092",
                 [
-                    "10.2.30.77:40864",
-                    "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s"
+                    "10.2.191.188:56650",
+                    "kafka-consumer-proxy-887d7f7b-lcfwb"
                 ],
+                "ESTABLISHED",
+                "64/java",
+                "no_pod_found",
                 "ESTABLISHED",
                 "64/java"
             ],
@@ -19052,11 +19070,14 @@
                 "64/java"
             ],
             [
-                "10.2.30.72:9091",
+                "10.2.30.72:9092",
                 [
-                    "10.2.30.77:40884",
-                    "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s"
+                    "10.2.191.188:46940",
+                    "kafka-consumer-proxy-887d7f7b-lcfwb"
                 ],
+                "ESTABLISHED",
+                "64/java",
+                "no_pod_found",
                 "ESTABLISHED",
                 "64/java"
             ],
@@ -19496,7 +19517,6 @@
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [
             "kafka-consumer-proxy-887d7f7b-lcfwb",
-            "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s",
             "graphql-6bcc6c57bc-876cs",
             "cluster-manager-k8s-57f4d497bc-k6m4c",
             "kafka-producer-proxy-5c67f8d7d7-tv644",
@@ -19540,11 +19560,14 @@
         ],
         "incomming_connections": [
             [
-                "10.2.30.65:2181",
+                "10.2.30.72:9092",
                 [
-                    "10.2.30.77:37704",
-                    "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s"
+                    "10.2.191.188:46644",
+                    "kafka-consumer-proxy-887d7f7b-lcfwb"
                 ],
+                "ESTABLISHED",
+                "64/java",
+                "no_pod_found",
                 "ESTABLISHED",
                 "71/java"
             ],
@@ -19560,7 +19583,6 @@
         ],
         "incomming_connected_service_names": [],
         "incomming_connected_pod_names": [
-            "kafka-test-shard-entity-operator-59bfc9cf4-7fp2s",
             "kafka-test-shard-kafka-0"
         ],
         "outgoing_connections": [],
@@ -27475,9 +27497,12 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:45314",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.191.191:58680",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27509,11 +27534,14 @@
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.152.176:45448",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.211.122:59676",
+                    "directory-599fdd8684-dk7bz"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27527,11 +27555,14 @@
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.152.176:45332",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.211.122:50406",
+                    "directory-599fdd8684-dk7bz"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27592,27 +27623,45 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:60724",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.191.191:33314",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:45370",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.191.191:33314",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:45360",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.191.191:33314",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27653,11 +27702,14 @@
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.152.176:45346",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.211.122:55288",
+                    "directory-599fdd8684-dk7bz"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27673,9 +27725,12 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:45320",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.61.255:58434",
+                    "redash-b6777b664-bsnkp"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27754,18 +27809,27 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:45444",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.191.191:45846",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.211.125:58902",
-                    "redash-scheduler-6758fd9647-phdcr"
+                    "10.2.191.191:45846",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27799,9 +27863,12 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:45364",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.236.26:50850",
+                    "redash-async-d5b464c6-trj5r"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27851,20 +27918,29 @@
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.152.176:45554",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.211.122:38260",
+                    "directory-599fdd8684-dk7bz"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.152.176:45340",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.211.122:38260",
+                    "directory-599fdd8684-dk7bz"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27896,11 +27972,14 @@
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.211.125:57514",
-                    "redash-scheduler-6758fd9647-phdcr"
+                    "10.2.211.122:58578",
+                    "directory-599fdd8684-dk7bz"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27914,11 +27993,14 @@
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.152.176:38996",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.50.106:38076",
+                    "credentials-manager-5b99dc45b5-dl6r6"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27968,20 +28050,29 @@
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.152.176:45380",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.211.122:42564",
+                    "directory-599fdd8684-dk7bz"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.211.125:52774",
-                    "redash-scheduler-6758fd9647-phdcr"
+                    "10.2.211.122:42564",
+                    "directory-599fdd8684-dk7bz"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -27997,27 +28088,45 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:38966",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.236.26:49572",
+                    "redash-async-d5b464c6-trj5r"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:60746",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.236.26:49572",
+                    "redash-async-d5b464c6-trj5r"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:60710",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.236.26:49572",
+                    "redash-async-d5b464c6-trj5r"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -28033,18 +28142,27 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:38952",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.191.191:48586",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:60748",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.191.191:48586",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -28060,9 +28178,12 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:60736",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.191.191:50388",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -28085,11 +28206,14 @@
                 "-"
             ],
             [
-                "10.2.152.179:6379",
+                "10.2.152.179:5432",
                 [
-                    "10.2.211.125:59466",
-                    "redash-scheduler-6758fd9647-phdcr"
+                    "10.2.50.106:54102",
+                    "credentials-manager-5b99dc45b5-dl6r6"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -28114,9 +28238,12 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:38982",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.61.255:57688",
+                    "redash-b6777b664-bsnkp"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -28159,9 +28286,12 @@
             [
                 "10.2.152.179:6379",
                 [
-                    "10.2.152.176:45540",
-                    "redash-worker-8f75c7b45-69b8m"
+                    "10.2.191.191:37790",
+                    "redash-jobs-7bcbd49999-dwq9p"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -28366,9 +28496,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:56180",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.64.46:40015",
+                    "cons-webapp-0"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -28429,9 +28562,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:47438",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.211.123:34460",
+                    "instance-manager-5d875f84d8-f2ts8"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -29203,9 +29339,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:46434",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.98.202:59594",
+                    "sqlgateway-scheduler-0"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -30373,9 +30512,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:59396",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.61.252:51472",
+                    "jobs-observability-5f5f74ddc-rs2vw"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -30418,9 +30560,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:38410",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.211.123:10276",
+                    "instance-manager-5d875f84d8-f2ts8"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -33874,9 +34019,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:58718",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.211.119:48886",
+                    "cons-jobs-runner-9766899db-9fdjh"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -35116,9 +35264,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:45882",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.211.123:46500",
+                    "instance-manager-5d875f84d8-f2ts8"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -35179,9 +35330,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:47446",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.12.190:45334",
+                    "cons-manager-0"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -35530,9 +35684,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:33576",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.191.189:40374",
+                    "managed-catalog-b5685957-sk28b"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -36925,9 +37082,12 @@
             [
                 "10.2.152.179:3306",
                 [
-                    "10.2.64.43:52146",
-                    "mlflow-serving-5d6f9ccbc9-q6ksh"
+                    "10.2.61.253:51752",
+                    "key-manager-594cb6458b-cxb42"
                 ],
+                "ESTABLISHED",
+                "-",
+                "no_pod_found",
                 "ESTABLISHED",
                 "-"
             ],
@@ -38584,10 +38744,8 @@
             "directory-599fdd8684-dk7bz",
             "redash-jobs-7bcbd49999-dwq9p",
             "redash-async-d5b464c6-trj5r",
-            "redash-worker-8f75c7b45-69b8m",
             "redash-b6777b664-bsnkp",
             "credentials-manager-5b99dc45b5-dl6r6",
-            "redash-scheduler-6758fd9647-phdcr",
             "jobs-observability-5f5f74ddc-rs2vw",
             "instance-manager-5d875f84d8-f2ts8",
             "jobs-api-776b6dfbb5-fcspg",
@@ -38598,7 +38756,6 @@
             "instance-pool-659b447f59-bwndl",
             "managed-catalog-b5685957-sk28b",
             "cons-webapp-0",
-            "mlflow-serving-5d6f9ccbc9-q6ksh",
             "clusters-database-monitor-56c5f797c7-t5d22",
             "partnerhub-bb8d7f7fb-6t2fz",
             "jobs-orchestrator-74c5f446c8-5bf7f",
